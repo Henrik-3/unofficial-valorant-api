@@ -15,10 +15,8 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 
 # Endpoints
 - The base url is https://api.henrikdev.xyz
-
-Available endpoints are:
-
-- /valorant/v1/profile/{name}/{tag}
-- /valorant/v1/matches/{name}/{tag}
+- Available endpoints are:
+  - /valorant/v1/profile/{name}/{tag}
+  - /valorant/v1/matches/{name}/{tag}
 
 If you have any questions write on Discord: Henrik3#1451
