@@ -14,7 +14,7 @@ If you exceed rate limit you will get following JSON with 429 Status Code:
 The documention for the API is available under https://docs.henrikdev.xyz/valorant-api.html
 
 # Endpoints
-The base url is https://api.henrikdev.xyz
+The base url is https://api.henrikdev.xyz \n
 Available endpoints are:
 
 - /valorant/v1/profile/{name}/{tag}
