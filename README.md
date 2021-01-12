@@ -19,6 +19,9 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   - /valorant/v1/profile/{name}/{tag}
   - /valorant/v1/matches/{name}/{tag}
   - /valorant/v1/match/{match-id}
+  
+# Projects using this API
+- https://github.com/OblivionGhoul/KannaKamuiBot
 
 Also would be happy if you give the project a star and give credit when you use it.
 If you have any questions write on Discord: Henrik3#1451
