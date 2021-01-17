@@ -24,5 +24,8 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - https://github.com/Henrik-3/valorant-labs
 - https://github.com/OblivionGhoul/KannaKamuiBot
 
+# Usage
+- ✅ 1000 Successful profile requests
+
 Also would be happy if you give the project a star and give credit when you use it.
 If you have any questions write on Discord: Henrik3#1451
