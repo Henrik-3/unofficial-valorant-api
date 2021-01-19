@@ -19,6 +19,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   - /valorant/v1/profile/{name}/{tag}
   - /valorant/v1/matches/{name}/{tag}
   - /valorant/v1/match/{match-id}
+  - /valorant/v1/rank/{name}/{tag}
   
 # Projects using this API
 - https://github.com/Henrik-3/valorant-labs
