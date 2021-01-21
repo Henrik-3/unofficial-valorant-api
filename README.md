@@ -31,5 +31,5 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 # Usage
 - ✅ 1000 Successful profile requests
 
-Also would be happy if you give the project a star and give credit when you use it.
-If you have any questions write on Discord: Henrik3#1451
+Also would be happy if you give the project a star and give credit when you use it. If you wanna help me to pay the windows server instance (5€ per month) to get data from the Ingame API or even the general server, you can help us over the donation link from my hoster: [Link](https://spenden.pp-h.eu/7cca1276-84ee-446f-9b07-47c668eaddfe)
+If you have any questions write on Discord: Henrik3#1451. 
