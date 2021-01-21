@@ -26,7 +26,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 # Projects using this API
 - https://github.com/Henrik-3/valorant-labs
 - https://github.com/OblivionGhoul/KannaKamuiBot
-- VALORANT DE Discord Rolesystem
+- [VALORANT DE Discord](https://discord.gg/invite/HCmvsEQ) Rolesystem
 
 # Usage
 - ✅ 1000 Successful profile requests
