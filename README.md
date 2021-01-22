@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.2.2-beta)
+# unofficial-valorant-api (v.1.2.2)
 Unofficial Valorant API by scraping data from the Valorant Tracker Network page
 
 # Authentication and Rate Limits
