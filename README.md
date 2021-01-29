@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.2.4)
+# unofficial-valorant-api (v.1.3)
 Unofficial Valorant API by scraping data from the Valorant Tracker Network page
 
 # Authentication and Rate Limits
@@ -22,6 +22,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   - [Tracker] /valorant/v1/rank/{name}/{tag} ❌
   - [Ingame]  /valorant/v1/puuid/{name}/{tag} ⚠️
   - [Ingame]  /valorant/v1/mmr/{region}/{name}/{tag} ⚠️
+  - [Ingame]  /valorant/v1/by-puuid/mmr/{region}/{puuid}
   - [Ingame]  /valorant/v1/leaderboard/{region}
 
 ⚠️== Beta | ❌ == Deprecated, will result in 410 Error
