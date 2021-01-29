@@ -36,6 +36,11 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - ✅ 1000 Successful profile requests | ✅ 1000 Successful MMR requests
 - ✅ 2500 Successful profile requests
 
+# Legal
+
+This API isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
+
+# Other Stuff
 Also would be happy if you give the project a star and give credit when you use it. If you wanna help me to pay the windows server instance (5€ per month) to get data from the Ingame API or even the general server, you can help us over the donation link from my hoster: [Link](https://spenden.pp-h.eu/7cca1276-84ee-446f-9b07-47c668eaddfe).
 
 
