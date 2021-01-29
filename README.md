@@ -16,13 +16,15 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 # Endpoints
 - The base url is https://api.henrikdev.xyz
 - Available endpoints are:
-  - /valorant/v1/profile/{name}/{tag}
-  - /valorant/v1/matches/{name}/{tag}
-  - /valorant/v1/match/{match-id}
-  - /valorant/v1/rank/{name}/{tag} [Deprecated, will result in 410 Error]
-  - /valorant/v1/puuid/{name}/{tag} [BETA]
-  - /valorant/v1/mmr/{region}/{name}/{tag} [BETA]
-  - /valorant/v1/leaderboard/{region}
+  - [Tracker] /valorant/v1/profile/{name}/{tag}
+  - [Tracker] /valorant/v1/matches/{name}/{tag}
+  - [Tracker] /valorant/v1/match/{match-id}
+  - [Tracker] /valorant/v1/rank/{name}/{tag} ❌
+  - [Ingame]  /valorant/v1/puuid/{name}/{tag} ⚠️
+  - [Ingame]  /valorant/v1/mmr/{region}/{name}/{tag} ⚠️
+  - [Ingame]  /valorant/v1/leaderboard/{region}
+
+⚠️== Beta | ❌ == Deprecated, will result in 410 Error
   
 # Projects using this API
 - https://github.com/Henrik-3/valorant-labs
