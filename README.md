@@ -15,20 +15,29 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 
 # Endpoints
 - The base url is https://api.henrikdev.xyz
-- Available endpoints are:
+- Available match endpoints are:
+
   - [Tracker] /valorant/v1/profile/{name}/{tag}
   - [Tracker] /valorant/v1/matches/{name}/{tag}
   - [Ingame]  /valorant/v2/matches/{region}/{name}/{tag} ⚠️
+  - [Ingame]  /valorant/v2/by-puuid/matches/{region}/{puuid} ⚠️
   - [Tracker] /valorant/v1/match/{match-id}
-  - [Tracker] /valorant/v1/rank/{name}/{tag} ❌
+  
+- Available profile/player endpoints are:
+  - [Tracker] /valorant/v1/profile/{name}/{tag}
   - [Ingame]  /valorant/v1/puuid/{name}/{tag} 
   - [Ingame]  /valorant/v1/mmr/{region}/{name}/{tag} 
   - [Ingame]  /valorant/v1/by-puuid/mmr/{region}/{puuid}
-  - [Ingame]  /valorant/v2/by-puuid/matches/{region}/{puuid} ⚠️
+  
+- Available utility endpoints are:  
+  
   - [Ingame]  /valorant/v1/leaderboard/{region}
   - [Ingame]  /valorant/v1/status/{region}
   - [Ingame]  /valorant/v1/content
   - [Ingame]  /valorant/v1/store-offers
+  
+- Deprecated endpoints are:
+  - [Tracker] /valorant/v1/rank/{name}/{tag} ❌
 
 ⚠️== Beta | ❌ == Deprecated, will result in 410 Error
   
