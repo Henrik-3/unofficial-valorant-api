@@ -39,6 +39,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   - [Ingame]  /valorant/v1/store-offers
   - [Ingame]  /valorant/v1/store-featured
   - [Website] /valorant/v1/website/{countrycode}
+  - [Website] /valorant/v1/website/{countrycode}?filter={game_updates, dev, esports, announcements}
   
 - Deprecated endpoints are:
   - [Tracker] /valorant/v1/rank/{name}/{tag} ❌
