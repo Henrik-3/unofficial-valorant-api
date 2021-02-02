@@ -46,6 +46,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - https://github.com/OblivionGhoul/KannaKamuiBot
 - [VALORANT DE Discord](https://discord.gg/invite/HCmvsEQ) Rolesystem
 - https://github.com/skittles9823/ValorantRankedLeaderboard
+- https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master
 
 # Usage
 - ✅ 1000 Successful profile requests | ✅ 1000 Successful MMR requests
@@ -54,6 +55,9 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 # Legal
 
 This API isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
+
+# Contributors
+Thanks to [@liamcottle](https://github.com/liamcottle) and [@RumbleMike](https://github.com/RumbleMike), without them the Ingame part of this API would be not available
 
 # Other Stuff
 Also would be happy if you give the project a star and give credit when you use it. If you wanna help me to pay the windows server instance (5€ per month) to get data from the Ingame API or even the general server, you can help us over the donation link from my hoster: [Link](https://spenden.pp-h.eu/7cca1276-84ee-446f-9b07-47c668eaddfe).
