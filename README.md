@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.3.2)
+# unofficial-valorant-api (v.1.3.3)
 Unofficial Valorant API by scraping data from the Valorant Tracker Network page
 
 # Authentication and Rate Limits
@@ -15,6 +15,8 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 
 # Endpoints
 - The base url is https://api.henrikdev.xyz
+- Available regions: eu, ap, na, kr
+- Available countrycodes: en-us, en-gb, de-de, es-es, fr-fr, it-it, ru-ru, tr-tr, es-mx, ja-jp, ko-kr, pt-br
 - Available match endpoints are:
 
   - [Tracker] /valorant/v1/profile/{name}/{tag}
@@ -35,6 +37,8 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   - [Ingame]  /valorant/v1/status/{region}
   - [Ingame]  /valorant/v1/content
   - [Ingame]  /valorant/v1/store-offers
+  - [Ingame]  /valorant/v1/store-featured
+  - [Website] /valorant/v1/website/{countrycode}
   
 - Deprecated endpoints are:
   - [Tracker] /valorant/v1/rank/{name}/{tag} ❌
@@ -49,7 +53,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master
 
 # Usage
-- ✅ 1000 Successful profile requests | ✅ 1000 Successful MMR requests
+- ✅ 1000 Successful profile requests | ✅ 1000 Successful MMR requests | ✅ 1000 Successful Matches requests
 - ✅ 2500 Successful profile requests
 
 # Legal
