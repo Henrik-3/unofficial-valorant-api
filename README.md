@@ -54,8 +54,9 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master
 
 # Usage
-- ✅ 1000 Successful profile requests | ✅ 1000 Successful MMR requests | ✅ 1000 Successful Matches requests
-- ✅ 2500 Successful profile requests
+- ✅ 1000 Successful **profile / mmr / matches / match** requests
+- ✅ 2500 Successful **profile / mmr** requests
+- ✅ 5000 Successful **profile** requests
 
 # Legal
 
