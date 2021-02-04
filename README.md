@@ -19,13 +19,13 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - Available countrycodes: en-us, en-gb, de-de, es-es, fr-fr, it-it, ru-ru, tr-tr, es-mx, ja-jp, ko-kr, pt-br
 - Available match endpoints are:
 
-  - [Tracker] /valorant/v1/profile/{name}/{tag}
   - [Tracker] /valorant/v1/matches/{name}/{tag}
   - [Ingame]  /valorant/v2/matches/{region}/{name}/{tag} ⚠️
   - [Ingame]  /valorant/v2/by-puuid/matches/{region}/{puuid} ⚠️
   - [Tracker] /valorant/v1/match/{match-id}
   
 - Available profile/player endpoints are:
+
   - [Tracker] /valorant/v1/profile/{name}/{tag}
   - [Ingame]  /valorant/v1/puuid/{name}/{tag} 
   - [Ingame]  /valorant/v1/mmr/{region}/{name}/{tag} 
