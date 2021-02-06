@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.3.3)
+# unofficial-valorant-api (v.1.4)
 Unofficial Valorant API by scraping data from the Valorant Tracker Network page
 
 # Authentication and Rate Limits
@@ -20,6 +20,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - Available match endpoints are:
 
   - [Tracker] /valorant/v1/matches/{name}/{tag}
+  - [Tracker] /valorant/v1/matches/{name}/{tag}?filter={competitive, deathmatch, spikerush, unrated}
   - [Ingame]  /valorant/v2/matches/{region}/{name}/{tag} ⚠️
   - [Ingame]  /valorant/v2/by-puuid/matches/{region}/{puuid} ⚠️
   - [Tracker] /valorant/v1/match/{match-id}
@@ -27,6 +28,8 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - Available profile/player endpoints are:
 
   - [Tracker] /valorant/v1/profile/{name}/{tag}
+  - [Tracker] /valorant/v2/profile/{name}/{tag}
+  - [Tracker] /valorant/v2/profile/{name}/{tag}?filter={e2a1, e1a3, e1a2, e1a1}
   - [Ingame]  /valorant/v1/puuid/{name}/{tag} 
   - [Ingame]  /valorant/v1/mmr/{region}/{name}/{tag} 
   - [Ingame]  /valorant/v1/by-puuid/mmr/{region}/{puuid}
