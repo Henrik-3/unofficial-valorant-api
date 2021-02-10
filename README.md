@@ -21,7 +21,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 
   - [Tracker] /valorant/v1/matches/{name}/{tag}
   - [Tracker] /valorant/v1/matches/{name}/{tag}?filter={competitive, deathmatch, spikerush, unrated}
-  - [Ingame]  /valorant/v2/matches/{region}/{name}/{tag} ⚠️
+  - [Ingame]  /valorant/v2/matches/{name}/{tag} ⚠️
   - [Ingame]  /valorant/v2/by-puuid/matches/{region}/{puuid} ⚠️
   - [Tracker] /valorant/v1/match/{match-id}
   
