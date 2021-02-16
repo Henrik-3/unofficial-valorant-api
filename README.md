@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.4)
+# unofficial-valorant-api (v.1.4.1)
 Unofficial Valorant API by scraping data from the Valorant Tracker Network page
 
 # Status
@@ -35,6 +35,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   - [Tracker] /valorant/v2/profile/{name}/{tag}?filter={e2a1, e1a3, e1a2, e1a1}
   - [Ingame]  /valorant/v1/puuid/{name}/{tag} 
   - [Ingame]  /valorant/v1/mmr/{region}/{name}/{tag} 
+  - [Ingame]  /valorant/v1/mmr-history/{region}/{name}/{tag} 
   - [Ingame]  /valorant/v1/by-puuid/mmr/{region}/{puuid}
   
 - Available utility endpoints are:  
@@ -60,9 +61,9 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master
 
 # Usage
-- ✅ 1000 Successful **profile / mmr / matches / match / leaderboard** requests
-- ✅ 2500 Successful **profile / mmr / matches / leaderboard** requests
-- ✅ 5000 Successful **profile / mmr** requests
+- ✅ 1000 Successful **profile / mmr / matches / match / leaderboard / status** requests
+- ✅ 2500 Successful **profile / mmr / matches / leaderboard / status** requests
+- ✅ 5000 Successful **profile / mmr / leaderboard** requests
 
 # Legal
 
