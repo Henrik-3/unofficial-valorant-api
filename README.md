@@ -1,7 +1,7 @@
 # IMPORTANT
 You could experience a high amount of 502, 503 or 504 currently, the reason for that is that the RiotClient randomly stopps the Connection to the Chat Servers since Version 24.1, i'm activly working on a workaround
 
-# unofficial-valorant-api (v.1.4.1)
+# unofficial-valorant-api (v.1.4.2)
 Unofficial Valorant API by scraping data from the Valorant Tracker Network page
 
 # Status
@@ -24,7 +24,8 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - Available regions: eu, ap, na, kr
 - Available countrycodes: en-us, en-gb, de-de, es-es, fr-fr, it-it, ru-ru, tr-tr, es-mx, ja-jp, ko-kr, pt-br
 - Available match endpoints are:
-
+    
+  - [Ingame]  /valorant/v1/live-match/{name}/{tag} ⚠️⚠️⚠️
   - [Tracker] /valorant/v1/matches/{name}/{tag}
   - [Tracker] /valorant/v1/matches/{name}/{tag}?filter={competitive, deathmatch, spikerush, unrated}
   - [Ingame]  /valorant/v2/matches/{name}/{tag} ⚠️
