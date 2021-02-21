@@ -28,8 +28,6 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   - [Ingame]  /valorant/v1/live-match/{name}/{tag} ⚠️⚠️⚠️
   - [Tracker] /valorant/v1/matches/{name}/{tag}
   - [Tracker] /valorant/v1/matches/{name}/{tag}?filter={competitive, deathmatch, spikerush, unrated}
-  - [Ingame]  /valorant/v2/matches/{name}/{tag} ⚠️
-  - [Ingame]  /valorant/v2/by-puuid/matches/{region}/{puuid} ⚠️
   - [Tracker] /valorant/v1/match/{match-id}
   
 - Available profile/player endpoints are:
@@ -54,6 +52,8 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   
 - Deprecated endpoints are:
   - [Tracker] /valorant/v1/rank/{name}/{tag} ❌
+  - [Ingame]  /valorant/v2/matches/{name}/{tag} ❌ [DEPRECATED BECAUSE OF ABUSING]
+  - [Ingame]  /valorant/v2/by-puuid/matches/{region}/{puuid} ❌ [DEPRECATED BECAUSE OF ABUSING]
 
 ⚠️== Beta | ❌ == Deprecated, will result in 410 Error
   
