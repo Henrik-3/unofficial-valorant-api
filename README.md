@@ -1,7 +1,7 @@
 # IMPORTANT
 You could experience a high amount of 502, 503 or 504 currently, the reason for that is that the RiotClient randomly stopps the Connection to the Chat Servers since Version 24.1, i'm activly working on a workaround
 
-# unofficial-valorant-api (v.1.4.2)
+# unofficial-valorant-api (v.1.4.3)
 Unofficial Valorant API by scraping data from the Valorant Tracker Network page
 
 # Status
