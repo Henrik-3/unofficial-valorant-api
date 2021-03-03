@@ -1,7 +1,4 @@
-# IMPORTANT
-You could experience a high amount of 502, 503 or 504 currently, the reason for that is that the RiotClient randomly stopps the Connection to the Chat Servers since Version 24.1, i'm activly working on a workaround
-
-# unofficial-valorant-api (v.1.4.3)
+# unofficial-valorant-api (v.1.5.1)
 Unofficial Valorant API by scraping data from the Valorant Tracker Network page
 
 # Status
@@ -29,14 +26,17 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   - [Tracker] /valorant/v1/matches/{name}/{tag}
   - [Tracker] /valorant/v1/matches/{name}/{tag}?filter={competitive, deathmatch, spikerush, unrated}
   - [Tracker] /valorant/v1/match/{match-id}
+  - [Ingame]  /valorant/v2/match/{match-id}
   
 - Available profile/player endpoints are:
 
   - [Tracker] /valorant/v1/profile/{name}/{tag}
   - [Tracker] /valorant/v2/profile/{name}/{tag}
-  - [Tracker] /valorant/v2/profile/{name}/{tag}?filter={e2a1, e1a3, e1a2, e1a1}
+  - [Tracker] /valorant/v2/profile/{name}/{tag}?filter={e2a2, e2a1, e1a3, e1a2, e1a1}
   - [Ingame]  /valorant/v1/puuid/{name}/{tag} 
-  - [Ingame]  /valorant/v1/mmr/{region}/{name}/{tag} 
+  - [Ingame]  /valorant/v1/mmr/{region}/{name}/{tag}
+  - [Ingame]  /valorant/v2/mmr/{region}/{name}/{tag} 
+  - [Ingame]  /valorant/v2/mmr/{region}/{name}/{tag}?filter={e2a2, e2a1, e1a3, e1a2, e1a1}
   - [Ingame]  /valorant/v1/mmr-history/{region}/{name}/{tag} 
   - [Ingame]  /valorant/v1/by-puuid/mmr/{region}/{puuid}
   
@@ -67,7 +67,8 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 # Usage
 - ✅ 1000 Successful **profile / mmr / matches / match / leaderboard / status** requests
 - ✅ 2500 Successful **profile / mmr / matches / leaderboard / status** requests
-- ✅ 5000 Successful **profile / mmr / leaderboard** requests
+- ✅ 5000 Successful **profile / mmr / leaderboard / status** requests
+- ✅ 10000 Successful **profile / mmr / leaderboard / status** requests
 
 # Legal
 
@@ -78,6 +79,7 @@ Thanks to [@liamcottle](https://github.com/liamcottle) and [@RumbleMike](https:/
 
 # Other Stuff
 Also would be happy if you give the project a star and give credit when you use it. If you wanna help me to pay the windows server instance (5€ per month) to get data from the Ingame API or even the general server, you can help us over the donation link from my hoster: [Link](https://spenden.pp-h.eu/7cca1276-84ee-446f-9b07-47c668eaddfe).
+Also if you are from Germany and want to support me on Twitch (Just for fun, no plan to get a real streamer any time soon), take a look at [here](https://www.twitch.tv/henrik_3)
 
 
 If you have any questions write on Discord: Henrik3#1451. 
