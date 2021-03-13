@@ -1,11 +1,11 @@
-# unofficial-valorant-api (v.1.5.2)
+# unofficial-valorant-api (v.1.5.4)
 Unofficial Valorant API by scraping data from the Valorant Tracker Network page
 
 # Status
 See the current status of the API here: https://status.henrikdev.xyz/
 
 # Authentication and Rate Limits
-All rate limits are the same for every endpoint, so in general you have **200 Requests every 2 Minutes**. Your rate limit is based on your IP so you don't need an API Key for authentication.
+All rate limits are the same for every endpoint, so in general you have **100 Requests every 2 Minutes**. Your rate limit is based on your IP so you don't need an API Key for authentication.
 If you exceed rate limit you will get following JSON with 429 Status Code:
 ```json
 {
@@ -22,8 +22,10 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - Available countrycodes: en-us, en-gb, de-de, es-es, fr-fr, it-it, ru-ru, tr-tr, es-mx, ja-jp, ko-kr, pt-br
 - Available match endpoints are:
     
-  - [Ingame]  /valorant/v1/live-match/{name}/{tag} ⚠️⚠️⚠️
+  - [Ingame]  /valorant/v1/live-match/{name}/{tag} 
   - [Ingame]  /valorant/v2/match/{match-id}
+  - [Ingame]  /valorant/v3/matches/{name}/{tag} ⚠️
+  - [Ingame]  /valorant/v3/by-puuid/matches/{region}/{puuid} ⚠️
   
 - Available profile/player endpoints are:
 
