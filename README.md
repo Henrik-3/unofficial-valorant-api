@@ -24,7 +24,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
     
   - [Ingame]  /valorant/v1/live-match/{name}/{tag} 
   - [Ingame]  /valorant/v2/match/{match-id}
-  - [Ingame]  /valorant/v3/matches/{name}/{tag} ⚠️
+  - [Ingame]  /valorant/v3/matches/{region}/{name}/{tag} ⚠️
   - [Ingame]  /valorant/v3/by-puuid/matches/{region}/{puuid} ⚠️
   
 - Available profile/player endpoints are:
