@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.5.4)
+# unofficial-valorant-api (v.1.5.5)
 Unofficial Valorant API by scraping data from the Valorant Tracker Network page
 
 # Status
@@ -39,6 +39,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - Available utility endpoints are:  
   
   - [Ingame]  /valorant/v1/leaderboard/{region}
+  - [Ingame]  /valorant/v1/leaderboard/{region}?name={name}&tag={tag}
   - [Ingame]  /valorant/v1/status/{region}
   - [Ingame]  /valorant/v1/content
   - [Ingame]  /valorant/v1/store-offers
@@ -66,7 +67,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - https://github.com/skittles9823/ValorantRankedLeaderboard
 - https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master
 
-# Usage
+# Usage (Outdated)
 - ✅ 1000 Successful **profile / mmr / matches / match / leaderboard / status** requests
 - ✅ 2500 Successful **profile / mmr / matches / leaderboard / status** requests
 - ✅ 5000 Successful **profile / mmr / leaderboard / status** requests
