@@ -1,8 +1,9 @@
 # unofficial-valorant-api (v.1.5.5)
-Unofficial Valorant API by scraping data from the Valorant Tracker Network page
+Unofficial Valorant API by using the Ingame API
 
 # Status
 See the current status of the API here: https://status.henrikdev.xyz/
+
 Known Issues:
 - No support for the new game mode
 - No Support for Breeze
