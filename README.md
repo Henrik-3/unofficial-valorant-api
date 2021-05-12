@@ -1,12 +1,8 @@
-# unofficial-valorant-api (v.1.5.5)
+# unofficial-valorant-api (v.1.5.6)
 Unofficial Valorant API by using the Ingame API
 
 # Status
 See the current status of the API here: https://status.henrikdev.xyz/
-
-Known Issues:
-- No support for the new game mode
-- No Support for Breeze
 
 # Authentication and Rate Limits
 All rate limits are the same for every endpoint, so in general you have **100 Requests every 2 Minutes**. Your rate limit is based on your IP so you don't need an API Key for authentication.
