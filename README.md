@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.5.6)
+# unofficial-valorant-api (v.1.6)
 Unofficial Valorant API by using the Ingame API
 
 # Status
