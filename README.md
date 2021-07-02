@@ -1,11 +1,11 @@
-# unofficial-valorant-api (v.1.6)
+# unofficial-valorant-api (v.1.6.1)
 Unofficial Valorant API by using the Ingame API
 
 # Status
 See the current status of the API here: https://status.henrikdev.xyz/
 
 # Authentication and Rate Limits
-All rate limits are the same for every endpoint, so in general you have **100 Requests every 2 Minutes**. Your rate limit is based on your IP so you don't need an API Key for authentication.
+All rate limits are the same for every endpoint, so in general you have **250 Requests every 2.5 Minutes**. Your rate limit is based on your IP so you don't need an API Key for authentication.
 If you exceed rate limit you will get following JSON with 429 Status Code:
 ```json
 {
@@ -24,8 +24,8 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
     
   - [Ingame]  /valorant/v1/live-match/{name}/{tag} 
   - [Ingame]  /valorant/v2/match/{match-id}
-  - [Ingame]  /valorant/v3/matches/{region}/{name}/{tag} ⚠️
-  - [Ingame]  /valorant/v3/by-puuid/matches/{region}/{puuid} ⚠️
+  - [Ingame]  /valorant/v3/matches/{region}/{name}/{tag} 
+  - [Ingame]  /valorant/v3/by-puuid/matches/{region}/{puuid}
   
 - Available profile/player endpoints are:
 
@@ -68,14 +68,14 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master
 
 # Usage (Outdated)
-- ✅ 1000 Successful **profile / mmr / matches / match / leaderboard / status** requests
-- ✅ 2500 Successful **profile / mmr / matches / leaderboard / status** requests
-- ✅ 5000 Successful **profile / mmr / leaderboard / status** requests
-- ✅ 10000 Successful **profile / mmr / leaderboard / status** requests
+- ✅ Hit one million monthly requests (02.07.2021)
 
 # Legal
 
 This API isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
+
+# Riot Games
+Hey Riot, first of all i hope u know that this project is a try to enhance the developer community of VALORANT and also recognize it as one. If u still has a issue with it, feel free to text me on Discord or something :D
 
 # Contributors
 Thanks to [@liamcottle](https://github.com/liamcottle) and [@RumbleMike](https://github.com/RumbleMike), without them the Ingame part of this API would be not available
