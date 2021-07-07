@@ -29,7 +29,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   
 - Available profile/player endpoints are:
 
-  - [Ingame]  /valorant/v1/account/{name}/{tag}
+  - [Ingame]  /valorant/v1/account/{name}/{tag} ⚠️
   - [Ingame]  /valorant/v1/puuid/{name}/{tag} [Deprecated at 21th of July 2021, use the account endpoint instead]
   - [Ingame]  /valorant/v1/mmr/{region}/{name}/{tag}
   - [Ingame]  /valorant/v2/mmr/{region}/{name}/{tag} 
