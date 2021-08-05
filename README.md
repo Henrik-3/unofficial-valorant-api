@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.6.2)
+# unofficial-valorant-api (v.1.7)
 Unofficial Valorant API by using the Ingame API
 
 # Status
@@ -14,7 +14,7 @@ If you exceed rate limit you will get following JSON with 429 Status Code:
 }
 ```
 # Documentation
-The documention for the API is available under https://docs.henrikdev.xyz/valorant-api.html
+The documention for the API is available under https://docs.henrikdev.xyz/valorant.html
 
 # Endpoints
 - The base url is https://api.henrikdev.xyz
@@ -29,13 +29,14 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   
 - Available profile/player endpoints are:
 
-  - [Ingame]  /valorant/v1/account/{name}/{tag} ⚠️
-  - [Ingame]  /valorant/v1/puuid/{name}/{tag} [Deprecated at 21th of July 2021, use the account endpoint instead]
+  - [Ingame]  /valorant/v1/account/{name}/{tag} 
   - [Ingame]  /valorant/v1/mmr/{region}/{name}/{tag}
   - [Ingame]  /valorant/v2/mmr/{region}/{name}/{tag} 
   - [Ingame]  /valorant/v2/mmr/{region}/{name}/{tag}?filter={e2a2, e2a1, e1a3, e1a2, e1a1}
   - [Ingame]  /valorant/v1/mmr-history/{region}/{name}/{tag} 
+  - [Ingame]  /valorant/v1/by-puuid/mmr-history/:region/:puuid
   - [Ingame]  /valorant/v1/by-puuid/mmr/{region}/{puuid}
+  - [Ingame]  /valorant/v2/by-puuid/mmr/{region}/{puuid}
   
 - Available utility endpoints are:  
   
