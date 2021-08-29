@@ -22,7 +22,6 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - Available countrycodes: en-us, en-gb, de-de, es-es, fr-fr, it-it, ru-ru, tr-tr, es-mx, ja-jp, ko-kr, pt-br
 - Available match endpoints are:
     
-  - [Ingame]  /valorant/v1/live-match/{name}/{tag} 
   - [Ingame]  /valorant/v2/match/{match-id}
   - [Ingame]  /valorant/v3/matches/{region}/{name}/{tag} 
   - [Ingame]  /valorant/v3/by-puuid/matches/{region}/{puuid}
@@ -59,6 +58,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   - [Tracker] /valorant/v1/rank/{name}/{tag} ❌
   - [Ingame]  /valorant/v2/matches/{name}/{tag} ❌ [DEPRECATED BECAUSE OF ABUSING]
   - [Ingame]  /valorant/v2/by-puuid/matches/{region}/{puuid} ❌ [DEPRECATED BECAUSE OF ABUSING]
+  - [Ingame]  /valorant/v1/live-match/{name}/{tag} 
 
 ⚠️== Beta | ❌ == Deprecated, will result in 410 Error
   
