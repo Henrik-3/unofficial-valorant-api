@@ -71,6 +71,8 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 
 # Usage (Outdated)
 - ✅ Hit one million monthly requests (02.07.2021)
+- ✅ Hit three million monthly requests (01.09.2021)
+![unknown](https://user-images.githubusercontent.com/43936184/131871951-c96adf9d-da0d-4621-8eba-17063f724e71.png)
 
 # Legal
 
