@@ -1,6 +1,8 @@
 # unofficial-valorant-api (v.1.7)
 Unofficial Valorant API by using the Ingame API
 
+<a href="https://discord.gg/X3GaVkX2YN" target="_blank"><img src="https://discordapp.com/api/guilds/704231681309278228/widget.png?style=banner2"/></a>
+
 # Status
 See the current status of the API here: https://status.henrikdev.xyz/
 
