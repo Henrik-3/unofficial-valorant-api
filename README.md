@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.7)
+# unofficial-valorant-api (v.1.7.1)
 Unofficial Valorant API by using the Ingame API
 
 <a href="https://discord.gg/X3GaVkX2YN" target="_blank"><img src="https://discordapp.com/api/guilds/704231681309278228/widget.png?style=banner2"/></a>
@@ -24,31 +24,32 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - Available countrycodes: en-us, en-gb, de-de, es-es, fr-fr, it-it, ru-ru, tr-tr, es-mx, ja-jp, ko-kr, pt-br
 - Available match endpoints are:
     
-  - [Ingame]  /valorant/v2/match/{match-id}
-  - [Ingame]  /valorant/v3/matches/{region}/{name}/{tag} 
-  - [Ingame]  /valorant/v3/by-puuid/matches/{region}/{puuid}
+  - [Ingame]  GET /valorant/v2/match/{match-id}
+  - [Ingame]  GET /valorant/v3/matches/{region}/{name}/{tag} 
+  - [Ingame]  GET /valorant/v3/by-puuid/matches/{region}/{puuid}
   
 - Available profile/player endpoints are:
 
-  - [Ingame]  /valorant/v1/account/{name}/{tag} 
-  - [Ingame]  /valorant/v1/mmr/{region}/{name}/{tag}
-  - [Ingame]  /valorant/v2/mmr/{region}/{name}/{tag} 
-  - [Ingame]  /valorant/v2/mmr/{region}/{name}/{tag}?filter={e2a2, e2a1, e1a3, e1a2, e1a1}
-  - [Ingame]  /valorant/v1/mmr-history/{region}/{name}/{tag} 
-  - [Ingame]  /valorant/v1/by-puuid/mmr-history/:region/:puuid
-  - [Ingame]  /valorant/v1/by-puuid/mmr/{region}/{puuid}
-  - [Ingame]  /valorant/v2/by-puuid/mmr/{region}/{puuid}
+  - [Ingame]  GET /valorant/v1/account/{name}/{tag} 
+  - [Ingame]  GET /valorant/v1/mmr/{region}/{name}/{tag}
+  - [Ingame]  GET /valorant/v2/mmr/{region}/{name}/{tag} 
+  - [Ingame]  GET /valorant/v2/mmr/{region}/{name}/{tag}?filter={e2a2, e2a1, e1a3, e1a2, e1a1}
+  - [Ingame]  GET /valorant/v1/mmr-history/{region}/{name}/{tag} 
+  - [Ingame]  GET /valorant/v1/by-puuid/mmr-history/:region/:puuid
+  - [Ingame]  GET /valorant/v1/by-puuid/mmr/{region}/{puuid}
+  - [Ingame]  GET /valorant/v2/by-puuid/mmr/{region}/{puuid}
   
 - Available utility endpoints are:  
   
-  - [Ingame]  /valorant/v1/leaderboard/{region}
-  - [Ingame]  /valorant/v1/leaderboard/{region}?name={name}&tag={tag}
-  - [Ingame]  /valorant/v1/status/{region}
-  - [Ingame]  /valorant/v1/content
-  - [Ingame]  /valorant/v1/store-offers
-  - [Ingame]  /valorant/v1/store-featured
-  - [Website] /valorant/v1/website/{countrycode}
-  - [Website] /valorant/v1/website/{countrycode}?filter={game_updates, dev, esports, announcements}
+  - [Ingame]  POST /valorant/v1/raw [For the usage take a look at here](https://github.com/Henrik-3/unofficial-valorant-api/releases/tag/v1.7.1)
+  - [Ingame]  GET /valorant/v1/leaderboard/{region}
+  - [Ingame]  GET /valorant/v1/leaderboard/{region}?name={name}&tag={tag}
+  - [Ingame]  GET /valorant/v1/status/{region}
+  - [Ingame]  GET /valorant/v1/content
+  - [Ingame]  GET /valorant/v1/store-offers
+  - [Ingame]  GET /valorant/v1/store-featured
+  - [Website] GET /valorant/v1/website/{countrycode}
+  - [Website] GET /valorant/v1/website/{countrycode}?filter={game_updates, dev, esports, announcements}
   
 - Deprecated endpoints are:
   - [Tracker] /valorant/v1/profile/{name}/{tag} ❌
