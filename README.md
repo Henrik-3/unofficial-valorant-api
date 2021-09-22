@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.7.1)
+# unofficial-valorant-api (v.1.7.2)
 Unofficial Valorant API by using the Ingame API
 
 <a href="https://discord.gg/X3GaVkX2YN" target="_blank"><img src="https://discordapp.com/api/guilds/704231681309278228/widget.png?style=banner2"/></a>
@@ -25,8 +25,10 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - Available match endpoints are:
     
   - [Ingame]  GET /valorant/v2/match/{match-id}
-  - [Ingame]  GET /valorant/v3/matches/{region}/{name}/{tag} 
+  - [Ingame]  GET /valorant/v3/matches/{region}/{name}/{tag}
+  - [Ingame]  GET /valorant/v3/matches/{region}/{name}/{tag}?size={1-10}
   - [Ingame]  GET /valorant/v3/by-puuid/matches/{region}/{puuid}
+  - [Ingame]  GET /valorant/v3/by-puuid/matches/{region}/{puuid}?size={1-10}
   
 - Available profile/player endpoints are:
 
