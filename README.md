@@ -1,5 +1,7 @@
 # unofficial-valorant-api (v.1.7.2)
 Unofficial Valorant API by using the Ingame API
+<br>
+**NPM Package: https://www.npmjs.com/package/unofficial-valorant-api**
 
 <a href="https://discord.gg/X3GaVkX2YN" target="_blank"><img src="https://discordapp.com/api/guilds/704231681309278228/widget.png?style=banner2"/></a>
 
