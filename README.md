@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.7.2)
+# unofficial-valorant-api (v.1.7.3)
 Unofficial Valorant API by using the Ingame API
 <br>
 **NPM Package: https://www.npmjs.com/package/unofficial-valorant-api**
