@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.7.3)
+# unofficial-valorant-api (v.1.7.4)
 Unofficial Valorant API by using the Ingame API
 <br>
 **NPM Package: https://www.npmjs.com/package/unofficial-valorant-api**
@@ -29,8 +29,12 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   - [Ingame]  GET /valorant/v2/match/{match-id}
   - [Ingame]  GET /valorant/v3/matches/{region}/{name}/{tag}
   - [Ingame]  GET /valorant/v3/matches/{region}/{name}/{tag}?size={1-10}
+  - [Ingame]  GET /valorant/v3/matches/{region}/{name}/{tag}?map={haven, icebox, bind, split, ascent, breeze, fracture}
+  - [Ingame]  GET /valorant/v3/matches/{region}/{name}/{tag}?filter={escalation, spikerush, deathmatch, competitive, unrated, replication, custom, newmap, snowball}
   - [Ingame]  GET /valorant/v3/by-puuid/matches/{region}/{puuid}
   - [Ingame]  GET /valorant/v3/by-puuid/matches/{region}/{puuid}?size={1-10}
+  - [Ingame]  GET /valorant/v3/by-puuid/matches/{region}/{puuid}?map={haven, icebox, bind, split, ascent, breeze, fracture}
+  - [Ingame]  GET /valorant/v3/by-puuid/matches/{region}/{puuid}?filter={escalation, spikerush, deathmatch, competitive, unrated, replication, custom, newmap, snowball}
   
 - Available profile/player endpoints are:
 
