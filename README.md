@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.7.4)
+# unofficial-valorant-api (v.1.7.5)
 Unofficial Valorant API by using the Ingame API
 <br>
 **NPM Package: https://www.npmjs.com/package/unofficial-valorant-api**
@@ -39,6 +39,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
 - Available profile/player endpoints are:
 
   - [Ingame]  GET /valorant/v1/account/{name}/{tag} 
+  - [Ingame]  GET /valorant/v1/account/{name}/{tag}[?force=true](https://github.com/Henrik-3/unofficial-valorant-api/releases/tag/v1.7.5)
   - [Ingame]  GET /valorant/v1/mmr/{region}/{name}/{tag}
   - [Ingame]  GET /valorant/v2/mmr/{region}/{name}/{tag} 
   - [Ingame]  GET /valorant/v2/mmr/{region}/{name}/{tag}?filter={e2a2, e2a1, e1a3, e1a2, e1a1}
