@@ -74,7 +74,7 @@ module.exports = {
      * @param {("escalation" | "spikerush" | "deathmatch" | "competitive" | "unrated" | "replication")} [filter] Filter for only games with the specific type
      */
     getMatches: async function(region, name, tag, size, filter) {
-        this.returndata(`https://api.henrikdev.xyz/valorant/v3/matches/${region}/${encodeURI(name)}/${encodeURI(tag)}${size != undefined && filter == undefined ? `?size=${size}` : size == undefined && filter != undefined ? `?filter=${filter}` : size != undefined && filter != undefined ? `?filter=${filter}&size=${size}` : ""}`, "matches")
+        return this.returndata(`https://api.henrikdev.xyz/valorant/v3/matches/${region}/${encodeURI(name)}/${encodeURI(tag)}${size ? `?size=${size}` : ""}${filter ? `?filter=${filter}` : ""}`, "matches")
     },
     /**
      * Get Match History by PUUID
