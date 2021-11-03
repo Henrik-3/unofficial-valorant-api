@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.7.5)
+# unofficial-valorant-api (v.1.7.6)
 Unofficial Valorant API by using the Ingame API
 <br>
 **NPM Package: https://www.npmjs.com/package/unofficial-valorant-api**
@@ -42,7 +42,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   - [Ingame]  GET /valorant/v1/account/{name}/{tag}[?force=true](https://github.com/Henrik-3/unofficial-valorant-api/releases/tag/v1.7.5)
   - [Ingame]  GET /valorant/v1/mmr/{region}/{name}/{tag}
   - [Ingame]  GET /valorant/v2/mmr/{region}/{name}/{tag} 
-  - [Ingame]  GET /valorant/v2/mmr/{region}/{name}/{tag}?filter={e2a2, e2a1, e1a3, e1a2, e1a1}
+  - [Ingame]  GET /valorant/v2/mmr/{region}/{name}/{tag}?filter={e3a3, e3a2, e3a1, e2a3, e2a2, e2a1, e1a3, e1a2, e1a1}
   - [Ingame]  GET /valorant/v1/mmr-history/{region}/{name}/{tag} 
   - [Ingame]  GET /valorant/v1/by-puuid/mmr-history/:region/:puuid
   - [Ingame]  GET /valorant/v1/by-puuid/mmr/{region}/{puuid}
@@ -55,6 +55,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   - [Ingame]  GET /valorant/v1/leaderboard/{region}?name={name}&tag={tag}
   - [Ingame]  GET /valorant/v1/status/{region}
   - [Ingame]  GET /valorant/v1/content
+  - [Ingame]  GET /valorant/v1/content?locale={"ar-AE", "de-DE", "en-GB", "en-US", "es-ES", "es-MX", "fr-FR", "id-ID", "it-IT", "ja-jp", "ko-KR", "pl-PL", "pt-BR", "ru-RU", "th-TH", "tr-TR", "vi-VN", "zh-CN", "zh-TW"}
   - [Ingame]  GET /valorant/v1/store-offers
   - [Ingame]  GET /valorant/v1/store-featured
   - [Website] GET /valorant/v1/website/{countrycode}
@@ -101,5 +102,8 @@ Consider to also check out https://valorant-api.com if you need any images from 
 Also would be happy if you give the project a star and give credit when you use it. If you wanna help me to pay the server instance (11€ per month) to get data from the Ingame API or even the general server, you can help us over the donation link from my hoster: [Link](https://spenden.pp-h.eu/7cca1276-84ee-446f-9b07-47c668eaddfe).
 Also if you are from Germany and want to support me on Twitch (Just for fun, no plan to get a real streamer any time soon), take a look at [here](https://www.twitch.tv/henrik_3)
 
+<a href="https://pph.sh/partner/38898?utm_medium=banner&utm_content=branding_970x90_Large-Leaderboard-dark&target=" title="Prepaid-Hoster.de" target="_blank" rel="sponsored nofollow">
+    <img src="https://pph.sh/partner/banner/38898/branding_970x90_Large-Leaderboard-dark.png" width="970" height="90" alt="Prepaid Hoster Werbe-Banner">
+</a>
 
 If you have any questions write on Discord: Henrik3#1451. 
