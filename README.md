@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.1.7.7)
+# unofficial-valorant-api (v.1.7.8)
 Unofficial Valorant API by using the Ingame API
 <br>
 **NPM Package: https://www.npmjs.com/package/unofficial-valorant-api**
@@ -52,6 +52,7 @@ The documention for the API is available under https://docs.henrikdev.xyz/valora
   
   - [Ingame]  POST /valorant/v1/raw [For the usage take a look at here](https://github.com/Henrik-3/unofficial-valorant-api/releases/tag/v1.7.1)
   - [Ingame]  GET /valorant/v1/leaderboard/{region}
+  - [INGAME]  GET /valorant/v2/leaderboard/{region}
   - [Ingame]  GET /valorant/v1/leaderboard/{region}?name={name}&tag={tag}
   - [Ingame]  GET /valorant/v1/status/{region}
   - [Ingame]  GET /valorant/v1/content
