@@ -5,6 +5,9 @@ Unofficial Valorant API by using the Ingame API
 
 <a href="https://discord.gg/X3GaVkX2YN" target="_blank"><img src="https://discordapp.com/api/guilds/704231681309278228/widget.png?style=banner2"/></a>
 
+# Recode v2
+The recode (v2) of the API will be released around the start of 2022 (plus minus 3 days). This update will have a lot of bugfixes and content update and could include some breaking changes based on your code. If you have any question regarding this update write me on Discord or over email (contact deatils at the bottom).
+
 # Status
 See the current status of the API here: https://status.henrikdev.xyz/
 
@@ -111,4 +114,4 @@ Also if you are from Germany and want to support me on Twitch (Just for fun, no 
     <img src="https://pph.sh/partner/banner/38898/branding_970x90_Large-Leaderboard-dark.png" width="970" height="90" alt="Prepaid Hoster Werbe-Banner">
 </a>
 
-If you have any questions write on Discord: Henrik3#1451. 
+If you have any questions write on Discord: Henrik3#1451 or write me an email to contact@henrikdev.xyz. 
