@@ -1,6 +1,12 @@
 # API v2.0 changes
 Here you will find all changes for version 2 of this API
 
+## Test it
+Use https://v2-api.henrikdev.xyz as your base URL to test the new version API already
+
+## Release
+Release will be the 1st or 2nd of January 2022
+
 ## Fixes
 - Fixed that the account endpoint `/valorant/v1/account/:name/:tag` allowed all version codes
 - Fixed that you wont receive a 500 error code anymore when a user changed his riot tag recently
