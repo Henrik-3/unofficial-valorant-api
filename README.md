@@ -6,7 +6,7 @@ Unofficial Valorant API by using the Ingame API
 <a href="https://discord.gg/X3GaVkX2YN" target="_blank"><img src="https://discordapp.com/api/guilds/704231681309278228/widget.png?style=banner2"/></a>
 
 # Recode v2
-The recode (v2) of the API will be released around the start of 2022 (plus minus 3 days). This update will have a lot of bugfixes and some content updates, whcih could raise some issues based on your code (some values of the json will change, for example "N.A" ==> null). If you have any question regarding this update write me on Discord or over email (contact deatils at the bottom).
+You find all information on v2 at https://github.com/Henrik-3/unofficial-valorant-api/blob/main/v2_changes.md
 
 # Status
 See the current status of the API here: https://status.henrikdev.xyz/
