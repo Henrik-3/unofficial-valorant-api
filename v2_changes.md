@@ -7,6 +7,9 @@ Use https://v2-api.henrikdev.xyz as your base URL to test the new version API al
 ## Release
 Release will be the 1st or 2nd of January 2022
 
+# Server Change
+I switched my host server to a new server with a 5x better connection and a bit better hardware
+
 ## Fixes
 - Fixed that the account endpoint `/valorant/v1/account/:name/:tag` allowed all version codes
 - Fixed that you wont receive a 500 error code anymore when a user changed his riot tag recently
