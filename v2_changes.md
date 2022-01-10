@@ -374,6 +374,8 @@ rounds: [
       "url": "https://playvalorant.com/de-de/news/dev/state-of-the-agents-december-2021/"
     },
     {...}
+  ]
+}
 ```
 - Changed that when the ability cast was unable to get, the API now returns null instead of "N.A"
 ```diff
@@ -383,7 +385,28 @@ rounds: [
 }
 ```
 - Changed that date_raw in the mmr-history endpoint and game_start in the matches endpoint are now unix time (in seconds)
-
+```diff
+{
+  "status": 200,
+  "data": {
+    metadata: {
+      "map": "Bind",
+      "game_version": "release-03.12-shipping-16-649370",
+      "game_length": 2153653,
+-     "game_start": 1641794832000,
++     "game_start": 1641794832,
+      "game_start_patched": "Monday, January 10, 2022 7:07 AM",
+      "rounds_played": 22,
+      "mode": "Unrated",
+      "season_id": "a16955a5-4ad0-f761-5e9e-389df1c892fb",
+      "platform": "PC",
+      "matchid": "655f1049-47ec-4c4b-86eb-50679fc23aa4",
+      "region": "ap",
+      "cluster": "Singapore 1"
+    }
+  }
+}
+```
 
 
 
