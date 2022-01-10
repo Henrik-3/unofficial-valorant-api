@@ -58,7 +58,10 @@ all_players: [
 +   },
 +   "behavior": {
 +     "afk_rounds": 0,
-+     "friendly_fire": {},
++     "friendly_fire": {
++         "incoming": 0,
++         "outgoing": 0
++      },
 +     "rounds_in_spawn": 0
 +   },
 +   "platform": {
@@ -73,6 +76,19 @@ all_players: [
       "q_cast": 3,
       "e_cast": 16,
       "x_cast": 2
+    },
+    "assets": {
+      "card": {
+        "small": "https://media.valorant-api.com/playercards/58314922-434e-6ed6-0625-cc9e137f7ea0/smallart.png",
+        "large": "https://media.valorant-api.com/playercards/58314922-434e-6ed6-0625-cc9e137f7ea0/largeart.png",
+        "wide": "https://media.valorant-api.com/playercards/58314922-434e-6ed6-0625-cc9e137f7ea0/wideart.png"
+      },
+      "agent": {
+        "small": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/displayicon.png",
+        "bust": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/bustportrait.png",
+        "full": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/fullportrait.png",
+        "killfeed": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/killfeedportrait.png"
+      }
     },
     "stats": {
       "score": 2297,
