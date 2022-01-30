@@ -35,7 +35,7 @@ module.exports = {
      * @param {String} tag Tag of the player
      */
     getMMRHistory: async function(region, name, tag) {
-        return this.returndata(`https://api.henrikdev.xyz/valorant/v1/${region}/${encodeURI(name)}/${encodeURI(tag)}`, "mmr")
+        return this.returndata(`https://api.henrikdev.xyz/valorant/v1/mmr-history/${region}/${encodeURI(name)}/${encodeURI(tag)}`, "mmr")
     },
     /**
      * Get MMR by PUUID
