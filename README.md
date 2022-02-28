@@ -21,7 +21,7 @@ If you exceed rate limit you will get following JSON with 429 Status Code:
 }
 ```
 # Documentation
-The documention for the API is available under https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API/2.0.0
+The documention for the API is available under https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API
   
 # Projects using this API
 - https://github.com/Henrik-3/valorant-labs
