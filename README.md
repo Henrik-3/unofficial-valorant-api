@@ -5,11 +5,8 @@ Unofficial Valorant API by using the Ingame API
 
 <a href="https://discord.gg/X3GaVkX2YN" target="_blank"><img src="https://discordapp.com/api/guilds/704231681309278228/widget.png?style=banner2"/></a>
 
-# Recode v2
-You find all information on v2 at https://github.com/Henrik-3/unofficial-valorant-api/blob/main/v2_changes.md
-
-# Status
-See the current status of the API here: https://status.henrikdev.xyz/
+# Before using this API
+Please make sure that the User has giving his consent to using his data. Analytic services where the user haven't giving his consent are not supportet and will be banned if found out
 
 # Authentication and Rate Limits
 All rate limits are the same for every endpoint, so in general you have **250 Requests every 2.5 Minutes**. Your rate limit is based on your IP so you don't need an API Key for authentication.
@@ -20,6 +17,12 @@ If you exceed rate limit you will get following JSON with 429 Status Code:
     "message": "You reached your Rate Limit, please try again later"
 }
 ```
+**Important:**
+The API will move in the future to a key based system, no application and therefore no waittime is required. When this change will go live is unknown yet, it's expected to happen in summer 2022. This change will happen because of large botting attacks which impacts all other developers.
+
+# Status
+See the current status of the API here: https://status.henrikdev.xyz/
+
 # Documentation
 The documention for the API is available under https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API
   
