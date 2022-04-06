@@ -20,6 +20,9 @@ If you exceed rate limit you will get following JSON with 429 Status Code:
 **Important:**
 The API will move in the future to a key based system, no application and therefore no waittime is required. When this change will go live is unknown yet, it's expected to happen in summer 2022. This change will happen because of large botting attacks which impacts all other developers.
 
+# Status 403 - Forbidden
+If you receive this status code, please ping my on the support discord or contact me over my mail or discord that are linked on the bottom of this page.
+
 # Status
 See the current status of the API here: https://status.henrikdev.xyz/
 
