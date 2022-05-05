@@ -20,6 +20,9 @@ If you exceed rate limit you will get following JSON with 429 Status Code:
 **Important:**
 The API will move in the future to a key based system, no application and therefore no waittime is required. When this change will go live is unknown yet, it's expected to happen in summer 2022. This change will happen because of large botting attacks which impacts all other developers.
 
+*Edit: Some further information on this: You will be able to get a key on the linked discord above in the future (probably implement it really soon so you guys can all migrate), since it is easier for me to implement such a system over a discord bot instead of creating a website for it. It is also easier to contact the people then if something is wrong, since i will connect the API key to the Discord Account ID.*
+*You will also need to enter some details about your app, for example the usecase. I will ask you for this so i can make sure the API is not used in a bad way and (hopefully) the user knows that his data is used. I will also adjust the Rate Limit for the API then, how this will look like is not quite clear right now and still subject to change* 
+
 # Status 403 - Forbidden
 If you receive this status code, please ping my on the support discord or contact me over my mail or discord that are linked on the bottom of this page.
 
