@@ -1,7 +1,6 @@
 # unofficial-valorant-api (v.2.0.1)
 Unofficial Valorant API by using the Ingame API
 <br>
-**NPM Package: https://www.npmjs.com/package/unofficial-valorant-api** [v.1.7.8]
 
 <a href="https://discord.gg/X3GaVkX2YN" target="_blank"><img src="https://discordapp.com/api/guilds/704231681309278228/widget.png?style=banner2"/></a>
 
@@ -34,17 +33,14 @@ The documention for the API is available under https://app.swaggerhub.com/apis-d
   
 # Projects using this API
 - https://github.com/Henrik-3/valorant-labs
-- https://github.com/OblivionGhoul/KannaKamuiBot
-- [VALORANT DE Discord](https://discord.gg/invite/HCmvsEQ) Rolesystem
+- [VALO DE Discord](https://discord.gg/valode) Rolesystem
 - https://github.com/skittles9823/ValorantRankedLeaderboard
 - https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master
 
-# Usage (Outdated)
-- ✅ Hit one million monthly requests (02.07.2021)
-- ✅ Hit three million monthly requests (01.09.2021)
-- ✅ Hit ten million monthly requests (15.11.2021)
-
-![unknown (2)](https://user-images.githubusercontent.com/43936184/140612175-9d1762fb-468a-4627-9914-12e2226e3b52.png)
+# Wrapper
+[x] JS - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.1.7.8]
+[x] Python - **https://github.com/raimannma/ValorantAPI** [API v.2.0.1 / current]
+[x] C# - **https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master** [API v.1.6.2]
 
 # Legal
 This API isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
