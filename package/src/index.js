@@ -27,6 +27,13 @@ class HenrikDevValorantAPI {
             if (!Object.values(input)[i]) throw new Error(`Missing parameter: ${Object.keys(input)[i]}`);
         }
     }
+    _query(input) {
+        let query = new URLSearchParams();
+        for (let i = 0; Object.values(input).length > i; i++) {
+            if (Object.values(input)[i] != null) query.append(Object.keys(input)[i], Object.values(input)[i]);
+        }
+        return query.toString().length ? query : null;
+    }
     async _fetch({url, type} = {}) {
         const req = await axios({
             url: url,
@@ -43,8 +50,9 @@ class HenrikDevValorantAPI {
 
     async getAccount({name, tag, force} = {}) {
         this._validate({name, tag});
+        const query = this._query({force});
         return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/account/${encodeURI(name)}/${encodeURI(tag)}${force ? `?force=${true}` : ''}`,
+            url: `https://api.henrikdev.xyz/valorant/v1/account/${encodeURI(name)}/${encodeURI(tag)}${query ? `?${query}` : ''}`,
             type: 'GET',
         });
     }
@@ -53,6 +61,31 @@ class HenrikDevValorantAPI {
         this._validate({version, region, puuid});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/${version}/by-puuid/mmr/${region}/${puuid}${filter ? `?filter=${filter}` : ''}`,
+            type: 'GET',
+        });
+    }
+
+    async getMMRHistoryByPUUID({region, puuid} = {}) {
+        this._validate({region, puuid});
+        return await this._fetch({
+            url: `https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr-history/${region}/${puuid}`,
+            type: 'GET',
+        });
+    }
+
+    async getMatchesByPUUID({region, puuid, filter, map, size} = {}) {
+        this._validate({region, puuid});
+        const query = this._query({filter, map, size});
+        return await this._fetch({
+            url: `https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/${region}/${puuid}${query ? `?${query}` : ''}`,
+            type: 'GET',
+        });
+    }
+
+    async getContent({locale} = {}) {
+        const query = this._query({locale});
+        return await this._fetch({
+            url: `https://api.henrikdev.xyz/valorant/v1/content${query ? `?${query}` : ''}`,
             type: 'GET',
         });
     }

@@ -16,7 +16,52 @@ export declare enum Episodes {
     Episode5Act3 = 'e5a3',
 }
 
-export declare enum getMMRByPUUIDVersions {
+export declare enum Modes {
+    Escalation = 'escalation',
+    SpikeRush = 'spikerush',
+    Deathmatch = 'deathmatch',
+    Competitive = 'competitive',
+    Unrated = 'unrated',
+    Replication = 'replication',
+    Custom = 'custom',
+    NewMap = 'newmap',
+    Snowball = 'snowball',
+}
+
+export declare enum Maps {
+    Ascent = 'ascent',
+    Split = 'split',
+    Fracture = 'fracture',
+    Bind = 'bind',
+    Breeze = 'breeze',
+    Icebox = 'icebox',
+    Haven = 'haven',
+    Pearl = 'pearl',
+}
+
+export declare enum Locales {
+    Arabic = 'ar-AE',
+    German = 'de-DE',
+    EnglishGB = 'en-GB',
+    EnglishUS = 'en-US',
+    Spanish = 'es-ES',
+    Mexican = 'es-MX',
+    French = 'fr-FR',
+    Indonesian = 'id-ID',
+    Italian = 'it-IT',
+    Japanese = 'ja-JP',
+    Korean = 'ko-KR',
+    Polish = 'pl-PL',
+    Portuguese = 'pt-BR',
+    Russian = 'ru-RU',
+    Thailand = 'th-TH',
+    Turkish = 'tr-TR',
+    Vietnamese = 'vi-VN',
+    Czech = 'zn-CN',
+    Taiwanese = 'zn-TW',
+}
+
+export declare enum MMRVersions {
     Version1 = 'v1',
     Version2 = 'v2',
 }
@@ -31,9 +76,20 @@ export declare enum Regions {
 }
 
 export class HenrikDevValorantAPI {
-    private _parseresponse;
+    private _parsebody(body: any): any;
+    private _parseresponse(req: any): APIResponse;
+    private _validate(input: any): any;
+    private _fetch(options: _fetch): Promise<APIResponse>;
     public getAccount(options: AccountFetchOptions): Promise<APIResponse>;
     public getMMRByPUUID(options: getMMRByPUUIDFetchOptions): Promise<APIResponse>;
+    public getMMRHistoryByPUUID(options: getMMRHistoryByPUUIDFetchOptions): Promise<APIResponse>;
+    public getMatchesByPUUID(options: getMatchesByPUUIDFetchOptions): Promise<APIResponse>;
+    public getContent(options: getContentFetchOptions): Promise<APIResponse>;
+}
+
+export interface _fetch {
+    url: string;
+    type: string;
 }
 
 export interface APIResponse {
@@ -56,11 +112,29 @@ export interface RateLimit {
 export interface AccountFetchOptions {
     name: string;
     tag: string;
+    force?: boolean;
 }
 
 export interface getMMRByPUUIDFetchOptions {
-    version: getMMRByPUUIDVersions;
+    version: MMRVersions;
     region: Regions;
     puuid: string;
-    filter?: string;
+    filter?: Episodes;
+}
+
+export interface getMMRByPUUIDFetchOptions {
+    region: Regions;
+    puuid: string;
+}
+
+export interface getMatchesByPUUIDFetchOptions {
+    region: Regions;
+    puuid: string;
+    filter?: Modes;
+    map?: Maps;
+    size?: int;
+}
+
+export interface getContentFetchOptions {
+    locale?: Locales;
 }
