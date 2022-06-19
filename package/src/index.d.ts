@@ -39,6 +39,21 @@ export declare enum Maps {
     Pearl = 'pearl',
 }
 
+export declare enum CCRegions {
+    EnglishGB = 'en-gb',
+    EnglishUS = 'en-us',
+    Spanish = 'es-es',
+    Mexican = 'es-mx',
+    French = 'fr-fr',
+    Italian = 'it-it',
+    Japanese = 'ja-jp',
+    Korean = 'ko-kr',
+    Portuguese = 'pt-br',
+    Russian = 'ru-ru',
+    Turkish = 'tr-tr',
+    Vietnamese = 'vi-vn',
+}
+
 export declare enum Locales {
     Arabic = 'ar-AE',
     German = 'de-DE',
@@ -61,7 +76,19 @@ export declare enum Locales {
     Taiwanese = 'zn-TW',
 }
 
+export declare enum RawTypes {
+    CompetitiveUpdates = 'competitiveupdates',
+    MMR = 'mmr',
+    MatchDetails = 'matchdetails',
+    MatchHistory = 'matchhistory',
+}
+
 export declare enum MMRVersions {
+    Version1 = 'v1',
+    Version2 = 'v2',
+}
+
+export declare enum LeaderboardVersions {
     Version1 = 'v1',
     Version2 = 'v2',
 }
@@ -85,6 +112,18 @@ export class HenrikDevValorantAPI {
     public getMMRHistoryByPUUID(options: getMMRHistoryByPUUIDFetchOptions): Promise<APIResponse>;
     public getMatchesByPUUID(options: getMatchesByPUUIDFetchOptions): Promise<APIResponse>;
     public getContent(options: getContentFetchOptions): Promise<APIResponse>;
+    public getLeaderboard(options: getLeaderboardOptions): Promise<APIResponse>;
+    public getMatches(options: getMatchesFetchOptions): Promise<APIResponse>;
+    public getMatch(options: getMatchFetchOptions): Promise<APIResponse>;
+    public getMMRHistory(options: getMMRHistoryFetchOptions): Promise<APIResponse>;
+    public getMMR(options: getMMRFetchOptions): Promise<APIResponse>;
+    public getRawData(options: getRawFetchOptions): Promise<APIResponse>;
+    public getStatus(options: getStatusFetchOptions): Promise<APIResponse>;
+    public getFeaturedItems(): Promise<APIResponse>;
+    public getOffers(): Promise<APIResponse>;
+    public getVersion(options: getVersionFetchOptions): Promise<APIResponse>;
+    public getWebsite(options: getWebsiteFetchOptions): Promise<APIResponse>;
+    public getCrosshair(options: getCrosshairFetchOptions): Promise<APIResponse>;
 }
 
 export interface _fetch {
@@ -122,7 +161,7 @@ export interface getMMRByPUUIDFetchOptions {
     filter?: Episodes;
 }
 
-export interface getMMRByPUUIDFetchOptions {
+export interface getMMRHistoryByPUUIDFetchOptions {
     region: Regions;
     puuid: string;
 }
@@ -137,4 +176,59 @@ export interface getMatchesByPUUIDFetchOptions {
 
 export interface getContentFetchOptions {
     locale?: Locales;
+}
+
+export interface getLeaderboardOptions {
+    version: LeaderboardVersions;
+    region: Regions;
+}
+
+export interface getMatchesByPUUIDFetchOptions {
+    region: Regions;
+    name: string;
+    tag: string;
+    filter?: Modes;
+    map?: Maps;
+    size?: int;
+}
+
+export interface getMatchFetchOptions {
+    match_id: string;
+}
+
+export interface getMMRHistoryFetchOptions {
+    region: Regions;
+    name: string;
+    tag: string;
+}
+
+export interface getMMRHistoryFetchOptions {
+    version: MMRVersions;
+    region: Regions;
+    name: string;
+    tag: string;
+    filter?: Episodes;
+}
+
+export interface getRawFetchOptions {
+    type: RawTypes;
+    uuid: string;
+    region: Regions;
+    queries: string;
+}
+
+export interface getStatusFetchOptions {
+    region: Regions;
+}
+
+export interface getVersionFetchOptions {
+    region: Regions;
+}
+
+export interface getWebsiteFetchOptions {
+    country_code: CCRegions;
+}
+
+export interface getCrosshairFetchOptions {
+    code: string;
 }
