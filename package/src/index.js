@@ -11,7 +11,7 @@ class HenrikDevValorantAPI {
     _parseresponse(req) {
         return {
             status: req.response ? req.response.status : req.status,
-            data: req.response ? null : req.config.headers['Content-Type'] == 'application/json' ? this._parsebody(req.data) : req.data,
+            data: req.response ? null : !req.config.headers['Content-Type'] ? this._parsebody(req.data) : req.data,
             ratelimits: {
                 used: Number(req.response ? req.response.headers['x-ratelimit-limit'] : req.headers['x-ratelimit-limit']),
                 remaining: Number(req.response ? req.response.headers['x-ratelimit-remaining'] : req.headers['x-ratelimit-remaining']),
@@ -23,7 +23,6 @@ class HenrikDevValorantAPI {
     }
     _validate(input) {
         for (let i = 0; Object.keys(input).length > i; i++) {
-            console.log(Object.keys(input)[i]);
             if (Object.values(input)[i] == null) throw new Error(`Missing parameter: ${Object.keys(input)[i]}`);
         }
     }
@@ -49,7 +48,6 @@ class HenrikDevValorantAPI {
                       'User-Agent': 'unofficial-valorant-api/node.js/2.1',
                   },
         }).catch(err => err);
-        console.log(req);
         return this._parseresponse(req);
     }
 
@@ -180,10 +178,11 @@ class HenrikDevValorantAPI {
         });
     }
 
-    async getWebsite({country_code} = {}) {
+    async getWebsite({country_code, filter} = {}) {
         this._validate({country_code});
+        const query = this._query({filter});
         return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/website/${country_code}`,
+            url: `https://api.henrikdev.xyz/valorant/v1/website/${country_code}${query ? `?${query}` : ''}`,
             type: 'GET',
         });
     }

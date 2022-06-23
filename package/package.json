@@ -1,11 +1,11 @@
 {
-    "name": "unofficial-valorant-api-beta",
-    "version": "2.1.0-beta.0",
+    "name": "unofficial-valorant-api",
+    "version": "2.1.1-beta.2",
     "type": "module",
     "description": "Library for the Unofficial VALORANT API by api.henrikdev.xyz",
-    "main": "./src/index.mjs",
+    "main": "./src/index.js",
     "dependencies": {
-        "axios": "^0.21.1"
+        "axios": "^0.27.2"
     },
     "keywords": [
         "Valorant",
