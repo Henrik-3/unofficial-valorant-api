@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.2.0.1)
+# unofficial-valorant-api (v.2.1.1)
 Unofficial Valorant API by using the Ingame API
 <br>
 
