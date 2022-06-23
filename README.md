@@ -50,8 +50,8 @@ The documention for the API is available under https://app.swaggerhub.com/apis-d
 - [VALO DE Discord](https://discord.gg/valode) Rolesystem
 
 # Wrapper
-- [x] JS - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.1.7.8] [v2.1 support is a work in Progress]
-- [x] Python - **https://github.com/raimannma/ValorantAPI** [API v.2.0.1 / current]
+- [x] JS - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.2.1.1 / current]
+- [x] Python - **https://github.com/raimannma/ValorantAPI** [API v.2.0.1]
 - [x] C# - **https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master** [API v.1.6.2]
 
 # Legal
