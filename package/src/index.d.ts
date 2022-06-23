@@ -181,9 +181,12 @@ export interface getContentFetchOptions {
 export interface getLeaderboardOptions {
     version: LeaderboardVersions;
     region: Regions;
+    name?: string;
+    tag?: string;
+    puuid?: string;
 }
 
-export interface getMatchesByPUUIDFetchOptions {
+export interface getMatchesFetchOptions {
     region: Regions;
     name: string;
     tag: string;
@@ -202,7 +205,7 @@ export interface getMMRHistoryFetchOptions {
     tag: string;
 }
 
-export interface getMMRHistoryFetchOptions {
+export interface getMMRFetchOptions {
     version: MMRVersions;
     region: Regions;
     name: string;
@@ -227,6 +230,7 @@ export interface getVersionFetchOptions {
 
 export interface getWebsiteFetchOptions {
     country_code: CCRegions;
+    filter?: string;
 }
 
 export interface getCrosshairFetchOptions {
