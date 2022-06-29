@@ -16,7 +16,6 @@ If you exceed rate limit you will get following JSON with 429 Status Code:
     "message": "You reached your Rate Limit, please try again later"
 }
 ```
-**Important:**
 The API will move in the future to a key based system, with the quarantee that you will receive an answer to your application within 24-48h. The change will go live around the mid of July. This change will happen because of large botting attacks abnd data privacy reasons which could impact all other developers.
 
 *Edit: Some further information on this: You are now able to generate a key on the linked discord above, since it is easier for me to implement such a system over a discord bot instead of creating a website for it. It is also easier to contact the developers if something is wrong, since i will connect the API key to the Discord Account ID.*
@@ -34,6 +33,14 @@ There are also some Rate Limit Adjustments:
     - Rate Limit you requested
     - Suitable for: Production Discord Bots | Websites
     - PLEASE MAKE SURE THAT YOU ALSO REQUEST AN OFFICIAL VALORANT API KEY AT RIOT TO GET RSO IF YOU HAVE A STATS FEATURE FOR EXAMPLE
+    
+**IMPORTANT**
+
+What is not allowed?
+- Big analytic projects
+    - Why? Because of data privacy. Rito set RSO as a requirement for their official API because the VAL Team said they want to protect the users data. Since i dont want to get into trouble with Riot and want to keep up the API as long as possible for normal developers out there this is a requirement
+- Public store trackers / websites / bots
+    - Why? Because it's simply not allowed and the risk of scamming accounts is also way to high. If it's a private project for a couple of friends you will receive a key, but as soon as i find out that the project is used in the public the key will get revoked.
 
 
 # Status 403 - Forbidden
