@@ -1,11 +1,11 @@
-# unofficial-valorant-api (v.2.0.1)
+# unofficial-valorant-api (v.2.1.1)
 Unofficial Valorant API by using the Ingame API
 <br>
 
 <a href="https://discord.gg/X3GaVkX2YN" target="_blank"><img src="https://discordapp.com/api/guilds/704231681309278228/widget.png?style=banner2"/></a>
 
 # Before using this API
-Please make sure that the user has given his consent to use his data. Analytic services where the user haven't giving his consent are not supported and will be banned if found out
+Please make sure that the user has given his consent to use his data. Analytic services where the user haven't giving his consent are not supported and will be banned if found out, same goes with store checkers if they are public
 
 # Authentication and Rate Limits
 All rate limits are the same for every endpoint, so in general you have **250 Requests every 2.5 Minutes**. Your rate limit is based on your IP so you don't need an API Key for authentication.
@@ -16,10 +16,9 @@ If you exceed rate limit you will get following JSON with 429 Status Code:
     "message": "You reached your Rate Limit, please try again later"
 }
 ```
-**Important:**
-The API will move in the future to a key based system, with the quarantee that you will receive an answer to your application within 24-48h. The change will go live around the mid of July. This change will happen because of large botting attacks abnd data privacy reasons which could impact all other developers.
+The API will move in the future to a key based system, with the quarantee that you will receive an answer to your application within 24-48h. The change will go live on the 1st of august. This change will happen because of large botting attacks abnd data privacy reasons which could impact all other developers.
 
-*Edit: Some further information on this: You are now able to generate a key on the linked discord above, since it is easier for me to implement such a system over a discord bot instead of creating a website for it. It is also easier to contact the developers if something is wrong, since i will connect the API key to the Discord Account ID.*
+You are now able to generate a key on the linked discord above, since it is easier for me to implement such a system over a discord bot instead of creating a website for it. It is also easier to contact the developers if something is wrong, since i will connect the API key to the Discord Account ID.
 
 *You will also have to enter some details about your app, for example the usecase. I will ask you for this so i can make sure the API is not used in a bad way and (hopefully) the user knows that his data is used.*
 
@@ -34,6 +33,14 @@ There are also some Rate Limit Adjustments:
     - Rate Limit you requested
     - Suitable for: Production Discord Bots | Websites
     - PLEASE MAKE SURE THAT YOU ALSO REQUEST AN OFFICIAL VALORANT API KEY AT RIOT TO GET RSO IF YOU HAVE A STATS FEATURE FOR EXAMPLE
+    
+**IMPORTANT**
+
+What is not allowed?
+- Big analytic projects
+    - Why? Because of data privacy. Rito set RSO as a requirement for their official API because the VAL Team said they want to protect the users data. Since i dont want to get into trouble with Riot and want to keep up the API as long as possible for normal developers out there this is a requirement
+- Public store trackers / websites / bots
+    - Why? Because it's simply not allowed and the risk of scamming accounts is also way to high. If it's a private project for a couple of friends you will receive a key, but as soon as i find out that the project is used in the public the key will get revoked.
 
 
 # Status 403 - Forbidden
@@ -61,7 +68,7 @@ This API isn't endorsed by Riot Games and doesn't reflect the views or opinions 
 Hey Riot, first of all i hope u know that this project is a try to enhance the developer community of VALORANT and also recognize it as one. If u still have an issue with it, feel free to text me on Discord or something :D
 
 # Contributors
-Thanks to @liamcottle, @RumbleMike and @Hamper, without them the API would be not available.
+Thanks to @liamcottle, @RumbleMike and @Hamper, without them mayn parts of the API would be not available.
 Consider to also check out https://valorant-api.com if you need any images from the game.
 
 # Other Stuff
