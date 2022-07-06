@@ -1,6 +1,6 @@
 //Discord.js v13.8.0
 import {Client, Intents} from 'discord.js';
-import {HenrikDevValorantAPI} from 'unofficial-valorant-api';
+import HenrikDevValorantAPI from 'unofficial-valorant-api';
 const VAPI = new HenrikDevValorantAPI();
 
 const client = new Client({

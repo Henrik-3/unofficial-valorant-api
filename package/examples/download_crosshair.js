@@ -1,4 +1,4 @@
-import {HenrikDevValorantAPI} from 'unofficial-valorant-api';
+import HenrikDevValorantAPI from 'unofficial-valorant-api';
 import {writeFileSync} from 'fs';
 const VAPI = new HenrikDevValorantAPI();
 async function download(crosshair_code) {

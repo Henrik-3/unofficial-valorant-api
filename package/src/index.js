@@ -1,6 +1,6 @@
-import axios from 'axios';
+const axios = require('axios');
 
-class HenrikDevValorantAPI {
+module.exports = class {
     constructor(key) {
         this.token = key;
     }
@@ -195,6 +195,4 @@ class HenrikDevValorantAPI {
             rtype: 'arraybuffer',
         });
     }
-}
-
-export {HenrikDevValorantAPI};
+};
