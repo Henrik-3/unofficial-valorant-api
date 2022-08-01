@@ -8,7 +8,7 @@ Unofficial Valorant API by using the Ingame API
 Please make sure that the user has given his consent to use his data. Analytic services where the user haven't giving his consent are not supported and will be banned if found out, same goes with store checkers if they are public
 
 # Authentication and Rate Limits
-All rate limits are the same for every endpoint, so in general you have **250 Requests every 2.5 Minutes**. Your rate limit is based on your IP so you don't need an API Key for authentication.
+All rate limits are the same for every endpoint, so in general you have **90 requests every minute** if you use an API Key, if not it will be **30 requests every minute** based on the IP.
 If you exceed rate limit you will get following JSON with 429 Status Code:
 ```json
 {
@@ -22,7 +22,7 @@ If you exceed rate limit you will get following JSON with 429 Status Code:
   ]
 }
 ```
-The API uses a key based system, with the quarantee that you will receive an answer to your application within 24-48h. This change happened because of large botting attacks and data privacy reasons which could impact all other developers.
+The API party uses a key based system, with the quarantee that you will receive an answer to your application within 24-48h. This change happened because of large botting attacks and data privacy reasons which could impact all other developers.
 
 You are can generate a key on the linked discord above. 
 
