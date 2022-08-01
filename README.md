@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.2.1.1)
+# unofficial-valorant-api (v.2.2.0)
 Unofficial Valorant API by using the Ingame API
 <br>
 
@@ -12,13 +12,19 @@ All rate limits are the same for every endpoint, so in general you have **250 Re
 If you exceed rate limit you will get following JSON with 429 Status Code:
 ```json
 {
-    "status": 429,
-    "message": "You reached your Rate Limit, please try again later"
+  "status": 429,
+  "errors": [
+    {
+      "message": "Rate Limited",
+      "code": 0,
+      "global": false
+    }
+  ]
 }
 ```
-The API will move in the future to a key based system, with the quarantee that you will receive an answer to your application within 24-48h. The change will go live on the 1st of august. This change will happen because of large botting attacks abnd data privacy reasons which could impact all other developers.
+The API uses a key based system, with the quarantee that you will receive an answer to your application within 24-48h. This change happened because of large botting attacks and data privacy reasons which could impact all other developers.
 
-You are now able to generate a key on the linked discord above, since it is easier for me to implement such a system over a discord bot instead of creating a website for it. It is also easier to contact the developers if something is wrong, since i will connect the API key to the Discord Account ID.
+You are can generate a key on the linked discord above. 
 
 *You will also have to enter some details about your app, for example the usecase. I will ask you for this so i can make sure the API is not used in a bad way and (hopefully) the user knows that his data is used.*
 
@@ -42,6 +48,28 @@ What is not allowed?
 - Public store trackers / websites / bots
     - Why? Because it's simply not allowed and the risk of scamming accounts is also way to high. If it's a private project for a couple of friends you will receive a key, but as soon as i find out that the project is used in the public the key will get revoked.
 
+# Error codes
+Here are the error codes for the VALORANT API that could come up. There will always be a more detailed explanation in the `details` field.
+| Code | Description |
+| ------------- | ------------- |
+| 1 | Invalid API Key |
+| 2 | Forbidden endpoint |
+| 3 | Restricted endpoint |
+| 101 | No region found for this Player  |
+| 102  | No matches found, can't get puuid  |
+| 103 | Possible name change detected, can't get puuid. Please play one match, wait 1-2 minutes and try it again  |
+| 104 | Invalid region |
+| 105 | Invalid filter |
+| 106 | Invalid gamemode |
+| 107 | Invalid map |
+| 108 | Invalid locale |
+| 109 | Missing name |
+| 110 | Missing tag |
+| 111 | Player not found in leaderboard |
+| 112 | Invalid raw type |
+| 113 | Invalid match or player id |
+| 114 | Invalid country code |
+| 115 | Invalid season |
 
 # Status 403 - Forbidden
 If you receive this status code, please ping me on the support discord or contact me over my mail or discord that are linked on the bottom of this page.
@@ -57,9 +85,9 @@ The documention for the API is available under https://app.swaggerhub.com/apis-d
 - [VALO DE Discord](https://discord.gg/valode) Rolesystem
 
 # Wrapper
-- [x] JS - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.2.1.1 / current]
-- [x] Python - **https://github.com/raimannma/ValorantAPI** [API v.2.0.1]
-- [x] C# - **https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master** [API v.1.6.2]
+- [x] JS - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.2.1.1] [v2.2.0 support WIP]
+- [x] Python - **https://github.com/raimannma/ValorantAPI** [API v.2.0.1] [v2.2.0 support WIP]
+- [x] C# - **https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master** [API v.1.6.2] [Outdated]
 
 # Legal
 This API isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
@@ -74,4 +102,4 @@ Consider to also check out https://valorant-api.com if you need any images from 
 # Other Stuff
 Also would be happy if you give the project a star and give credit when you use it. If you wanna help me to pay the server instance (16€ per month) or want to support my work, you can help me via patreon: [Link](https://www.patreon.com/henrikdev).
 
-If you have any questions write on Discord: Henrik3#1451 or write me an email to contact@henrikdev.xyz. 
+If you have any questions write on Discord: Henrik3#1451 or on the support server or write me an email to contact@henrikdev.xyz. 
