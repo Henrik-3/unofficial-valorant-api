@@ -29,7 +29,6 @@ module.exports = class {
     _query(input) {
         let query = new URLSearchParams();
         for (let i = 0; Object.values(input).length > i; i++) {
-            console.log(Object.values(input)[i] != null, Object.values(input)[i]);
             if (Object.values(input)[i] && Object.values(input)[i] != 'undefined') query.append(Object.keys(input)[i], Object.values(input)[i]);
         }
         return query.toString().length ? query : null;
