@@ -102,7 +102,7 @@ export declare enum Regions {
     Brazil = 'br',
 }
 
-export class {
+export default class {
     private _parsebody(body: any): any;
     private _parseresponse(req: any): APIResponse;
     private _validate(input: any): any;
