@@ -1,12 +1,12 @@
 const axios = require('axios');
 
 module.exports = class {
-    constructor(key) {
-        this.token = key;
+    constructor(token) {
+        this.token = token;
     }
     _parsebody(body) {
-        if (body.message) return {message: body.message};
-        return body.status ? body.data : body;
+        if (body.errors) return body.errors;
+        return [{message: 'Unknown error', code: 0, details: 'null'}];
     }
     _parseresponse(req) {
         return {
@@ -29,11 +29,12 @@ module.exports = class {
     _query(input) {
         let query = new URLSearchParams();
         for (let i = 0; Object.values(input).length > i; i++) {
-            if (Object.values(input)[i] != null) query.append(Object.keys(input)[i], Object.values(input)[i]);
+            console.log(Object.values(input)[i] != null, Object.values(input)[i]);
+            if (Object.values(input)[i] && Object.values(input)[i] != 'undefined') query.append(Object.keys(input)[i], Object.values(input)[i]);
         }
         return query.toString().length ? query : null;
     }
-    async _fetch({url, type, body = null, rtype = null} = {}) {
+    async _fetch({url, type = 'GET', body = null, rtype = null} = {}) {
         const req = await axios({
             url: url,
             method: type,
@@ -41,11 +42,11 @@ module.exports = class {
             responseType: rtype ? rtype : 'json',
             headers: this.token
                 ? {
-                      Authentication: this.token,
-                      'User-Agent': 'unofficial-valorant-api/node.js/2.1',
+                      Authorization: this.token,
+                      'User-Agent': 'unofficial-valorant-api/node.js/2.2.0',
                   }
                 : {
-                      'User-Agent': 'unofficial-valorant-api/node.js/2.1',
+                      'User-Agent': 'unofficial-valorant-api/node.js/2.2.0',
                   },
         }).catch(err => err);
         return this._parseresponse(req);
@@ -56,7 +57,6 @@ module.exports = class {
         const query = this._query({force});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/v1/account/${encodeURI(name)}/${encodeURI(tag)}${query ? `?${query}` : ''}`,
-            type: 'GET',
         });
     }
 
@@ -65,7 +65,6 @@ module.exports = class {
         const query = this._query({filter});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/${version}/by-puuid/mmr/${region}/${puuid}${query ? `?${query}` : ''}`,
-            type: 'GET',
         });
     }
 
@@ -73,7 +72,6 @@ module.exports = class {
         this._validate({region, puuid});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr-history/${region}/${puuid}`,
-            type: 'GET',
         });
     }
 
@@ -82,7 +80,6 @@ module.exports = class {
         const query = this._query({filter, map, size});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/${region}/${puuid}${query ? `?${query}` : ''}`,
-            type: 'GET',
         });
     }
 
@@ -90,18 +87,16 @@ module.exports = class {
         const query = this._query({locale});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/v1/content${query ? `?${query}` : ''}`,
-            type: 'GET',
         });
     }
 
-    async getLeaderboard({version, region, start, end, name, tag, puuid} = {}) {
+    async getLeaderboard({version, region, start, end, name, tag, puuid, season} = {}) {
         if (name && tag && puuid)
             throw new Error("Too many parameters: You can't search for name/tag and puuid at the same time, please decide between name/tag and puuid");
         this._validate({version, region});
-        const query = this._query({start, end, name: encodeURI(name), tag: encodeURI(tag), puuid});
+        const query = this._query({start, end, name: encodeURI(name), tag: encodeURI(tag), puuid, season});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/${version}/leaderboard/${region}${query ? `?${query}` : ''}`,
-            type: 'GET',
         });
     }
 
@@ -110,7 +105,6 @@ module.exports = class {
         const query = this._query({filter, map, size});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/v3/matches/${region}/${encodeURI(name)}/${encodeURI(tag)}${query ? `?${query}` : ''}`,
-            type: 'GET',
         });
     }
 
@@ -118,7 +112,6 @@ module.exports = class {
         this._validate({match_id});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/v2/match/${match_id}`,
-            type: 'GET',
         });
     }
 
@@ -126,7 +119,6 @@ module.exports = class {
         this._validate({region, name, tag});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/v1/mmr-history/${region}/${encodeURI(name)}/${encodeURI(tag)}`,
-            type: 'GET',
         });
     }
 
@@ -135,7 +127,6 @@ module.exports = class {
         const query = this._query({filter});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/${version}/mmr/${region}/${encodeURI(name)}/${encodeURI(tag)}${query ? `?${query}` : ''}`,
-            type: 'GET',
         });
     }
 
@@ -152,21 +143,18 @@ module.exports = class {
         this._validate({region});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/v1/status/${region}`,
-            type: 'GET',
         });
     }
 
     async getFeaturedItems() {
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/v1/store-featured`,
-            type: 'GET',
         });
     }
 
     async getOffers() {
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/v1/store-offers`,
-            type: 'GET',
         });
     }
 
@@ -174,7 +162,6 @@ module.exports = class {
         this._validate({region});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/v1/version/${region}`,
-            type: 'GET',
         });
     }
 
@@ -183,7 +170,6 @@ module.exports = class {
         const query = this._query({filter});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/v1/website/${country_code}${query ? `?${query}` : ''}`,
-            type: 'GET',
         });
     }
 
@@ -191,7 +177,6 @@ module.exports = class {
         this._validate({code});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/v1/crosshair/generate?id=${code}`,
-            type: 'GET',
             rtype: 'arraybuffer',
         });
     }

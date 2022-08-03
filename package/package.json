@@ -1,6 +1,6 @@
 {
     "name": "unofficial-valorant-api",
-    "version": "2.1.1-beta.3",
+    "version": "2.2.1-stable.0",
     "description": "Library for the Unofficial VALORANT API by api.henrikdev.xyz",
     "main": "./src/index.js",
     "dependencies": {
