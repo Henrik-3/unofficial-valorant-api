@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.2.2.0)
+# unofficial-valorant-api (v.2.2.1)
 Unofficial Valorant API by using the Ingame API
 <br>
 
@@ -85,8 +85,8 @@ The documention for the API is available under https://app.swaggerhub.com/apis-d
 - [VALO DE Discord](https://discord.gg/valode) Rolesystem
 
 # Wrapper
-- [x] JS - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.2.1.1] [v2.2.0 support WIP]
-- [x] Python - **https://github.com/raimannma/ValorantAPI** [API v.2.0.1] [v2.2.0 support WIP]
+- [x] JS - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.2.2.1 / current]
+- [x] Python - **https://github.com/raimannma/ValorantAPI** [API v.2.2.1 / current]
 - [x] C# - **https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master** [API v.1.6.2] [Outdated]
 
 # Legal
