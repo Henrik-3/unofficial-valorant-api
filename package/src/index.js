@@ -6,7 +6,7 @@ module.exports = class {
     }
     _parsebody(body) {
         if (body.errors) return body.errors;
-        return [{message: 'Unknown error', code: 0, details: 'null'}];
+        return body.status ? body.data : body;
     }
     _parseresponse(req) {
         return {
