@@ -1,106 +1,87 @@
-export declare enum Episodes {
-    Episode1Act1 = 'e1a1',
-    Episode1Act2 = 'e1a2',
-    Episode1Act3 = 'e1a3',
-    Episode2Act1 = 'e2a1',
-    Episode2Act2 = 'e2a2',
-    Episode2Act3 = 'e2a3',
-    Episode3Act1 = 'e3a1',
-    Episode3Act2 = 'e3a2',
-    Episode3Act3 = 'e3a3',
-    Episode4Act1 = 'e4a1',
-    Episode4Act2 = 'e4a2',
-    Episode4Act3 = 'e4a3',
-    Episode5Act1 = 'e5a1',
-    Episode5Act2 = 'e5a2',
-    Episode5Act3 = 'e5a3',
-}
+export type Episodes =
+    'e1a1' |
+    'e1a2' |
+    'e1a3' |
+    'e2a1' |
+    'e2a2' |
+    'e2a3' |
+    'e3a1' |
+    'e3a2' |
+    'e3a3' |
+    'e4a1' |
+    'e4a2' |
+    'e4a3' |
+    'e5a1' |
+    'e5a2' |
+    'e5a3';
 
-export declare enum Modes {
-    Escalation = 'escalation',
-    SpikeRush = 'spikerush',
-    Deathmatch = 'deathmatch',
-    Competitive = 'competitive',
-    Unrated = 'unrated',
-    Replication = 'replication',
-    Custom = 'custom',
-    NewMap = 'newmap',
-    Snowball = 'snowball',
-}
+export type Modes =
+    'escalation' |
+    'spikerush' |
+    'deathmatch' |
+    'competitive' |
+    'unrated' |
+    'replication' |
+    'custom' |
+    'newmap' |
+    'snowball';
 
-export declare enum Maps {
-    Ascent = 'ascent',
-    Split = 'split',
-    Fracture = 'fracture',
-    Bind = 'bind',
-    Breeze = 'breeze',
-    Icebox = 'icebox',
-    Haven = 'haven',
-    Pearl = 'pearl',
-}
+export type Maps =
+    'ascent' |
+    'split' |
+    'fracture' |
+    'bind' |
+    'breeze' |
+    'icebox' |
+    'haven' |
+    'pearl';
 
-export declare enum CCRegions {
-    EnglishGB = 'en-gb',
-    EnglishUS = 'en-us',
-    Spanish = 'es-es',
-    Mexican = 'es-mx',
-    French = 'fr-fr',
-    Italian = 'it-it',
-    Japanese = 'ja-jp',
-    Korean = 'ko-kr',
-    Portuguese = 'pt-br',
-    Russian = 'ru-ru',
-    Turkish = 'tr-tr',
-    Vietnamese = 'vi-vn',
-}
+export type CCRegions =
+    'en-gb' |
+    'en-us' |
+    'es-es' |
+    'es-mx' |
+    'fr-fr' |
+    'it-it' |
+    'ja-jp' |
+    'ko-kr' |
+    'pt-br' |
+    'ru-ru' |
+    'tr-tr' |
+    'vi-vn';
 
-export declare enum Locales {
-    Arabic = 'ar-AE',
-    German = 'de-DE',
-    EnglishGB = 'en-GB',
-    EnglishUS = 'en-US',
-    Spanish = 'es-ES',
-    Mexican = 'es-MX',
-    French = 'fr-FR',
-    Indonesian = 'id-ID',
-    Italian = 'it-IT',
-    Japanese = 'ja-JP',
-    Korean = 'ko-KR',
-    Polish = 'pl-PL',
-    Portuguese = 'pt-BR',
-    Russian = 'ru-RU',
-    Thailand = 'th-TH',
-    Turkish = 'tr-TR',
-    Vietnamese = 'vi-VN',
-    Czech = 'zn-CN',
-    Taiwanese = 'zn-TW',
-}
+export type Locales =
+    'ar-AE' |
+    'de-DE' |
+    'en-GB' |
+    'en-US' |
+    'es-ES' |
+    'es-MX' |
+    'fr-FR' |
+    'id-ID' |
+    'it-IT' |
+    'ja-JP' |
+    'ko-KR' |
+    'pl-PL' |
+    'pt-BR' |
+    'ru-RU' |
+    'th-TH' |
+    'tr-TR' |
+    'vi-VN' |
+    'zn-CN' |
+    'zn-TW';
 
-export declare enum RawTypes {
-    CompetitiveUpdates = 'competitiveupdates',
-    MMR = 'mmr',
-    MatchDetails = 'matchdetails',
-    MatchHistory = 'matchhistory',
-}
+export type RawTypes =
+    'competitiveupdates' |
+    'mmr' |
+    'matchdetails' |
+    'matchhistory';
 
-export declare enum MMRVersions {
-    Version1 = 'v1',
-    Version2 = 'v2',
-}
+export type MMRVersions = 'v1' | 'v2';
 
-export declare enum LeaderboardVersions {
-    Version1 = 'v1',
-    Version2 = 'v2',
-}
+export type LeaderboardVersions = 'v1' | 'v2';
 
-export declare enum Regions {
-    Europe = 'eu',
-    NorthAmerica = 'na',
-    Korea = 'kr',
-    Asia = 'ap',
-    LatinAmerica = 'latam',
-    Brazil = 'br',
-}
+export type Regions = 'eu' | 'na' | 'kr' | 'ap' | 'latam' | 'br';
 
 export default class {
     private _parsebody(body: any): any;
