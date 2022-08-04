@@ -106,7 +106,7 @@ export interface getMatchesByPUUIDFetchOptions {
     puuid: string;
     filter?: Modes;
     map?: Maps;
-    size?: int;
+    size?: number;
 }
 
 export interface getContentFetchOptions {
@@ -128,7 +128,7 @@ export interface getMatchesFetchOptions {
     tag: string;
     filter?: Modes;
     map?: Maps;
-    size?: int;
+    size?: number;
 }
 
 export interface getMatchFetchOptions {
