@@ -33,6 +33,8 @@ export type RawTypes = 'competitiveupdates' | 'mmr' | 'matchdetails' | 'matchhis
 
 export type MMRVersions = 'v1' | 'v2';
 
+export type FeaturedItemsVersion = 'v1' | 'v2';
+
 export type LeaderboardVersions = 'v1' | 'v2';
 
 export type Regions = 'eu' | 'na' | 'kr' | 'ap' | 'latam' | 'br';
@@ -43,6 +45,7 @@ export default class {
     private _validate(input: any): any;
     private _fetch(options: _fetch): Promise<APIResponse>;
     public getAccount(options: AccountFetchOptions): Promise<APIResponse>;
+    public getAccountByPUUID(options: AccountFetchByPUUIDOptions): Promise<APIResponse>;
     public getMMRByPUUID(options: getMMRByPUUIDFetchOptions): Promise<APIResponse>;
     public getMMRHistoryByPUUID(options: getMMRHistoryByPUUIDFetchOptions): Promise<APIResponse>;
     public getMatchesByPUUID(options: getMatchesByPUUIDFetchOptions): Promise<APIResponse>;
@@ -54,7 +57,7 @@ export default class {
     public getMMR(options: getMMRFetchOptions): Promise<APIResponse>;
     public getRawData(options: getRawFetchOptions): Promise<APIResponse>;
     public getStatus(options: getStatusFetchOptions): Promise<APIResponse>;
-    public getFeaturedItems(): Promise<APIResponse>;
+    public getFeaturedItems(options: getFeaturedItemsFetchOptions): Promise<APIResponse>;
     public getOffers(): Promise<APIResponse>;
     public getVersion(options: getVersionFetchOptions): Promise<APIResponse>;
     public getWebsite(options: getWebsiteFetchOptions): Promise<APIResponse>;
@@ -86,6 +89,11 @@ export interface RateLimit {
 export interface AccountFetchOptions {
     name: string;
     tag: string;
+    force?: boolean;
+}
+
+export interface AccountFetchByPUUIDOptions {
+    puuid: string;
     force?: boolean;
 }
 
@@ -171,4 +179,9 @@ export interface getWebsiteFetchOptions {
 
 export interface getCrosshairFetchOptions {
     code: string;
+    size?: number;
+}
+
+export interface getFeaturedItemsFetchOptions {
+    version: FeaturedItemsVersion;
 }

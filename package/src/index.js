@@ -42,10 +42,10 @@ module.exports = class {
             headers: this.token
                 ? {
                       Authorization: this.token,
-                      'User-Agent': 'unofficial-valorant-api/node.js/2.2.0',
+                      'User-Agent': 'unofficial-valorant-api/node.js/2.3.0',
                   }
                 : {
-                      'User-Agent': 'unofficial-valorant-api/node.js/2.2.0',
+                      'User-Agent': 'unofficial-valorant-api/node.js/2.3.0',
                   },
         }).catch(err => err);
         return this._parseresponse(req);
@@ -56,6 +56,14 @@ module.exports = class {
         const query = this._query({force});
         return await this._fetch({
             url: `https://api.henrikdev.xyz/valorant/v1/account/${encodeURI(name)}/${encodeURI(tag)}${query ? `?${query}` : ''}`,
+        });
+    }
+
+    async getAccountByPUUID({puuid, force} = {}) {
+        this._validate({puuid});
+        const query = this._query({force});
+        return await this._fetch({
+            url: `https://api.henrikdev.xyz/valorant/v1/by-puuid/account/${puuid}${query ? `?${query}` : ''}`,
         });
     }
 
@@ -145,9 +153,10 @@ module.exports = class {
         });
     }
 
-    async getFeaturedItems() {
+    async getFeaturedItems({version} = {}) {
+        this._validate({version});
         return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/store-featured`,
+            url: `https://api.henrikdev.xyz/valorant/${version}/store-featured`,
         });
     }
 
@@ -172,10 +181,11 @@ module.exports = class {
         });
     }
 
-    async getCrosshair({code} = {}) {
+    async getCrosshair({code, size} = {}) {
         this._validate({code});
+        const query = this._query({id: code, size});
         return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/crosshair/generate?id=${code}`,
+            url: `https://api.henrikdev.xyz/valorant/v1/crosshair/generate${query ? `?${query}` : ''}`,
             rtype: 'arraybuffer',
         });
     }
