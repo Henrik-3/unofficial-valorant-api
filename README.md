@@ -22,11 +22,11 @@ If you exceed rate limit you will get following JSON with 429 Status Code:
   ]
 }
 ```
-The API party uses a key based system, with the quarantee that you will receive an answer to your application within 24-48h. This change happened because of large botting attacks and data privacy reasons which could impact all other developers.
+The API party uses a key based system, with the guarantee that you will receive an answer to your application within 24-48h. This change happened because of large botting attacks and data privacy reasons which could impact all other developers.
 
 You are can generate a key on the linked discord above. 
 
-*You will also have to enter some details about your app, for example the usecase. I will ask you for this so i can make sure the API is not used in a bad way and (hopefully) the user knows that his data is used.*
+*You will also have to enter some details about your app, e.g., the use case. This is to ensure the API is not used in a harmful way and (hopefully) the user knows that his data is used.*
 
 There are also some Rate Limit Adjustments:
 - No Key: 
@@ -44,9 +44,9 @@ There are also some Rate Limit Adjustments:
 
 What is not allowed?
 - Big analytic projects
-    - Why? Because of data privacy. Rito set RSO as a requirement for their official API because the VAL Team said they want to protect the users data. Since i dont want to get into trouble with Riot and want to keep up the API as long as possible for normal developers out there this is a requirement
+    - Why? Because of data privacy. Rito set RSO as a requirement for their official API because the VAL Team said they want to protect the users data. Since I dont want to get into trouble with Riot and want to keep up the API as long as possible for normal developers out there this is a requirement
 - Public store trackers / websites / bots
-    - Why? Because it's simply not allowed and the risk of scamming accounts is also way to high. If it's a private project for a couple of friends you will receive a key, but as soon as i find out that the project is used in the public the key will get revoked.
+    - Why? Because it's simply not allowed and the risk of scamming accounts is also way to high. If it's a private project for a couple of friends you will receive a key, but as soon as I find out that the project is used in the public the key will get revoked.
 
 # Error codes
 Here are the error codes for the VALORANT API that could come up. There will always be a more detailed explanation in the `details` field.
@@ -96,8 +96,8 @@ This API isn't endorsed by Riot Games and doesn't reflect the views or opinions 
 Hey Riot, first of all i hope u know that this project is a try to enhance the developer community of VALORANT and also recognize it as one. If u still have an issue with it, feel free to text me on Discord or something :D
 
 # Contributors
-Thanks to @liamcottle, @RumbleMike and @Hamper, without them mayn parts of the API would be not available.
-Consider to also check out https://valorant-api.com if you need any images from the game.
+Thanks to @liamcottle, @RumbleMike and @Hamper. Without them, parts of the API would be not available.
+Consider checking out https://valorant-api.com if you need any images from the game.
 
 # Other Stuff
 Also would be happy if you give the project a star and give credit when you use it. If you wanna help me to pay the server instance (16€ per month) or want to support my work, you can help me via patreon: [Link](https://www.patreon.com/henrikdev).
