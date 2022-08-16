@@ -219,9 +219,9 @@ export default class {
 
     /**
 	 * Get a list of all in-app-purchases for valorant
-	 * ! find out wtf this actually does
 	 */
     async getIAPs() {
+        // ! find out wtf this actually does
         return this._fetch<StoreOffersResponse>("v1/store-offers")
     }
 
