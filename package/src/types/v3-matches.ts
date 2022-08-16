@@ -1,4 +1,4 @@
-import type { Characters, Mode, Rank, Region, ValorantMap, Weapon } from "./general.js"
+import type { Characters, Mode, Rank, Region, ValorantMap, Weapon } from "./general"
 
 export interface Player {
 	puuid: string

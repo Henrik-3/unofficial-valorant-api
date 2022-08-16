@@ -1,2 +1,5 @@
 examples/**/*
 test/**/*
+src/**/*
+.eslintrc.cjs
+tsconfig.json

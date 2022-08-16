@@ -1,4 +1,4 @@
-import { Region } from "./general.js"
+import { Region } from "./general"
 
 export interface Card {
 	small: string

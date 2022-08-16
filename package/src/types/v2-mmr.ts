@@ -1,4 +1,4 @@
-import { Rank, Season } from "./general.js"
+import { Rank, Season } from "./general"
 
 export interface SeasonMMR {
 	error?: "No data available"

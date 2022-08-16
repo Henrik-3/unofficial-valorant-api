@@ -11,7 +11,7 @@ export interface Reward {
 export interface Offer {
 	OfferID: string
 	IsDirectPurchase: boolean
-	StartDate: any
+	StartDate: Date
 	Cost: Cost
 	Rewards: Reward[]
 }
