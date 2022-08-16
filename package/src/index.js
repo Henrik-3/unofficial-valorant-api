@@ -1,192 +1,95 @@
-const axios = require('axios');
-
-module.exports = class {
+import axios from "axios";
+const baseUrl = "https://api.henrikdev.xyz/valorant";
+export default class {
+    token;
+    /**
+     * The main class to call API functions from
+     * @param {string} token - The token (optional). Get one from https://discord.gg/wXNMnqzvAD
+     */
     constructor(token) {
         this.token = token;
     }
-    _parsebody(body) {
-        if (body.errors) return body.errors;
+    _parseBody(body) {
+        if (body.errors)
+            return body.errors;
         return body.status ? body.data : body;
     }
-    _parseresponse(req) {
+    async _fetch(url, searchParams, config = {}) {
+        // Format search params into `?something=like&this`
+        const queryParams = searchParams ? Object.keys(searchParams).reduce((acc, cur) => {
+            const value = searchParams[cur];
+            if (value === null || value === undefined)
+                return acc;
+            return acc === ""
+                ? `?${cur}=${value}`
+                : acc + `&${cur}=${value}`;
+        }, "") : "";
+        // Main request
+        const req = await axios({
+            url: encodeURI(`${baseUrl}/${url}${queryParams}`),
+            responseType: "json",
+            headers: this.token
+                ? { Authorization: this.token, "User-Agent": "unofficial-valorant-api/node.js/2.3.0", }
+                : { "User-Agent": "unofficial-valorant-api/node.js/2.3.0", },
+            ...config
+        }).catch(error => error);
+        // Formatting response
         return {
             status: req.response ? req.response.status : req.status,
-            data: req.response ? null : !req.config.headers['Content-Type'] ? this._parsebody(req.data) : req.data,
-            ratelimits: {
-                used: Number(req.response ? req.response.headers['x-ratelimit-limit'] : req.headers['x-ratelimit-limit']),
-                remaining: Number(req.response ? req.response.headers['x-ratelimit-remaining'] : req.headers['x-ratelimit-remaining']),
-                reset: Number(req.response ? req.response.headers['x-ratelimit-reset'] : req.headers['x-ratelimit-reset']),
+            data: req.response ? null : !req.config.headers["Content-Type"] ? this._parseBody(req.data) : req.data,
+            rateLimits: {
+                used: Number(req.response ? req.response.headers["x-ratelimit-limit"] : req.headers["x-ratelimit-limit"]),
+                remaining: Number(req.response ? req.response.headers["x-ratelimit-remaining"] : req.headers["x-ratelimit-remaining"]),
+                reset: Number(req.response ? req.response.headers["x-ratelimit-reset"] : req.headers["x-ratelimit-reset"]),
             },
-            error: req.response ? this._parsebody(req.response.data) : null,
-            url: req.config.url,
+            error: req.response ? this._parseBody(req.response.data) : null,
+            url: req.config.url
         };
     }
-    _validate(input) {
-        for (let i = 0; Object.keys(input).length > i; i++) {
-            if (Object.values(input)[i] == null) throw new Error(`Missing parameter: ${Object.keys(input)[i]}`);
-        }
-    }
-    _query(input) {
-        let query = new URLSearchParams();
-        for (let i = 0; Object.values(input).length > i; i++) {
-            if (Object.values(input)[i] && Object.values(input)[i] != 'undefined') query.append(Object.keys(input)[i], Object.values(input)[i]);
-        }
-        return query.toString().length ? query : null;
-    }
-    async _fetch({url, type = 'GET', body = null, rtype = null} = {}) {
-        const req = await axios({
-            url: url,
-            method: type,
-            data: body,
-            responseType: rtype ? rtype : 'json',
-            headers: this.token
-                ? {
-                      Authorization: this.token,
-                      'User-Agent': 'unofficial-valorant-api/node.js/2.3.0',
-                  }
-                : {
-                      'User-Agent': 'unofficial-valorant-api/node.js/2.3.0',
-                  },
-        }).catch(err => err);
-        return this._parseresponse(req);
-    }
-
-    async getAccount({name, tag, force} = {}) {
-        this._validate({name, tag});
-        const query = this._query({force});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/account/${encodeURI(name)}/${encodeURI(tag)}${query ? `?${query}` : ''}`,
+    /**
+     * Make sure each key in {@param input} has a non `null` or `undefined` value
+     * @param {{ [key: string]: any }} input - Arguments to check
+     */
+    async _validateArgs(input) {
+        Object.keys(input).forEach(key => {
+            if (input[key] === null || input[key] === undefined)
+                throw new TypeError(`Missing parameter: "${key}"`);
         });
     }
-
-    async getAccountByPUUID({puuid, force} = {}) {
-        this._validate({puuid});
-        const query = this._query({force});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/by-puuid/account/${puuid}${query ? `?${query}` : ''}`,
-        });
+    /**
+     * Gets general info about a player by their Riot ID
+     * - **Returns:**
+     * - Current rank and info about their rank
+     * - RR change on their last game
+     * - Their PUUID
+     * - Their peak rank from every season
+     * @param {string} name - The Riot ID username of the player
+     * @param {string} tag - The Riot ID tag of the player
+     * @param {Region} region - The region of the player
+     * @param {Season} filter - Filter results based on episode and act
+     */
+    async getMMR(name, tag, region, filter) {
+        this._validateArgs({ name, tag, region });
+        return this._fetch(`v2/mmr/${region}/${name}/${tag}`, { filter });
     }
-
-    async getMMRByPUUID({version, region, puuid, filter} = {}) {
-        this._validate({version, region, puuid});
-        const query = this._query({filter});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/${version}/by-puuid/mmr/${region}/${puuid}${query ? `?${query}` : ''}`,
-        });
+    /**
+     * Gets the most recent 5 matches by a players Riot ID
+     * - **Returns:**
+     * - Info about most recent 5 matches including:
+     * 	- Metadata info about the match such as length, time, map, score, etc
+     * 	- Information about every player including their PUUID, Riot ID, kills, ability usage, etc
+     * 	- Information about every round in the match such as plant/defuse info, etc
+     * 	- Information about every kill in the game including killer, victim, assist, etc
+     * @param {string} name - The Riot ID username of the player
+     * @param {string} tag - The Riot ID tag of the player
+     * @param {Region} region - The region of the player
+     * @param {Season} filter - Filter results based on episode and act
+     * @param {ValorantMap} map - Filter results based on map **(needs testing)**
+     * @param {any} size - Filter results based on size **{needs testing)**
+    */
+    async getMatches(name, tag, region, filter, map, size) {
+        this._validateArgs({ name, tag, region });
+        return this._fetch(`v2/mmr/${region}/${name}/${tag}`, { filter, map, size });
     }
-
-    async getMMRHistoryByPUUID({region, puuid} = {}) {
-        this._validate({region, puuid});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr-history/${region}/${puuid}`,
-        });
-    }
-
-    async getMatchesByPUUID({region, puuid, filter, map, size} = {}) {
-        this._validate({region, puuid});
-        const query = this._query({filter, map, size});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/${region}/${puuid}${query ? `?${query}` : ''}`,
-        });
-    }
-
-    async getContent({locale} = {}) {
-        const query = this._query({locale});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/content${query ? `?${query}` : ''}`,
-        });
-    }
-
-    async getLeaderboard({version, region, start, end, name, tag, puuid, season} = {}) {
-        if (name && tag && puuid)
-            throw new Error("Too many parameters: You can't search for name/tag and puuid at the same time, please decide between name/tag and puuid");
-        this._validate({version, region});
-        const query = this._query({start, end, name: encodeURI(name), tag: encodeURI(tag), puuid, season});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/${version}/leaderboard/${region}${query ? `?${query}` : ''}`,
-        });
-    }
-
-    async getMatches({region, name, tag, filter, map, size} = {}) {
-        this._validate({region, name, tag});
-        const query = this._query({filter, map, size});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v3/matches/${region}/${encodeURI(name)}/${encodeURI(tag)}${query ? `?${query}` : ''}`,
-        });
-    }
-
-    async getMatch({match_id} = {}) {
-        this._validate({match_id});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v2/match/${match_id}`,
-        });
-    }
-
-    async getMMRHistory({region, name, tag} = {}) {
-        this._validate({region, name, tag});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/mmr-history/${region}/${encodeURI(name)}/${encodeURI(tag)}`,
-        });
-    }
-
-    async getMMR({version, region, name, tag, filter} = {}) {
-        this._validate({version, region, name, tag});
-        const query = this._query({filter});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/${version}/mmr/${region}/${encodeURI(name)}/${encodeURI(tag)}${query ? `?${query}` : ''}`,
-        });
-    }
-
-    async getRawData({type, value, region, queries} = {}) {
-        this._validate({type, value, region, queries});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/raw`,
-            body: {type, value, region, queries},
-            type: 'POST',
-        });
-    }
-
-    async getStatus({region} = {}) {
-        this._validate({region});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/status/${region}`,
-        });
-    }
-
-    async getFeaturedItems({version} = {}) {
-        this._validate({version});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/${version}/store-featured`,
-        });
-    }
-
-    async getOffers() {
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/store-offers`,
-        });
-    }
-
-    async getVersion({region} = {}) {
-        this._validate({region});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/version/${region}`,
-        });
-    }
-
-    async getWebsite({country_code, filter} = {}) {
-        this._validate({country_code});
-        const query = this._query({filter});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/website/${country_code}${query ? `?${query}` : ''}`,
-        });
-    }
-
-    async getCrosshair({code, size} = {}) {
-        this._validate({code});
-        const query = this._query({id: code, size});
-        return await this._fetch({
-            url: `https://api.henrikdev.xyz/valorant/v1/crosshair/generate${query ? `?${query}` : ''}`,
-            rtype: 'arraybuffer',
-        });
-    }
-};
+}
+//# sourceMappingURL=index.js.map

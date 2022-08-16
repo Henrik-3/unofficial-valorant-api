@@ -1,5 +1,9 @@
+/**
+ * OUTDATED NEW EXAMPLES COMING SOON
+ */
+
 //Discord.js v13.8.0
-import {Client, Intents} from 'discord.js';
+import { Client, Intents } from 'discord.js';
 import HenrikDevValorantAPI from 'unofficial-valorant-api';
 const VAPI = new HenrikDevValorantAPI();
 

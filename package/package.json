@@ -1,6 +1,6 @@
 {
     "name": "unofficial-valorant-api",
-    "version": "2.3.0-stable.0",
+    "version": "3.0.0-stable.0",
     "description": "Library for the Unofficial VALORANT API by api.henrikdev.xyz",
     "main": "./src/index.js",
     "dependencies": {
@@ -20,5 +20,6 @@
     },
     "homepage": "https://github.com/Henrik-3/unofficial-valorant-api",
     "author": "HenrikDev",
-    "license": "ISC"
+    "license": "ISC",
+    "type": "module"
 }
