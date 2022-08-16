@@ -21,5 +21,8 @@
     "homepage": "https://github.com/Henrik-3/unofficial-valorant-api",
     "author": "HenrikDev",
     "license": "ISC",
-    "type": "module"
+    "type": "module",
+    "devDependencies": {
+        "@types/node": "^18.7.5"
+    }
 }

@@ -1,5 +1,4 @@
-import type { Region } from "../index.js"
-import type { Characters, Mode, Rank, ValorantMap, Weapon } from "./general.js"
+import type { Characters, Mode, Rank, Region, ValorantMap, Weapon } from "./general.js"
 
 export interface Player {
 	puuid: string
@@ -78,7 +77,7 @@ export interface Player {
 
 type PlayerLocation = { x: number, y: number }
 
-interface PlayerLocationOnEvent {
+export interface PlayerLocationOnEvent {
 	player_puuid: string
 	player_display_name: string
 	player_team: "Red" | "Blue"
@@ -86,7 +85,7 @@ interface PlayerLocationOnEvent {
 	view_radians: number
 }
 
-interface KillEvent {
+export interface KillEvent {
 	kill_time_in_round: number
 	kill_time_in_match: number
 	killer_puuid: string
@@ -111,7 +110,7 @@ interface KillEvent {
 	}[]
 }
 
-interface Round {
+export interface Round {
 	winning_team: "Red" | "Blue"
 	end_type: "Eliminated" | "Bomb defused" | "Bomb detonated"
 	bomb_planted: boolean
@@ -189,7 +188,7 @@ interface Round {
 	}
 }
 
-interface KillEventMatch extends KillEvent {
+export interface KillEventMatch extends KillEvent {
 	round: number
 }
 

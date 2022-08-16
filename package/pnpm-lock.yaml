@@ -1,12 +1,20 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/node': ^18.7.5
   axios: ^0.27.2
 
 dependencies:
   axios: 0.27.2
 
+devDependencies:
+  '@types/node': 18.7.5
+
 packages:
+
+  /@types/node/18.7.5:
+    resolution: {integrity: sha512-NcKK6Ts+9LqdHJaW6HQmgr7dT/i3GOHG+pt6BiWv++5SnjtRd4NXeiuN2kA153SjhXPR/AhHIPHPbrsbpUVOww==}
+    dev: true
 
   /asynckit/0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
