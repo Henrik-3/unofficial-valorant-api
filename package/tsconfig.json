@@ -18,5 +18,14 @@
 		"node_modules",
 		"dist",
 		"test"
-	]
+	],
+	"typedocOptions": {
+		"entryPoints": [
+			"./src"
+		],
+		"entryPointStrategy": "expand",
+		"out": "./doc",
+		"excludeInternal": true,
+		"hideBreadcrumbs": true
+	}
 }

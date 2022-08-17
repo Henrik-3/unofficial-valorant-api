@@ -1,12 +1,15 @@
-import { spawn } from "child_process";
-import _VAPI from "../dist/index.js";
-const VAPI = new _VAPI();
+import { spawn } from "child_process"
+import _VAPI from "../dist/index.js"
+const VAPI = new _VAPI()
+
 const clipboard = (data) => {
-    const proc = spawn("pbcopy");
-    proc.stdin.write(data);
-    proc.stdin.end();
-};
-const res = await VAPI.initUtils();
+    const proc = spawn("pbcopy") 
+    proc.stdin.write(data)
+    proc.stdin.end()
+}
+
+const res = await VAPI.initUtils()
+
 // const object = Object.keys(res.data).reduce((acc, cur) => {
 //     if (Array.isArray(res.data[cur])) {
 //         acc[cur] = res.data[cur].slice(0, 2)
@@ -17,4 +20,3 @@ const res = await VAPI.initUtils();
 // }, {})
 // console.log(object)
 // clipboard(JSON.stringify(object))
-//# sourceMappingURL=test.js.map
