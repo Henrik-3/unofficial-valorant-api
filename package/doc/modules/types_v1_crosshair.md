@@ -14,4 +14,4 @@
 
 #### Defined in
 
-[types/v1-crosshair.ts:1](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-crosshair.ts#L1)
+[types/v1-crosshair.ts:1](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-crosshair.ts#L1)

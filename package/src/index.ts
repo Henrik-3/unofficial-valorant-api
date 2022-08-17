@@ -123,7 +123,7 @@ export default class {
 	 * Create a new instance of the main API. All API calls are in this class
 	 * @example
 	 * Create a new instance
-	 * ```
+	 * ```js
 	 * import _VAPI from "unofficial-valorant-api"
 	 * const VAPI = new _VAPI("my super secret token")
 	 * ```
@@ -228,7 +228,7 @@ export default class {
 	 * Get an image of a valorant crosshair by its code
 	 * @example
 	 * Load and write a crosshair to crosshair.png
-	 * ```
+	 * ```js
 	 * import { writeFileSync } from "fs"
 	 * 
 	 * const crosshair = await default.getCrosshair("0;s;1;P;c;5;o;1;d;1;z;3;0b;0;1b;0;S;c;4;o;1")

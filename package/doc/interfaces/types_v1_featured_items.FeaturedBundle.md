@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[types/v1-featured-items.ts:26](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-featured-items.ts#L26)
+[types/v1-featured-items.ts:26](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-featured-items.ts#L26)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[types/v1-featured-items.ts:28](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-featured-items.ts#L28)
+[types/v1-featured-items.ts:28](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-featured-items.ts#L28)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[types/v1-featured-items.ts:27](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-featured-items.ts#L27)
+[types/v1-featured-items.ts:27](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-featured-items.ts#L27)

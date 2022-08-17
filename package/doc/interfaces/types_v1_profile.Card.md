@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[types/v1-profile.ts:7](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-profile.ts#L7)
+[types/v1-profile.ts:7](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-profile.ts#L7)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[types/v1-profile.ts:5](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-profile.ts#L5)
+[types/v1-profile.ts:5](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-profile.ts#L5)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[types/v1-profile.ts:4](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-profile.ts#L4)
+[types/v1-profile.ts:4](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-profile.ts#L4)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[types/v1-profile.ts:6](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-profile.ts#L6)
+[types/v1-profile.ts:6](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-profile.ts#L6)

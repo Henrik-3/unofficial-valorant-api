@@ -23,4 +23,4 @@
 
 #### Defined in
 
-[types/v3-matches.ts:232](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v3-matches.ts#L232)
+[types/v3-matches.ts:232](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L232)

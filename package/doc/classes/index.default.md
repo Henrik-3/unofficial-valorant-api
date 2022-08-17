@@ -49,7 +49,7 @@ Create a new instance of the main API. All API calls are in this class
 **`Example`**
 
 Create a new instance
-```
+```js
 import _VAPI from "unofficial-valorant-api"
 const VAPI = new _VAPI("my super secret token")
 ```
@@ -62,7 +62,7 @@ const VAPI = new _VAPI("my super secret token")
 
 #### Defined in
 
-[index.ts:132](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L132)
+[index.ts:132](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L132)
 
 ## Properties
 
@@ -92,7 +92,7 @@ You must call [initUtils](index.default.md#initutils) before using this!
 
 #### Defined in
 
-[index.ts:120](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L120)
+[index.ts:120](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L120)
 
 ___
 
@@ -139,7 +139,7 @@ You must call [initUtils](index.default.md#initutils) before using this!
 
 #### Defined in
 
-[index.ts:114](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L114)
+[index.ts:114](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L114)
 
 ## Methods
 
@@ -163,7 +163,7 @@ List of announcements from the valorant website
 
 #### Defined in
 
-[index.ts:253](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L253)
+[index.ts:253](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L253)
 
 ___
 
@@ -176,7 +176,7 @@ Get an image of a valorant crosshair by its code
 **`Example`**
 
 Load and write a crosshair to crosshair.png
-```
+```js
 import { writeFileSync } from "fs"
 
 const crosshair = await default.getCrosshair("0;s;1;P;c;5;o;1;d;1;z;3;0b;0;1b;0;S;c;4;o;1")
@@ -198,7 +198,7 @@ The image of the crosshair as a Buffer
 
 #### Defined in
 
-[index.ts:241](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L241)
+[index.ts:241](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L241)
 
 ___
 
@@ -216,7 +216,7 @@ Featured items in the current valorant store
 
 #### Defined in
 
-[index.ts:272](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L272)
+[index.ts:272](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L272)
 
 ___
 
@@ -234,7 +234,7 @@ List of IAPs in valorant
 
 #### Defined in
 
-[index.ts:281](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L281)
+[index.ts:281](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L281)
 
 ___
 
@@ -273,7 +273,7 @@ Descending order of the highest ranked players. (Immortal and up)
 
 #### Defined in
 
-[index.ts:408](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L408)
+[index.ts:408](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L408)
 
 ___
 
@@ -308,7 +308,7 @@ Information about a players mmr/rank
 
 #### Defined in
 
-[index.ts:437](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L437)
+[index.ts:437](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L437)
 
 ___
 
@@ -342,7 +342,7 @@ Information about a players mmr/rank
 
 #### Defined in
 
-[index.ts:455](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L455)
+[index.ts:455](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L455)
 
 ___
 
@@ -368,7 +368,7 @@ List of rr changes (recent competitive games)
 
 #### Defined in
 
-[index.ts:367](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L367)
+[index.ts:367](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L367)
 
 ___
 
@@ -393,7 +393,7 @@ List of rr changes (recent competitive games)
 
 #### Defined in
 
-[index.ts:378](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L378)
+[index.ts:378](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L378)
 
 ___
 
@@ -417,7 +417,7 @@ Information about the match
 
 #### Defined in
 
-[index.ts:388](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L388)
+[index.ts:388](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L388)
 
 ___
 
@@ -455,7 +455,7 @@ Info about a players last 5 matches
 
 #### Defined in
 
-[index.ts:477](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L477)
+[index.ts:477](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L477)
 
 ___
 
@@ -492,7 +492,7 @@ Info about a players last 5 matches
 
 #### Defined in
 
-[index.ts:498](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L498)
+[index.ts:498](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L498)
 
 ___
 
@@ -526,7 +526,7 @@ General information on a players profile
 
 #### Defined in
 
-[index.ts:516](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L516)
+[index.ts:516](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L516)
 
 ___
 
@@ -559,7 +559,7 @@ General information on a players profile
 
 #### Defined in
 
-[index.ts:533](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L533)
+[index.ts:533](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L533)
 
 ___
 
@@ -589,7 +589,7 @@ Information about the players rr history
 
 #### Defined in
 
-[index.ts:336](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L336)
+[index.ts:336](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L336)
 
 ___
 
@@ -619,7 +619,7 @@ Information about the players mmr
 
 #### Defined in
 
-[index.ts:352](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L352)
+[index.ts:352](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L352)
 
 ___
 
@@ -649,7 +649,7 @@ Information about the match
 
 #### Defined in
 
-[index.ts:304](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L304)
+[index.ts:304](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L304)
 
 ___
 
@@ -679,7 +679,7 @@ Information about the players match history
 
 #### Defined in
 
-[index.ts:320](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L320)
+[index.ts:320](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L320)
 
 ___
 
@@ -703,7 +703,7 @@ Info about undergoing maintenances and incidents in a region of valorant
 
 #### Defined in
 
-[index.ts:291](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L291)
+[index.ts:291](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L291)
 
 ___
 
@@ -725,7 +725,7 @@ Get all translations for every character, skin, map, ability, spray, charm, play
 
 #### Defined in
 
-[index.ts:419](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L419)
+[index.ts:419](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L419)
 
 ___
 
@@ -749,7 +749,7 @@ Information about a regions valorant
 
 #### Defined in
 
-[index.ts:263](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L263)
+[index.ts:263](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L263)
 
 ___
 
@@ -769,4 +769,4 @@ Must be called before using [rankImages](index.default.md#rankimages) and [mapIm
 
 #### Defined in
 
-[index.ts:139](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/index.ts#L139)
+[index.ts:139](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/index.ts#L139)

@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[types/raw/match-history.ts:11](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/raw/match-history.ts#L11)
+[types/raw/match-history.ts:11](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/match-history.ts#L11)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[types/raw/match-history.ts:12](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/raw/match-history.ts#L12)
+[types/raw/match-history.ts:12](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/match-history.ts#L12)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[types/raw/match-history.ts:14](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/raw/match-history.ts#L14)
+[types/raw/match-history.ts:14](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/match-history.ts#L14)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[types/raw/match-history.ts:10](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/raw/match-history.ts#L10)
+[types/raw/match-history.ts:10](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/match-history.ts#L10)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[types/raw/match-history.ts:13](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/raw/match-history.ts#L13)
+[types/raw/match-history.ts:13](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/match-history.ts#L13)
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[types/raw/match-history.ts:15](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/raw/match-history.ts#L15)
+[types/raw/match-history.ts:15](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/match-history.ts#L15)

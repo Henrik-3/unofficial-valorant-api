@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[types/v1-website.ts:2](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-website.ts#L2)
+[types/v1-website.ts:2](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-website.ts#L2)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[types/v1-website.ts:3](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-website.ts#L3)
+[types/v1-website.ts:3](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-website.ts#L3)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[types/v1-website.ts:4](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-website.ts#L4)
+[types/v1-website.ts:4](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-website.ts#L4)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[types/v1-website.ts:5](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-website.ts#L5)
+[types/v1-website.ts:5](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-website.ts#L5)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[types/v1-website.ts:6](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-website.ts#L6)
+[types/v1-website.ts:6](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-website.ts#L6)
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[types/v1-website.ts:7](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-website.ts#L7)
+[types/v1-website.ts:7](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-website.ts#L7)

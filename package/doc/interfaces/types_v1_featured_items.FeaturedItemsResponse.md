@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[types/v1-featured-items.ts:32](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v1-featured-items.ts#L32)
+[types/v1-featured-items.ts:32](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-featured-items.ts#L32)

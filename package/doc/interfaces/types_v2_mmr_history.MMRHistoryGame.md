@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[types/v2-mmr-history.ts:11](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v2-mmr-history.ts#L11)
+[types/v2-mmr-history.ts:11](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-mmr-history.ts#L11)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[types/v2-mmr-history.ts:12](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v2-mmr-history.ts#L12)
+[types/v2-mmr-history.ts:12](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-mmr-history.ts#L12)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[types/v2-mmr-history.ts:17](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v2-mmr-history.ts#L17)
+[types/v2-mmr-history.ts:17](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-mmr-history.ts#L17)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[types/v2-mmr-history.ts:18](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v2-mmr-history.ts#L18)
+[types/v2-mmr-history.ts:18](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-mmr-history.ts#L18)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[types/v2-mmr-history.ts:16](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v2-mmr-history.ts#L16)
+[types/v2-mmr-history.ts:16](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-mmr-history.ts#L16)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[types/v2-mmr-history.ts:13](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v2-mmr-history.ts#L13)
+[types/v2-mmr-history.ts:13](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-mmr-history.ts#L13)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[types/v2-mmr-history.ts:15](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v2-mmr-history.ts#L15)
+[types/v2-mmr-history.ts:15](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-mmr-history.ts#L15)
 
 ___
 
@@ -93,4 +93,4 @@ ___
 
 #### Defined in
 
-[types/v2-mmr-history.ts:14](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/v2-mmr-history.ts#L14)
+[types/v2-mmr-history.ts:14](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-mmr-history.ts#L14)

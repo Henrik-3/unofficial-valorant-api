@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[types/raw/match-details.ts:251](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/raw/match-details.ts#L251)
+[types/raw/match-details.ts:251](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/match-details.ts#L251)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[types/raw/match-details.ts:252](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/raw/match-details.ts#L252)
+[types/raw/match-details.ts:252](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/match-details.ts#L252)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[types/raw/match-details.ts:255](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/raw/match-details.ts#L255)
+[types/raw/match-details.ts:255](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/match-details.ts#L255)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[types/raw/match-details.ts:249](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/raw/match-details.ts#L249)
+[types/raw/match-details.ts:249](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/match-details.ts#L249)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[types/raw/match-details.ts:250](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/raw/match-details.ts#L250)
+[types/raw/match-details.ts:250](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/match-details.ts#L250)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[types/raw/match-details.ts:256](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/raw/match-details.ts#L256)
+[types/raw/match-details.ts:256](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/match-details.ts#L256)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[types/raw/match-details.ts:254](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/raw/match-details.ts#L254)
+[types/raw/match-details.ts:254](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/match-details.ts#L254)
 
 ___
 
@@ -93,4 +93,4 @@ ___
 
 #### Defined in
 
-[types/raw/match-details.ts:253](https://github.com/jameslinimk/unofficial-valorant-api/blob/372bfa0/package/src/types/raw/match-details.ts#L253)
+[types/raw/match-details.ts:253](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/match-details.ts#L253)
