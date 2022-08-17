@@ -21,4 +21,4 @@
 
 #### Defined in
 
-[types/v1-content.ts:3](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-content.ts#L3)
+[types/v1-content.ts:3](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v1-content.ts#L3)

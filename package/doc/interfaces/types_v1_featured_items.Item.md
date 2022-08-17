@@ -6,69 +6,102 @@
 
 ### Properties
 
-- [BasePrice](types_v1_featured_items.Item.md#baseprice)
-- [CurrencyID](types_v1_featured_items.Item.md#currencyid)
-- [DiscountPercent](types_v1_featured_items.Item.md#discountpercent)
-- [DiscountedPrice](types_v1_featured_items.Item.md#discountedprice)
-- [IsPromoItem](types_v1_featured_items.Item.md#ispromoitem)
-- [Item](types_v1_featured_items.Item.md#item)
+- [amount](types_v1_featured_items.Item.md#amount)
+- [base\_price](types_v1_featured_items.Item.md#base_price)
+- [discount\_percent](types_v1_featured_items.Item.md#discount_percent)
+- [discounted\_price](types_v1_featured_items.Item.md#discounted_price)
+- [image](types_v1_featured_items.Item.md#image)
+- [name](types_v1_featured_items.Item.md#name)
+- [promo\_item](types_v1_featured_items.Item.md#promo_item)
+- [type](types_v1_featured_items.Item.md#type)
+- [uuid](types_v1_featured_items.Item.md#uuid)
 
 ## Properties
 
-### BasePrice
+### amount
 
-• **BasePrice**: `number`
+• **amount**: `number`
 
 #### Defined in
 
-[types/v1-featured-items.ts:9](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-featured-items.ts#L9)
+[types/v1-featured-items.ts:6](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v1-featured-items.ts#L6)
 
 ___
 
-### CurrencyID
+### base\_price
 
-• **CurrencyID**: `string`
+• **base\_price**: `number`
 
 #### Defined in
 
-[types/v1-featured-items.ts:10](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-featured-items.ts#L10)
+[types/v1-featured-items.ts:8](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v1-featured-items.ts#L8)
 
 ___
 
-### DiscountPercent
+### discount\_percent
 
-• **DiscountPercent**: `number`
+• **discount\_percent**: `number`
 
 #### Defined in
 
-[types/v1-featured-items.ts:11](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-featured-items.ts#L11)
+[types/v1-featured-items.ts:7](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v1-featured-items.ts#L7)
 
 ___
 
-### DiscountedPrice
+### discounted\_price
 
-• **DiscountedPrice**: `number`
+• **discounted\_price**: `number`
 
 #### Defined in
 
-[types/v1-featured-items.ts:12](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-featured-items.ts#L12)
+[types/v1-featured-items.ts:9](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v1-featured-items.ts#L9)
 
 ___
 
-### IsPromoItem
+### image
 
-• **IsPromoItem**: `boolean`
+• **image**: `string`
 
 #### Defined in
 
-[types/v1-featured-items.ts:13](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-featured-items.ts#L13)
+[types/v1-featured-items.ts:4](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v1-featured-items.ts#L4)
 
 ___
 
-### Item
+### name
 
-• **Item**: [`BaseItem`](types_v1_featured_items.BaseItem.md)
+• **name**: `string`
 
 #### Defined in
 
-[types/v1-featured-items.ts:8](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-featured-items.ts#L8)
+[types/v1-featured-items.ts:3](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v1-featured-items.ts#L3)
+
+___
+
+### promo\_item
+
+• **promo\_item**: `boolean`
+
+#### Defined in
+
+[types/v1-featured-items.ts:10](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v1-featured-items.ts#L10)
+
+___
+
+### type
+
+• **type**: `string`
+
+#### Defined in
+
+[types/v1-featured-items.ts:5](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v1-featured-items.ts#L5)
+
+___
+
+### uuid
+
+• **uuid**: `string`
+
+#### Defined in
+
+[types/v1-featured-items.ts:2](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v1-featured-items.ts#L2)

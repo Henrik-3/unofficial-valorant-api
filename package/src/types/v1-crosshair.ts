@@ -1,1 +1,1 @@
-export type CrosshairResponse = Buffer
+export type CrosshairResponse = Buffer;

@@ -11,10 +11,5 @@
 		"sourceMap": true,
 		"skipLibCheck": true,
 		"allowSyntheticDefaultImports": true
-	},
-	"exclude": [
-		"node_modules",
-		"./node_modules",
-		"./node_modules/*"
-	]
+	}
 }

@@ -1,23 +1,23 @@
-import { Region } from "../general"
+import { Region } from "../general";
 
 interface Match {
-	MatchID: string
-	MapID: string
-	SeasonID: string
-	MatchStartTime: any
-	TierAfterUpdate: number
-	TierBeforeUpdate: number
-	RankedRatingAfterUpdate: number
-	RankedRatingBeforeUpdate: number
-	RankedRatingEarned: number
-	RankedRatingPerformanceBonus: number
-	CompetitiveMovement: string
-	AFKPenalty: number
+    MatchID: string;
+    MapID: string;
+    SeasonID: string;
+    MatchStartTime: any;
+    TierAfterUpdate: number;
+    TierBeforeUpdate: number;
+    RankedRatingAfterUpdate: number;
+    RankedRatingBeforeUpdate: number;
+    RankedRatingEarned: number;
+    RankedRatingPerformanceBonus: number;
+    CompetitiveMovement: string;
+    AFKPenalty: number;
 }
 
 export interface RawCompetitiveUpdatesResponse {
-	Version: number
-	Subject: string
-	Matches: Match[]
-	region: Region
+    Version: number;
+    Subject: string;
+    Matches: Match[];
+    region: Region;
 }

@@ -14,7 +14,7 @@ client.on("interactionCreate", async interaction => {
         switch (interaction.commandName) {
             case "mmr": {
                 await interaction.deferReply({ ephemeral: true })
-                const mmr_data = await VAPI.getMMR(interaction.options.getString("name"), interaction.options.getString("tag"), "na")
+                const mmr_data = await VAPI.getMMR(interaction.options.getString("name"), interaction.options.getString("tag"), "eu")
 
                 if (mmr_data.error) {
                     return interaction.editReply({

@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[types/v1-store-offers.ts:2](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-store-offers.ts#L2)
+[types/v1-store-offers.ts:2](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v1-store-offers.ts#L2)

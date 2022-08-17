@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[types/general.ts:12](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/general.ts#L12)
+[types/general.ts:12](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/general.ts#L12)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[types/general.ts:16](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/general.ts#L16)
+[types/general.ts:16](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/general.ts#L16)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[types/general.ts:9](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/general.ts#L9)
+[types/general.ts:9](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/general.ts#L9)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[types/general.ts:3](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/general.ts#L3)
+[types/general.ts:3](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/general.ts#L3)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[types/general.ts:11](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/general.ts#L11)
+[types/general.ts:11](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/general.ts#L11)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[types/general.ts:7](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/general.ts#L7)
+[types/general.ts:7](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/general.ts#L7)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[types/general.ts:10](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/general.ts#L10)
+[types/general.ts:10](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/general.ts#L10)
 
 ___
 
@@ -91,4 +91,4 @@ ___
 
 #### Defined in
 
-[types/general.ts:14](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/general.ts#L14)
+[types/general.ts:14](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/general.ts#L14)

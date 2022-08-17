@@ -1,6 +1,6 @@
 export interface VersionResponse {
-	version: string
-	clientVersion: string
-	branch: string
-	region: string
+    version: string;
+    clientVersion: string;
+    branch: string;
+    region: string;
 }

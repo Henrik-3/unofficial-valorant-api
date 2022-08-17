@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[types/v1-store-offers.ts:20](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-store-offers.ts#L20)
+[types/v1-store-offers.ts:20](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v1-store-offers.ts#L20)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[types/v1-store-offers.ts:21](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v1-store-offers.ts#L21)
+[types/v1-store-offers.ts:21](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v1-store-offers.ts#L21)

@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[types/v3-matches.ts:106](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L106)
+[types/v3-matches.ts:106](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L106)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[types/v3-matches.ts:100](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L100)
+[types/v3-matches.ts:100](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L100)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[types/v3-matches.ts:98](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L98)
+[types/v3-matches.ts:98](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L98)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[types/v3-matches.ts:99](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L99)
+[types/v3-matches.ts:99](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L99)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[types/v3-matches.ts:90](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L90)
+[types/v3-matches.ts:90](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L90)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[types/v3-matches.ts:89](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L89)
+[types/v3-matches.ts:89](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L89)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[types/v3-matches.ts:92](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L92)
+[types/v3-matches.ts:92](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L92)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[types/v3-matches.ts:91](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L91)
+[types/v3-matches.ts:91](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L91)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[types/v3-matches.ts:93](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L93)
+[types/v3-matches.ts:93](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L93)
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[types/v3-matches.ts:105](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L105)
+[types/v3-matches.ts:105](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L105)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[types/v3-matches.ts:104](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L104)
+[types/v3-matches.ts:104](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L104)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[types/v3-matches.ts:97](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L97)
+[types/v3-matches.ts:97](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L97)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[types/v3-matches.ts:95](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L95)
+[types/v3-matches.ts:95](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L95)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[types/v3-matches.ts:94](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L94)
+[types/v3-matches.ts:94](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L94)
 
 ___
 
@@ -183,4 +183,4 @@ ___
 
 #### Defined in
 
-[types/v3-matches.ts:96](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v3-matches.ts#L96)
+[types/v3-matches.ts:96](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v3-matches.ts#L96)

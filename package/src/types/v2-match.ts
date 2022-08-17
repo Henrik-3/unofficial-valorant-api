@@ -1,3 +1,3 @@
-import { Match } from "./v3-matches"
+import { Match } from "./v3-matches";
 
-export type MatchResponse = Match
+export type MatchResponse = Match;

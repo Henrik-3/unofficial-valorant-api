@@ -1,33 +1,20 @@
-export interface BaseItem {
-	ItemTypeID: string
-	ItemID: string
-	Amount: number
-}
-
 export interface Item {
-	Item: BaseItem
-	BasePrice: number
-	CurrencyID: string
-	DiscountPercent: number
-	DiscountedPrice: number
-	IsPromoItem: boolean
+    uuid: string;
+    name: string;
+    image: string;
+    type: string;
+    amount: number;
+    discount_percent: number;
+    base_price: number;
+    discounted_price: number;
+    promo_item: boolean;
 }
 
-export interface Bundle {
-	ID: string
-	DataAssetID: string
-	CurrencyID: string
-	Items: Item[]
-	DurationRemainingInSeconds: number
-	WholesaleOnly: boolean
+export interface FeaturedItems {
+    bundle_uuid: string;
+    items: Item[];
+    seconds_remaining: number;
 }
 
-export interface FeaturedBundle {
-	Bundle: Bundle
-	Bundles: Bundle[]
-	BundleRemainingDurationInSeconds: number
-}
+export type FeaturedItemsResponse = FeaturedItems[];
 
-export interface FeaturedItemsResponse {
-	FeaturedBundle: FeaturedBundle
-}

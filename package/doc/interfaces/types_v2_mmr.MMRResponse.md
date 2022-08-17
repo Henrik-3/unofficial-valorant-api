@@ -18,44 +18,9 @@
 
 • **by\_season**: `Object`
 
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `e10a1` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e10a2` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e10a3` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e1a1` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e1a2` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e1a3` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e2a1` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e2a2` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e2a3` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e3a1` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e3a2` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e3a3` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e4a1` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e4a2` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e4a3` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e5a1` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e5a2` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e5a3` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e6a1` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e6a2` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e6a3` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e7a1` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e7a2` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e7a3` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e8a1` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e8a2` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e8a3` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e9a1` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e9a2` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-| `e9a3` | [`SeasonMMR`](types_v2_mmr.SeasonMMR.md) |
-
 #### Defined in
 
-[types/v2-mmr.ts:35](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-mmr.ts#L35)
+[types/v2-mmr.ts:35](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v2-mmr.ts#L35)
 
 ___
 
@@ -82,7 +47,7 @@ ___
 
 #### Defined in
 
-[types/v2-mmr.ts:19](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-mmr.ts#L19)
+[types/v2-mmr.ts:19](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v2-mmr.ts#L19)
 
 ___
 
@@ -92,7 +57,7 @@ ___
 
 #### Defined in
 
-[types/v2-mmr.ts:16](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-mmr.ts#L16)
+[types/v2-mmr.ts:16](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v2-mmr.ts#L16)
 
 ___
 
@@ -102,7 +67,7 @@ ___
 
 #### Defined in
 
-[types/v2-mmr.ts:18](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-mmr.ts#L18)
+[types/v2-mmr.ts:18](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v2-mmr.ts#L18)
 
 ___
 
@@ -112,4 +77,4 @@ ___
 
 #### Defined in
 
-[types/v2-mmr.ts:17](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-mmr.ts#L17)
+[types/v2-mmr.ts:17](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v2-mmr.ts#L17)

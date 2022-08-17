@@ -12,7 +12,8 @@
 		"skipLibCheck": true,
 		"allowSyntheticDefaultImports": true,
 		"declaration": true,
-		"outDir": "./dist"
+		"outDir": "./dist",
+		"resolveJsonModule": true
 	},
 	"exclude": [
 		"node_modules",

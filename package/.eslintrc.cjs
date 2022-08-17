@@ -23,7 +23,8 @@ module.exports = {
         "**/*.d.ts"
     ],
     rules: {
-        indent: [
+        indent: "off",
+        "@typescript-eslint/indent": [
             "error",
             4
         ],
@@ -36,13 +37,13 @@ module.exports = {
             "double"
         ],
         semi: "off",
-        "@typescript-eslint/semi": ["error", "never"],
+        "@typescript-eslint/semi": ["error", "always"],
         "@typescript-eslint/member-delimiter-style": [
             "error",
             {
                 multiline: {
-                    delimiter: "none",
-                    requireLast: false
+                    delimiter: "semi",
+                    requireLast: true
                 },
                 singleline: {
                     delimiter: "comma",
@@ -58,4 +59,4 @@ module.exports = {
             "off"
         ]
     }
-}
+};

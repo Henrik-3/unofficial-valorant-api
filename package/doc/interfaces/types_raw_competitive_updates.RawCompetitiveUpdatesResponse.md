@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[types/raw/competitive-updates.ts:21](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/competitive-updates.ts#L21)
+[types/raw/competitive-updates.ts:21](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/raw/competitive-updates.ts#L21)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[types/raw/competitive-updates.ts:20](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/competitive-updates.ts#L20)
+[types/raw/competitive-updates.ts:20](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/raw/competitive-updates.ts#L20)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[types/raw/competitive-updates.ts:19](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/competitive-updates.ts#L19)
+[types/raw/competitive-updates.ts:19](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/raw/competitive-updates.ts#L19)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[types/raw/competitive-updates.ts:22](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/raw/competitive-updates.ts#L22)
+[types/raw/competitive-updates.ts:22](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/raw/competitive-updates.ts#L22)

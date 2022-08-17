@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[types/v2-leaderboard.ts:22](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-leaderboard.ts#L22)
+[types/v2-leaderboard.ts:22](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v2-leaderboard.ts#L22)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[types/v2-leaderboard.ts:21](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-leaderboard.ts#L21)
+[types/v2-leaderboard.ts:21](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v2-leaderboard.ts#L21)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[types/v2-leaderboard.ts:20](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-leaderboard.ts#L20)
+[types/v2-leaderboard.ts:20](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v2-leaderboard.ts#L20)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[types/v2-leaderboard.ts:16](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-leaderboard.ts#L16)
+[types/v2-leaderboard.ts:16](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v2-leaderboard.ts#L16)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[types/v2-leaderboard.ts:17](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-leaderboard.ts#L17)
+[types/v2-leaderboard.ts:17](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v2-leaderboard.ts#L17)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[types/v2-leaderboard.ts:23](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-leaderboard.ts#L23)
+[types/v2-leaderboard.ts:23](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v2-leaderboard.ts#L23)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[types/v2-leaderboard.ts:19](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-leaderboard.ts#L19)
+[types/v2-leaderboard.ts:19](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v2-leaderboard.ts#L19)
 
 ___
 
@@ -93,4 +93,4 @@ ___
 
 #### Defined in
 
-[types/v2-leaderboard.ts:18](https://github.com/jameslinimk/unofficial-valorant-api/blob/c148ced/package/src/types/v2-leaderboard.ts#L18)
+[types/v2-leaderboard.ts:18](https://github.com/jameslinimk/unofficial-valorant-api/blob/2dbdb4a/package/src/types/v2-leaderboard.ts#L18)
