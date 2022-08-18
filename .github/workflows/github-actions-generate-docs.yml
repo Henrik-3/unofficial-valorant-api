@@ -25,9 +25,10 @@ jobs:
       - name: Push docs to docs branch
         run: |
           cd package
+          git config pull.rebase false
           git checkout -B docs
-          git pull origin docs
           git reset
           git add -f ./doc
           git commit -m "Upload docs"
+          git pull origin docs
           git push -u origin docs
