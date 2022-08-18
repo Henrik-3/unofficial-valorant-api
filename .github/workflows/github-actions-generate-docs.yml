@@ -25,7 +25,7 @@ jobs:
       - name: Push docs to docs branch
         run: |
           cd package
-          git push origin --delete remoteBranchName
+          git push origin --delete docs
 
           git checkout -B docs
           git add -f ./doc
