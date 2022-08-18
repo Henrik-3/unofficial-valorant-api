@@ -24,7 +24,6 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: Push docs to docs branch
         run: |
-          cd package
           git checkout -B docs
-          git add -f ./doc
+          git add -f ./package/doc
           git commit -m "Upload docs"
