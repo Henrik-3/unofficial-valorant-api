@@ -1,6 +1,7 @@
-import fs from "fs";
+import { readFileSync, renameSync, writeFileSync } from "fs";
 const path = "./doc/classes/index.default.md";
-const file = fs.readFileSync(path, "utf-8");
+const newPath = "./doc/README.md";
+const file = readFileSync(path, "utf-8");
 const lines = file.split("\n");
 const newLines = [...lines];
 lines.forEach((line, i) => {
@@ -31,5 +32,6 @@ lines.forEach((line, i) => {
         typeIndex++;
     }
 });
-fs.writeFileSync(path, newLines.filter(line => line !== null).join("\n"));
+writeFileSync(path, newLines.filter(line => line !== null).map(line => line?.replaceAll("../", "./")).join("\n"));
+renameSync(path, newPath);
 //# sourceMappingURL=editDocs.js.map

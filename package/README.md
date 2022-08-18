@@ -33,7 +33,7 @@ yarn add unofficial-valorant-api
 
 # Docs
 
-You can find the documentation [here](./doc/classes/index.default.md)
+You can find the documentation [here](https://github.com/Henrik-3/unofficial-valorant-api/tree/docs/doc)
 
 Need help? Join the [Discord server](https://discord.gg/X3GaVkX2YN)
 
