@@ -40,9 +40,9 @@
         "build:tsc": "tsc --watch false",
         "build:docs": "typedoc --plugin typedoc-plugin-markdown && node ./test/editDocs.js",
         "build:tests": "cd test && tsc --watch false",
-        "build": "npm run build:tests && npm run build:tsc && npm run build:docs",
+        "build": "npm run build:tsc && npm run build:tests && npm run build:docs",
         "develop:tsc": "tsc",
         "develop:testTsc": "cd test && tsc",
-        "test": "npm run build:tests && node ./test/test.js"
+        "test": "npm run build:tsc && npm run build:tests && node ./test/test.js"
     }
 }
