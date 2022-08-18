@@ -31,4 +31,4 @@ jobs:
           git add -f ./doc
           git commit -m "Upload docs"
           git pull origin docs --allow-unrelated-histories
-          git push -u origin docs
+          git push -f origin docs
