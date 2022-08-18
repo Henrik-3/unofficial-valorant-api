@@ -30,5 +30,5 @@ jobs:
           git reset
           git add -f ./doc
           git commit -m "Upload docs"
-          git pull origin docs
+          git pull origin docs --allow-unrelated-histories
           git push -u origin docs
