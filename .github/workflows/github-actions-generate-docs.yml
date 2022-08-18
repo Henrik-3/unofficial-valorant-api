@@ -19,15 +19,16 @@ jobs:
           npm run build
       - name: Log into github
         run: |
-          cd package
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: Push docs to docs branch
         run: |
-          cd package
           git push origin --delete docs
 
+          mv ./package/doc ./
+
           git checkout -B docs
+          git rm -rf .
           git add -f ./doc
           git commit -m "Upload docs"
           git push -u origin docs
