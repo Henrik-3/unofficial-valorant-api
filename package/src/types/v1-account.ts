@@ -7,7 +7,7 @@ export interface Card {
     id: string;
 }
 
-export interface ProfileResponse {
+export interface AccountResponse {
     puuid: string;
     region: Region;
     account_level: number;

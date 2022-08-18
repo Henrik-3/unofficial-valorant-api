@@ -5,10 +5,11 @@ import type { RawCompetitiveUpdatesResponse } from "./types/raw/competitive-upda
 import type { RawMatchDetailsResponse } from "./types/raw/match-details";
 import type { RawMatchHistoryResponse } from "./types/raw/match-history";
 import type { RawMMRResponse } from "./types/raw/mmr";
+import type { AccountResponse } from "./types/v1-account";
 import type { ContentResponse } from "./types/v1-content";
 import type { CrosshairResponse } from "./types/v1-crosshair";
 import type { FeaturedItemsResponse } from "./types/v1-featured-items";
-import type { ProfileResponse } from "./types/v1-profile";
+import { V1LeaderboardResponse } from "./types/v1-leaderboard";
 import type { StatusResponse } from "./types/v1-status";
 import type { StoreOffersResponse } from "./types/v1-store-offers";
 import type { VersionResponse } from "./types/v1-version";
@@ -396,6 +397,19 @@ export default class {
 	 * @remarks
 	 * In order for player filtering to work, they must be Immortal or higher
 	 * @param args.region - Region to get leaderboard from
+	 * @returns Descending order of the highest ranked players. (Immortal and up)
+	 * @throws {@link TypeError} - If both a riotID and puuid are supplied
+	 */
+    async getLeaderboard({ region }: { region: Region }): Promise<APIResponse<V2LeaderboardResponse>> {
+        this.validateArgs({ region });
+        return this.fetch<LeaderboardResponse>(`v2/leaderboard/${region}`);
+    }
+
+    /**
+	 * Get the leaderboard of a region
+	 * @remarks
+	 * In order for player filtering to work, they must be Immortal or higher
+	 * @param args.region - Region to get leaderboard from
 	 * @param args.start - (optional) Get 1000 leaderboard players starting from the given start value
 	 * @param args.end - (optional) Limit the amount of leaderboard players returned
 	 * @param args.riotID - (optional) Search for a specific player by their Riot ID
@@ -406,12 +420,11 @@ export default class {
 	 * @returns Descending order of the highest ranked players. (Immortal and up)
 	 * @throws {@link TypeError} - If both a riotID and puuid are supplied
 	 */
-    async getLeaderboard({ region, start, end, riotID, puuid, season, version }: { region: Region, start?: number, end?: number, riotID?: { name: string, tag: string} , puuid?: string, season?: Season, version?: "v1" | "v2" }): Promise<APIResponse<LeaderboardResponse>> {
+    async getLeaderboardV1({ region, start, end, riotID, puuid, season }: { region: Region, start?: number, end?: number, riotID?: { name: string, tag: string} , puuid?: string, season?: Season }): Promise<APIResponse<V2LeaderboardResponse>> {
         if (riotID && puuid) throw new TypeError("Too many parameters: You can't search for a Riot ID and puuid at the same time, please decide between Riot ID and puuid");
-        if (!version) version = "v2";
 
         this.validateArgs({ region });
-        return this.fetch<LeaderboardResponse>(`${version}/leaderboard/${region}`, { start, end, name: riotID?.name, tag: riotID?.tag, puuid, season });
+        return this.fetch<V1LeaderboardResponse>(`v1/leaderboard/${region}`, { start, end, name: riotID?.name, tag: riotID?.tag, puuid, season });
     }
 
     /**
@@ -519,9 +532,9 @@ export default class {
 	 * @param args.force - Force data update?
 	 * @return General information on a players profile
 	 */
-    async getAccount({ name, tag, force }: { name: string, tag: string, force?: boolean }): Promise<APIResponse<ProfileResponse>> {
+    async getAccount({ name, tag, force }: { name: string, tag: string, force?: boolean }): Promise<APIResponse<AccountResponse>> {
         this.validateArgs({ name, tag });
-        return this.fetch<ProfileResponse>(`v1/account/${name}/${tag}`, { force });
+        return this.fetch<AccountResponse>(`v1/account/${name}/${tag}`, { force });
     }
 
     /**
@@ -536,8 +549,8 @@ export default class {
 	 * @param args.force Force data update?
 	 * @return General information on a players profile
 	*/
-    async getAccountByPUUID({ puuid, force }: { puuid: string, force?: boolean }): Promise<APIResponse<ProfileResponse>> {
+    async getAccountByPUUID({ puuid, force }: { puuid: string, force?: boolean }): Promise<APIResponse<AccountResponse>> {
         this.validateArgs({ name: puuid });
-        return this.fetch<ProfileResponse>(`v1/by-puuid/account/${puuid}`, { force });
+        return this.fetch<AccountResponse>(`v1/by-puuid/account/${puuid}`, { force });
     }
 }
