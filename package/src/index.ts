@@ -400,7 +400,7 @@ export default class {
 	 * @returns Descending order of the highest ranked players. (Immortal and up)
 	 * @throws {@link TypeError} - If both a riotID and puuid are supplied
 	 */
-    async getLeaderboard({ region }: { region: Region }): Promise<APIResponse<V2LeaderboardResponse>> {
+    async getLeaderboard({ region }: { region: Region }): Promise<APIResponse<LeaderboardResponse>> {
         this.validateArgs({ region });
         return this.fetch<LeaderboardResponse>(`v2/leaderboard/${region}`);
     }
@@ -420,7 +420,7 @@ export default class {
 	 * @returns Descending order of the highest ranked players. (Immortal and up)
 	 * @throws {@link TypeError} - If both a riotID and puuid are supplied
 	 */
-    async getLeaderboardV1({ region, start, end, riotID, puuid, season }: { region: Region, start?: number, end?: number, riotID?: { name: string, tag: string} , puuid?: string, season?: Season }): Promise<APIResponse<V2LeaderboardResponse>> {
+    async getLeaderboardV1({ region, start, end, riotID, puuid, season }: { region: Region, start?: number, end?: number, riotID?: { name: string, tag: string} , puuid?: string, season?: Season }): Promise<APIResponse<V1LeaderboardResponse>> {
         if (riotID && puuid) throw new TypeError("Too many parameters: You can't search for a Riot ID and puuid at the same time, please decide between Riot ID and puuid");
 
         this.validateArgs({ region });

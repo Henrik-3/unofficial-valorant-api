@@ -1,0 +1,29 @@
+name: Build docs
+on: [ push, workflow_dispatch ]
+
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Change dir to package
+        run: |
+          cd package
+      - name: Install dependencies
+        run: |
+          npm i
+      - name: Build docs
+        run: |
+          npm run build
+      - name: Log into github
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Push docs to docs branch
+        run: |
+          git checkout -B docs
+          git add ./package/doc
+          git commit -m "Upload docs"
