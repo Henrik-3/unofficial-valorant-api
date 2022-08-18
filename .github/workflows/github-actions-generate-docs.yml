@@ -26,6 +26,7 @@ jobs:
         run: |
           cd package
           git checkout -B docs
+          git pull origin master
           git reset
           git add -f ./doc
           git commit -m "Upload docs"
