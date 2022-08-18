@@ -34,6 +34,6 @@ lines.forEach((line, i) => {
 });
 writeFileSync(path, newLines.filter(line => line !== null).map(line => (line
     ?.replaceAll("../", "./")
-    ?.replaceAll("index.default.md", "README"))).join("\n"));
+    ?.replaceAll("index.default.md", "README.md"))).join("\n"));
 renameSync(path, newPath);
 //# sourceMappingURL=editDocs.js.map
