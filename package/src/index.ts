@@ -56,6 +56,7 @@ interface ErrorObject {
 	 * The response status of the API. See remarks for info about specific error codes
 	 * @remarks
 	 * Can be any of the following:
+	 * - `0`    Riot Origin Server down for maintenance
 	 * - `1` 	Invalid API Key
 	 * - `2` 	Forbidden endpoint
 	 * - `3` 	Restricted endpoint
@@ -516,7 +517,7 @@ export default class {
     async getMatchesByPUUID({ puuid, region, gamemodeFilter, mapFilter, size }: { puuid: string, region: Region, gamemodeFilter?: Mode, mapFilter?: ValorantMap, size?: number }): Promise<APIResponse<MatchesResponse>> {
         this.validateArgs({ name: puuid, region });
         if (size && (size > 10 || size < 1)) throw new TypeError("Invalid size parameter. Size must be between 1-10!");
-        return this.fetch<MatchesResponse>(`by-puuid/matches/${region}/${puuid}`, { filter: gamemodeFilter, map: mapFilter, size });
+        return this.fetch<MatchesResponse>(`v3/by-puuid/matches/${region}/${puuid}`, { filter: gamemodeFilter, map: mapFilter, size });
     }
 
     /**

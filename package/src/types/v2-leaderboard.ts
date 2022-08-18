@@ -20,5 +20,5 @@ export interface LeaderboardResponse {
     immortal_3_threshold: number;
     immortal_2_threshold: number;
     immortal_1_threshold: number;
-    players: Player[];
+    players: (Player | null)[];
 }

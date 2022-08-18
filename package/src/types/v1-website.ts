@@ -7,11 +7,13 @@ export interface Post {
     url: string;
 }
 
-export interface WebsiteResponse {
+export interface Announcement {
     banner_url: string;
     category: string;
     date: Date;
-    external_link: string;
+    external_link?: string | null;
     title: string;
     url: string;
 }
+
+export type WebsiteResponse = Announcement[];

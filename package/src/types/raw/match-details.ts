@@ -231,11 +231,11 @@ interface RoundResult {
     roundCeremony: string;
     winningTeam: string;
     plantRoundTime: number;
-    plantPlayerLocations: PlantPlayerLocation[];
+    plantPlayerLocations?: PlantPlayerLocation[] | null;
     plantLocation: Location;
     plantSite: string;
     defuseRoundTime: number;
-    defusePlayerLocations: DefusePlayerLocation[];
+    defusePlayerLocations?: DefusePlayerLocation[] | null;
     defuseLocation: Location;
     playerStats: PlayerStat[];
     roundResultCode: string;

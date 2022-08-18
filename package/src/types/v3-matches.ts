@@ -13,9 +13,9 @@ export interface Player {
     player_title: string;
     party_id: string;
     session_playtime: {
-        minutes: number;
-        seconds: number;
-        milliseconds: number;
+        minutes?: number | null;
+        seconds?: number | null;
+        milliseconds?: number | null;
     };
     behavior: {
         afk_rounds: number;
@@ -96,10 +96,10 @@ export interface KillEvent {
     victim_team: "Red" | "Blue";
     victim_death_location: PlayerLocation;
     damage_weapon_id: string;
-    damage_weapon_name: Weapon;
+    damage_weapon_name?: Weapon | null;
     damage_weapon_assets: {
-        display_icon: string;
-        killfeed_icon: string;
+        display_icon?: string | null;
+        killfeed_icon?: string | null;
     };
     secondary_fire_mode: boolean;
     player_locations_on_kill: PlayerLocationOnEvent[];
@@ -112,36 +112,36 @@ export interface KillEvent {
 
 export interface Round {
     winning_team: "Red" | "Blue";
-    end_type: "Eliminated" | "Bomb defused" | "Bomb detonated";
+    end_type: "Eliminated" | "Bomb defused" | "Bomb detonated" | "Round timer expired" | "Surrendered";
     bomb_planted: boolean;
     bomb_defused: boolean;
     plant_events: {
-        plant_location?: PlayerLocation;
+        plant_location?: PlayerLocation | null;
         planted_by?: {
             puuid: string;
             display_name: string;
             team: "Red" | "Blue";
-        };
-        plant_site?: "A" | "B" | "C";
-        plant_time_in_round?: number;
-        player_locations_on_plant?: PlayerLocationOnEvent[];
+        } | null;
+        plant_site?: "A" | "B" | "C" | null;
+        plant_time_in_round?: number | null;
+        player_locations_on_plant?: PlayerLocationOnEvent[] | null;
     };
     defuse_events: {
-        defuse_location?: PlayerLocation;
+        defuse_location?: PlayerLocation | null;
         defused_by?: {
             puuid: string;
             display_name: string;
             team: "Red" | "Blue";
-        };
-        defuse_time_in_round?: number;
-        player_locations_on_defuse?: PlayerLocationOnEvent[];
+        } | null;
+        defuse_time_in_round?: number | null;
+        player_locations_on_defuse?: PlayerLocationOnEvent[] | null;
     };
     player_stats: {
         ability_casts: {
-            c_cast?: number;
-            q_cast?: number;
-            e_cast?: number;
-            x_cast?: number;
+            c_cast?: number | null;
+            q_cast?: number | null;
+            e_cast?: number | null;
+            x_cast?: number | null;
         };
         player_puuid: string;
         player_display_name: string;
@@ -165,18 +165,18 @@ export interface Round {
         economy: {
             loadout_value: number;
             weapon: {
-                id: string;
-                name: Weapon;
+                id?: string | null;
+                name?: Weapon | null;
                 assets: {
-                    display_icon: string;
-                    killfeed_icon: string;
+                    display_icon?: string | null;
+                    killfeed_icon?: string | null;
                 };
             };
             armor: {
-                id: string;
-                name: "Heavy Shields" | "Light Shields";
+                id?: string | null;
+                name?: "Heavy Shields" | "Light Shields" | null;
                 assets: {
-                    display_icon: string;
+                    display_icon?: string | null;
                 };
             };
             remaining: number;
@@ -185,7 +185,7 @@ export interface Round {
         was_afk: boolean;
         was_penalized: boolean;
         stayed_in_spawn: boolean;
-    };
+    }[];
 }
 
 export interface KillEventMatch extends KillEvent {
@@ -202,8 +202,8 @@ export interface Match {
         rounds_played: number;
         mode: Mode;
         queue: string;
-        season_id: "string";
-        platform: "PC";
+        season_id: string;
+        platform: string;
         matchid: string;
         region: Region;
         cluster: string;
@@ -215,12 +215,12 @@ export interface Match {
     };
     teams: {
         red: {
-            has_won: false;
+            has_won: boolean;
             rounds_won: number;
             rounds_lost: number;
         };
         blue: {
-            has_won: false;
+            has_won: boolean;
             rounds_won: number;
             rounds_lost: number;
         };

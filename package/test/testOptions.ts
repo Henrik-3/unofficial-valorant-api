@@ -106,7 +106,7 @@ export const argParams: {
             start: null,
             end: null,
             riotID: null,
-            puuid: examplePUUID,
+            puuid: null,
             season: null,
             version: null
         },
