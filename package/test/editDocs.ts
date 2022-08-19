@@ -1,7 +1,8 @@
 import { readFileSync, renameSync, writeFileSync } from "fs";
 
-const path = "./doc/classes/index.default.md";
-const newPath = "./doc/README.md";
+const basePath = "./doc";
+const path = basePath + "/classes/index.default.md";
+const newPath = basePath + "/README.md";
 
 const file = readFileSync(path, "utf-8");
 const lines = file.split("\n");
@@ -45,3 +46,5 @@ writeFileSync(path, newLines.filter(line => line !== null).map(line => (
         ?.replaceAll("index.default.md", "README.md")
 )).join("\n"));
 renameSync(path, newPath);
+
+writeFileSync(basePath + "/_config.yml", "theme: jekyll-theme-cayman");

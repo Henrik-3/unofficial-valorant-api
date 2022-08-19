@@ -19,22 +19,7 @@ jobs:
         run: |
           cd package
           npm run build
-      - name: Log into github
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      - name: Push docs to docs branch
-        run: |
-          git push origin --delete docs
-
-          mv ./package/doc ./
-
-          git checkout -B docs
-          git rm -rf .
-          git add -f ./doc
-          git commit -m "Upload docs"
-          git push -u origin docs
       - name: Deploy to GH pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: ./doc
+          folder: ./package/doc
