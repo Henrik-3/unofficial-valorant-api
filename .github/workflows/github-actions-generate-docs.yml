@@ -1,5 +1,7 @@
 name: Build docs
 on: [ push, workflow_dispatch ]
+permissions:
+  contents: write
 
 jobs:
   Explore-GitHub-Actions:
@@ -8,7 +10,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 16
       - name: Install dependencies
         run: |
           cd package
@@ -32,3 +34,7 @@ jobs:
           git add -f ./doc
           git commit -m "Upload docs"
           git push -u origin docs
+      - name: Deploy to GH pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs

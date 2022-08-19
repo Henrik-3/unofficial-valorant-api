@@ -5,8 +5,7 @@
     "main": "./dist/src/index.js",
     "types": "./dist/src/index.d.ts",
     "dependencies": {
-        "axios": "^0.27.2",
-        "typescript-json-schema": "^0.54.0"
+        "axios": "^0.27.2"
     },
     "keywords": [
         "Valorant",
@@ -34,7 +33,8 @@
         "eslint": "^8.22.0",
         "typedoc": "^0.23.10",
         "typedoc-plugin-markdown": "^3.13.4",
-        "typescript": "^4.7.4"
+        "typescript": "^4.7.4",
+        "typescript-json-schema": "^0.54.0"
     },
     "scripts": {
         "build:tsc": "tsc --watch false",
