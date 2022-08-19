@@ -16,7 +16,7 @@
 
 # API
 
-Find all inforamtion about the API itself [here](https://github.com/Henrik-3/unofficial-valorant-api)
+Find all inforamtion about the API itself [here](https://henrik-3.github.io/unofficial-valorant-api/)
 
 # Installation
 
