@@ -37,4 +37,4 @@ jobs:
       - name: Deploy to GH pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: ./package/doc
+          folder: ./doc
