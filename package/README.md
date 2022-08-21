@@ -44,7 +44,7 @@ You find some examples [here](./examples)
 # Contributing
 
 - The main package is located in [./package](./)
-- Please use [eslint](https://eslint.org) with the provided config in [./.eslintrc.cjs](./package/.eslintrc.cjs)
+- Please use [eslint](https://eslint.org) with the provided config in [./.eslintrc.cjs](./.eslintrc.cjs)
   - 4 spaces, double quotes, etc (found in config)
   - Use `import type` always (when you can), using `import { type thing, thing2 }` if you need to import both a type and a value from a module
 - **Use [pnpm](https://pnpm.io)!**
