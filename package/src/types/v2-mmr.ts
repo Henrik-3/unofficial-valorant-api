@@ -1,4 +1,4 @@
-import { Rank, Season } from "./general";
+import type { Rank, Season } from "./general";
 
 export interface SeasonMMR {
     error?: "No data available";
@@ -12,7 +12,7 @@ export interface SeasonMMR {
     }[];
 }
 
-export interface MMRResponse {
+export interface V2MMRResponse {
     name: string;
     tag: string;
     puuid: string;

@@ -16,5 +16,5 @@ export interface FeaturedItems {
     seconds_remaining: number;
 }
 
-export type FeaturedItemsResponse = FeaturedItems[];
+export type V1StoreFeaturedResponse = FeaturedItems[];
 

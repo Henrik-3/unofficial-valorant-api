@@ -21,7 +21,7 @@ export interface UpgradeCurrencyOffer {
     StorefrontItemID: string;
 }
 
-export interface StoreOffersResponse {
+export interface V1StoreOffersResponse {
     Offers: Offer[];
     UpgradeCurrencyOffers: UpgradeCurrencyOffer[];
 }

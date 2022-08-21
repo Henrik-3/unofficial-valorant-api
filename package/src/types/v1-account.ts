@@ -1,4 +1,4 @@
-import { Region } from "./general";
+import type { Region } from "./general";
 
 export interface Card {
     small: string;
@@ -7,7 +7,7 @@ export interface Card {
     id: string;
 }
 
-export interface AccountResponse {
+export interface V1AccountResponse {
     puuid: string;
     region: Region;
     account_level: number;

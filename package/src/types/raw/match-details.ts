@@ -1,10 +1,10 @@
-import { Region } from "../general";
+import type { Region } from "../general";
 
-interface PartyRRPenalties {
+export interface PartyRRPenalties {
     [key: string]: number;
 }
 
-interface MatchInfo {
+export interface MatchInfo {
     matchId: string;
     mapId: string;
     gamePodId: string;
@@ -28,21 +28,21 @@ interface MatchInfo {
     shouldMatchDisablePenalties: boolean;
 }
 
-interface PlatformInfo {
+export interface PlatformInfo {
     platformType: string;
     platformOS: string;
     platformOSVersion: string;
     platformChipset: string;
 }
 
-interface AbilityCasts {
+export interface AbilityCasts {
     grenadeCasts: number;
     ability1Casts: number;
     ability2Casts: number;
     ultimateCasts: number;
 }
 
-interface Stats {
+export interface Stats {
     score: number;
     roundsPlayed: number;
     kills: number;
@@ -52,18 +52,18 @@ interface Stats {
     abilityCasts: AbilityCasts;
 }
 
-interface RoundDamage {
+export interface RoundDamage {
     round: number;
     receiver: string;
     damage: number;
 }
 
-interface XpModification {
+export interface XpModification {
     Value: number;
     ID: string;
 }
 
-interface BehaviorFactors {
+export interface BehaviorFactors {
     afkRounds: number;
     collisions: number;
     damageParticipationOutgoing: number;
@@ -73,27 +73,27 @@ interface BehaviorFactors {
     stayedInSpawnRounds: number;
 }
 
-interface BaseAction {
+export interface BaseAction {
     idleTimeMillis: number;
     objectiveCompleteTimeMillis: number;
 }
 
-interface AdaptiveBots extends BaseAction {
+export interface AdaptiveBots extends BaseAction {
     adaptiveBotAverageDurationMillisAllAttempts: number;
     adaptiveBotAverageDurationMillisFirstAttempt: number;
     killDetailsFirstAttempt?: any;
 }
 
-interface DefendBombSite extends BaseAction {
+export interface DefendBombSite extends BaseAction {
     success: boolean;
 }
 
-interface SettingStatus {
+export interface SettingStatus {
     isMouseSensitivityDefault: boolean;
     isCrosshairDefault: boolean;
 }
 
-interface NewPlayerExperienceDetails {
+export interface NewPlayerExperienceDetails {
     basicMovement: BaseAction;
     basicGunSkill: BaseAction;
     adaptiveBots: AdaptiveBots;
@@ -103,7 +103,7 @@ interface NewPlayerExperienceDetails {
     settingStatus: SettingStatus;
 }
 
-interface Player {
+export interface Player {
     subject: string;
     gameName: string;
     tagLine: string;
@@ -124,7 +124,7 @@ interface Player {
     newPlayerExperienceDetails: NewPlayerExperienceDetails;
 }
 
-interface Team {
+export interface Team {
     teamId: string;
     won: boolean;
     roundsPlayed: number;
@@ -132,36 +132,36 @@ interface Team {
     numPoints: number;
 }
 
-interface Location {
+export interface Location {
     x: number;
     y: number;
 }
 
-interface PlantPlayerLocation {
+export interface PlantPlayerLocation {
     subject: string;
     viewRadians: number;
     location: Location;
 }
 
-interface DefusePlayerLocation {
+export interface DefusePlayerLocation {
     subject: string;
     viewRadians: number;
     location: Location;
 }
 
-interface PlayerLocation {
+export interface PlayerLocation {
     subject: string;
     viewRadians: number;
     location: Location;
 }
 
-interface FinishingDamage {
+export interface FinishingDamage {
     damageType: string;
     damageItem: string;
     isSecondaryFireMode: boolean;
 }
 
-interface Kill {
+export interface Kill {
     gameTime: number;
     roundTime: number;
     killer: string;
@@ -172,11 +172,11 @@ interface Kill {
     finishingDamage: FinishingDamage;
 }
 
-interface MatchKill extends Kill {
+export interface MatchKill extends Kill {
     round: number;
 }
 
-interface Damage {
+export interface Damage {
     receiver: string;
     damage: number;
     legshots: number;
@@ -184,7 +184,7 @@ interface Damage {
     headshots: number;
 }
 
-interface Economy {
+export interface Economy {
     loadoutValue: number;
     weapon: string;
     armor: string;
@@ -192,14 +192,14 @@ interface Economy {
     spent: number;
 }
 
-interface AbilityEffects {
+export interface AbilityEffects {
     grenadeEffects?: any;
     ability1Effects?: any;
     ability2Effects?: any;
     ultimateEffects?: any;
 }
 
-interface PlayerStat {
+export interface PlayerStat {
     subject: string;
     kills: Kill[];
     damage: Damage[];
@@ -211,7 +211,7 @@ interface PlayerStat {
     stayedInSpawn: boolean;
 }
 
-interface PlayerEconomy {
+export interface PlayerEconomy {
     subject: string;
     loadoutValue: number;
     weapon: string;
@@ -220,12 +220,12 @@ interface PlayerEconomy {
     spent: number;
 }
 
-interface PlayerScore {
+export interface PlayerScore {
     subject: string;
     score: number;
 }
 
-interface RoundResult {
+export interface RoundResult {
     roundNum: number;
     roundResult: string;
     roundCeremony: string;

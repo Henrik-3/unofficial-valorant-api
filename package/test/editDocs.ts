@@ -1,7 +1,7 @@
 import { readFileSync, renameSync, writeFileSync } from "fs";
 
 const basePath = "./doc";
-const path = basePath + "/classes/index.default.md";
+const path = basePath + "/classes/vapi.default.md";
 const newPath = basePath + "/README.md";
 
 const file = readFileSync(path, "utf-8");
@@ -43,7 +43,7 @@ lines.forEach((line, i) => {
 writeFileSync(path, newLines.filter(line => line !== null).map(line => (
     line
         ?.replaceAll("../", "./")
-        ?.replaceAll("index.default.md", "README.md")
+        ?.replaceAll("vapi.default.md", "README.md")
 )).join("\n"));
 renameSync(path, newPath);
 

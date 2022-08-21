@@ -1,6 +1,6 @@
-import { Region } from "../general";
+import type { Region } from "../general";
 
-interface History {
+export interface History {
     MatchID: string;
     GameStartTime: any;
     QueueID: string;

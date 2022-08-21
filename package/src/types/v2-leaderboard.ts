@@ -12,7 +12,7 @@ export interface Player {
     competitiveTier: number;
 }
 
-export interface LeaderboardResponse {
+export interface V2LeaderboardResponse {
     last_update: number;
     next_update: number;
     total_players: number;

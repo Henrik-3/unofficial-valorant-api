@@ -1,10 +1,10 @@
-import { Region } from "../general";
+import type { Region } from "../general";
 
-interface WinsByTier {
+export interface WinsByTier {
     [tier: number]: number;
 }
 
-interface SeasonalInfoBySeasonID {
+export interface SeasonalInfoBySeasonID {
     SeasonID: string;
     NumberOfWins: number;
     NumberOfWinsWithPlacements: number;
@@ -19,14 +19,14 @@ interface SeasonalInfoBySeasonID {
     TotalWinsNeededForRank: number;
 }
 
-interface Queue {
+export interface Queue {
     TotalGamesNeededForRating: number;
     TotalGamesNeededForLeaderboard: number;
     CurrentSeasonGamesNeededForRating: number;
     SeasonalInfoBySeasonID: SeasonalInfoBySeasonID;
 }
 
-interface QueueSkills {
+export interface QueueSkills {
     competitive: Queue;
     custom: Queue;
     deathmatch: Queue;
@@ -38,7 +38,7 @@ interface QueueSkills {
     unrated: Queue;
 }
 
-interface LatestCompetitiveUpdate {
+export interface LatestCompetitiveUpdate {
     MatchID: string;
     MapID: string;
     SeasonID: string;

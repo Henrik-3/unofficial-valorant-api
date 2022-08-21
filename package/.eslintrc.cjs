@@ -28,10 +28,6 @@ module.exports = {
             "error",
             4
         ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
         quotes: [
             "error",
             "double"
@@ -57,6 +53,10 @@ module.exports = {
         ],
         "@typescript-eslint/no-explicit-any": [
             "off"
+        ],
+        "eol-last": [
+            "error",
+            "always"
         ]
     }
 };

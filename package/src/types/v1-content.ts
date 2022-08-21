@@ -1,4 +1,4 @@
-import { Locale } from "./general";
+import type { Locale } from "./general";
 
 export type LocalizedNames = {
     [language in Locale]: string
@@ -24,7 +24,7 @@ export interface Act {
     isActive: boolean;
 }
 
-export interface ContentResponse {
+export interface V1ContentResponse {
     version: string;
     characters: Asset[];
     maps: AssetWithPath[];

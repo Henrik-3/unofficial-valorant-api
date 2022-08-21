@@ -8,6 +8,7 @@ export const argParams: {
     [method: string]: {
         args?: { [name: string]: any };
         type: string;
+        aliases?: string[];
     };
 } = {
     getCrosshair: {
@@ -15,31 +16,32 @@ export const argParams: {
             code: "0;P;t;2;o;1;d;1;f;0;0t;10;0l;3;0a;1;0f;0;1b;0",
             size: 256
         },
-        type: "CrosshairResponse"
+        type: "V1CrosshairResponse"
     },
     getWebsite: {
         args: {
             countryCode: "en-us"
         },
-        type: "WebsiteResponse"
+        type: "V1WebsiteResponse",
+        aliases: ["getAnnouncements"]
     },
     getVersion: {
         args: {
             region: "na"
         },
-        type: "VersionResponse"
+        type: "V1VersionResponse"
     },
     getFeaturedItems: {
-        type: "FeaturedItemsResponse"
+        type: "V2StoreFeaturedResponse"
     },
     getOffers: {
-        type: "StoreOffersResponse"
+        type: "V1StoreOffersResponse"
     },
     getStatus: {
         args: {
             region: "na"
         },
-        type: "StatusResponse"
+        type: "V1StatusResponse"
     },
     getRawMatchDetails: {
         args: {
@@ -73,34 +75,37 @@ export const argParams: {
         },
         type: "RawMMRResponse"
     },
+    getRawData: {
+        args: {
+            type: "mmr",
+            value: examplePUUID,
+            region: exampleRegion,
+            queries: null
+        },
+        type: "RawMMRResponse"
+    },
     getMMRHistory: {
         args: {
             name: exampleName,
             tag: exampleTag,
             region: exampleRegion
         },
-        type: "MMRHistoryResponse"
+        type: "V2MMRHistoryResponse"
     },
     getMMRHistoryByPUUID: {
         args: {
             puuid: examplePUUID,
             region: exampleRegion
         },
-        type: "MMRHistoryResponse"
+        type: "V2MMRHistoryResponse"
     },
     getMatch: {
         args: {
             matchID: exampleMatchID
         },
-        type: "MatchResponse"
+        type: "V2MatchResponse"
     },
     getLeaderboard: {
-        args: {
-            region: exampleRegion
-        },
-        type: "LeaderboardResponse"
-    },
-    getLeaderboardV1: {
         args: {
             region: exampleRegion,
             start: null,
@@ -110,13 +115,14 @@ export const argParams: {
             season: null,
             version: null
         },
-        type: "V1LeaderboardResponse"
+        type: "V2LeaderboardResponse"
     },
     getTranslations: {
         args: {
             locale: null
         },
-        type: "ContentResponse"
+        type: "V1ContentResponse",
+        aliases: ["getContent"]
     },
     getMMR: {
         args: {
@@ -124,14 +130,14 @@ export const argParams: {
             tag: exampleTag,
             region: exampleRegion
         },
-        type: "MMRResponse"
+        type: "V2MMRResponse"
     },
     getMMRByPUUID: {
         args: {
             puuid: examplePUUID,
             region: exampleRegion
         },
-        type: "MMRResponse"
+        type: "V2MMRResponse"
     },
     getMatches: {
         args: {
@@ -139,26 +145,26 @@ export const argParams: {
             tag: exampleTag,
             region: exampleRegion
         },
-        type: "MatchesResponse"
+        type: "V3MatchesResponse"
     },
     getMatchesByPUUID: {
         args: {
             puuid: examplePUUID,
             region: exampleRegion
         },
-        type: "MatchesResponse"
+        type: "V3MatchesResponse"
     },
     getAccount: {
         args: {
             name: exampleName,
             tag: exampleTag
         },
-        type: "AccountResponse"
+        type: "V1AccountResponse"
     },
     getAccountByPUUID: {
         args: {
             puuid: examplePUUID
         },
-        type: "AccountResponse"
+        type: "V1AccountResponse"
     }
 };

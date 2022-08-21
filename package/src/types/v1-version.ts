@@ -1,4 +1,4 @@
-export interface VersionResponse {
+export interface V1VersionResponse {
     version: string;
     clientVersion: string;
     branch: string;

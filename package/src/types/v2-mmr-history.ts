@@ -1,4 +1,4 @@
-import { Rank } from "./general";
+import type { Rank } from "./general";
 
 export interface Images {
     small: string;
@@ -18,4 +18,4 @@ export interface MMRHistoryGame {
     date_raw: number;
 }
 
-export type MMRHistoryResponse = MMRHistoryGame[];
+export type V2MMRHistoryResponse = MMRHistoryGame[];

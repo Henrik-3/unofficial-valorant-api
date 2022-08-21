@@ -1,6 +1,6 @@
-import { Region } from "../general";
+import type { Region } from "../general";
 
-interface Match {
+export interface Match {
     MatchID: string;
     MapID: string;
     SeasonID: string;

@@ -16,4 +16,4 @@ export interface Announcement {
     url: string;
 }
 
-export type WebsiteResponse = Announcement[];
+export type V1WebsiteResponse = Announcement[];

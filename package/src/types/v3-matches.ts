@@ -75,7 +75,7 @@ export interface Player {
     damage_received: number;
 }
 
-type PlayerLocation = { x: number, y: number };
+export type PlayerLocation = { x: number, y: number };
 
 export interface PlayerLocationOnEvent {
     player_puuid: string;
@@ -229,4 +229,4 @@ export interface Match {
     kills: KillEventMatch[];
 }
 
-export type MatchesResponse = Match[];
+export type V3MatchesResponse = Match[];

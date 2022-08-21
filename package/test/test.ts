@@ -5,11 +5,31 @@ import { lstatSync, readdirSync, readFileSync, writeFileSync } from "fs";
 import { resolve } from "path";
 import { buildGenerator, getProgramFromFiles, type CompilerOptions, type Definition } from "typescript-json-schema";
 import _VAPI from "../dist/src/index.js";
-import { argParams } from "./testOptions.js";
+import { argParams as _argParams } from "./testOptions.js";
 
+// Add aliases to argParams
+const argParams: {
+    [method: string]: {
+        args?: { [name: string]: any };
+        type: string;
+        aliases?: string[];
+    };
+} = Object.keys(_argParams).reduce((acc, cur) => {
+    const aliases = _argParams[cur].aliases;
+    if (aliases) {
+        aliases.forEach(alias => {
+            acc[alias] = _argParams[cur];
+        });
+    }
+    acc[cur] = _argParams[cur];
+    return acc;
+}, {});
+
+// Init AJV
 const ajv = new Ajv();
 addFormats(ajv);
 
+// Init VAPI
 const VAPI = new _VAPI();
 
 const methodBlacklist = ["initUtils", "constructor", "parseBody", "fetch", "validateArgs"];
