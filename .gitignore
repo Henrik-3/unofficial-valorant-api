@@ -1,11 +1,12 @@
 .history/
 node_modules/
-pnpm-lock.yaml
+
 dist/
-*.js.map
-*.js
-out.txt
-checked.txt
 doc/
 
+*.js.map
+*.js
+
+out.txt
+checked.txt
 _test.ts

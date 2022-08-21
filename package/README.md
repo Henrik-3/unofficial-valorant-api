@@ -40,3 +40,14 @@ Need help? Join the [Discord server](https://discord.gg/X3GaVkX2YN)
 # Code Examples
 
 You find some examples [here](./examples)
+
+# Contributing
+
+- The main package is located in [./package](./package)
+- Please use [eslint](https://eslint.org) with the provided config in [./package/.eslintrc.cjs](./package/.eslintrc.cjs)
+  - 4 spaces, double quotes, etc (found in config)
+  - Use `import type` always (when you can), using `import { type thing, thing2 }` if you need to import both a type and a value from a module
+- **Use [pnpm](https://pnpm.io)!**
+  - Install using `npm i -g pnpm`
+  - Use `pnpm i` to install the dependencies
+  - *A lot* faster & lock-file is a pnpm lock file
