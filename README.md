@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.2.5.0)
+# unofficial-valorant-api (v.2.5.1)
 Unofficial Valorant API by using the Ingame API
 <br>
 
@@ -98,6 +98,9 @@ Hey Riot, first of all i hope u know that this project is a try to enhance the d
 # Contributors
 Thanks to @liamcottle, @RumbleMike and @Hamper. Without them, parts of the API would be not available.
 Consider checking out https://valorant-api.com if you need any images from the game.
+
+# Year 2022 in Numbers
+![Annual Report 2022 API](https://user-images.githubusercontent.com/43936184/210059618-29665ffd-2070-48b9-87ae-293b55023941.png)
 
 # Other Stuff
 Also would be happy if you give the project a star and give credit when you use it. If you wanna help me to pay the server instance (16€ per month) or want to support my work, you can help me via patreon: [Link](https://www.patreon.com/henrikdev).
