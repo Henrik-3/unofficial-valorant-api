@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.2.5.1)
+# unofficial-valorant-api (v.2.5.2)
 Unofficial Valorant API by using the Ingame API
 <br>
 
@@ -86,7 +86,7 @@ The documention for the API is available under https://app.swaggerhub.com/apis-d
 
 # Wrapper
 - [x] JS - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.2.3.0]
-- [x] Python - **https://github.com/raimannma/ValorantAPI** [API v.2.3.0]
+- [x] Python - **https://github.com/raimannma/ValorantAPI** [API v.2.5.1]
 - [x] C# - **https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master** [API v.1.6.2] [Outdated]
 
 # Legal
