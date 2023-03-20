@@ -87,7 +87,7 @@ The documention for the API is available under https://app.swaggerhub.com/apis-d
 # Wrapper
 - [x] JavaScript - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.2.3.0]
 - [x] Python - **https://github.com/raimannma/ValorantAPI** [API v.2.6.1]
-- [x] Java - **https://github.com/SocketC0nnection/JVA** (by @SocketC0nnection) [API v.2.6.1]
+- [x] Java - **https://github.com/SocketC0nnection/JVA** (by @SocketC0nnection) [API v.2.6.2]
 - [x] C# - **https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master** [API v.1.6.2] [Outdated]
 
 # Legal
