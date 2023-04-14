@@ -70,6 +70,7 @@ Here are the error codes for the VALORANT API that could come up. There will alw
 | 113 | Invalid match or player id |
 | 114 | Invalid country code |
 | 115 | Invalid season |
+| 116 | Multiple queries detected. Make sure to only request one query for this query type. |
 
 # Status 403 - Forbidden
 If you receive this status code, please ping me on the support discord or contact me over my mail or discord that are linked on the bottom of this page.
