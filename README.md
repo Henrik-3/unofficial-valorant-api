@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.2.6.2)
+# unofficial-valorant-api (v.2.7.0)
 Unofficial Valorant API by using the Ingame API
 <br>
 
@@ -71,6 +71,10 @@ Here are the error codes for the VALORANT API that could come up. There will alw
 | 114 | Invalid country code |
 | 115 | Invalid season |
 | 116 | Multiple queries detected. Make sure to only request one query for this query type. |
+| 117 | Missing query |
+| 118 | Query 'page' and 'size' must be a valid number |
+| 119 | Query 'page' must be greater then 0 |
+| 120 | Query 'size' must be greater then 0 |
 
 # Status 403 - Forbidden
 If you receive this status code, please ping me on the support discord or contact me over my mail or discord that are linked on the bottom of this page.
@@ -86,7 +90,7 @@ The documention for the API is available under https://app.swaggerhub.com/apis-d
 - [VALO DE Discord](https://discord.gg/valode) Rolesystem
 
 # Wrapper
-- [x] JavaScript - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.2.3.0]
+- [x] JavaScript - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.2.3.0] [Outdated]
 - [x] Python - **https://github.com/raimannma/ValorantAPI** [API v.2.6.1]
 - [x] Java - **https://github.com/SocketC0nnection/JVA** (by @SocketC0nnection) [API v.2.6.2]
 - [x] C# - **https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master** [API v.1.6.2] [Outdated]
