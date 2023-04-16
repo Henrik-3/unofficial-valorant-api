@@ -45,7 +45,7 @@ There are also some Rate Limit Adjustments:
 What is not allowed?
 - Big analytic projects
     - Why? Because of data privacy. Rito set RSO as a requirement for their official API because the VAL Team said they want to protect the users data. Since I dont want to get into trouble with Riot and want to keep up the API as long as possible for normal developers out there this is a requirement
-- Public store trackers / websites / bots
+- Public store trackers / store websites / store bots
     - Why? Because it's simply not allowed and the risk of scamming accounts is also way to high. If it's a private project for a couple of friends you will receive a key, but as soon as I find out that the project is used in the public the key will get revoked.
 
 # Error codes
