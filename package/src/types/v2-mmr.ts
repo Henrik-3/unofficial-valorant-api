@@ -1,7 +1,7 @@
-import type { Rank, Season } from "./general";
+import type {Rank, Season} from './general';
 
 export interface SeasonMMR {
-    error?: "No data available";
+    error?: 'No data available';
     wins: number;
     number_of_games: number;
     final_rank: number;
@@ -17,22 +17,27 @@ export interface V2MMRResponse {
     tag: string;
     puuid: string;
     current_data: {
-        currenttier: number;
-        currenttierpatched: Rank;
+        currenttier: number | null;
+        currenttierpatched: Rank | null;
         images: {
-            small: string;
-            large: string;
-            triangle_up: string;
-            triangle_down: string;
+            small: string | null;
+            large: string | null;
+            triangle_up: string | null;
+            triangle_down: string | null;
         };
-        ranking_in_tier: number;
-        mmr_change_to_last_game: number;
-        elo: number;
+        ranking_in_tier: number | null;
+        mmr_change_to_last_game: number | null;
+        elo: number | null;
         games_needed_for_rating: number;
         old: boolean;
     };
-
+    highest_tier: {
+        old: boolean;
+        tier: number | null;
+        patched_tier: string | null;
+        season: string | null;
+    };
     by_season: {
-        [key in Season]: SeasonMMR
+        [key in Season]: SeasonMMR;
     };
 }

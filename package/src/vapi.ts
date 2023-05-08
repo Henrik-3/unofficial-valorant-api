@@ -8,20 +8,21 @@ import type {RawMMRResponse} from './types/raw/mmr';
 import type {V1AccountResponse} from './types/v1-account';
 import type {V1ContentResponse} from './types/v1-content';
 import type {V1CrosshairResponse} from './types/v1-crosshair';
+import {v1EsportsSchedule} from './types/v1-esports-schedule';
 import {V1LifetimeMatchesResponse} from './types/v1-lifetime-matches';
 import type {V1StatusResponse} from './types/v1-status';
-import type {V1StoreOffersResponse} from './types/v1-store-offers';
 import type {V1VersionResponse} from './types/v1-version';
 import type {V1WebsiteResponse} from './types/v1-website';
 import type {V2MatchResponse} from './types/v2-match';
-import type {V2MMRHistoryResponse} from './types/v2-mmr-history';
+import type {V1MMRHistoryResponse} from './types/v1-mmr-history';
 import type {V3MatchesResponse} from './types/v3-matches';
-import {LeaderboardResponse, MMRResponse, RawResponse, StoreFeaturedResponse} from './types/versions.js';
+import {LeaderboardResponse, MMRResponse, RawResponse, StoreFeaturedResponse, StoreOffersResponse} from './types/versions.js';
 
 /**
  * Base API endpoint
  */
 const baseUrl = 'https://api.henrikdev.xyz/valorant';
+const baseCDNUrl = 'https://cdn.henrikdev.xyz/valorant';
 export default class {
     /**
      * Images for every Rank
@@ -222,8 +223,8 @@ export default class {
      * Get a list of all the prices of every skin in the game
      * @returns List of skin prices
      */
-    async getOffers(): Promise<APIResponse<V1StoreOffersResponse>> {
-        return this.fetch<V1StoreOffersResponse>('v1/store-offers');
+    async getOffers<T extends 'v1' | 'v2'>({version}: {version?: T} = {}): Promise<APIResponse<StoreOffersResponse<T>>> {
+        return this.fetch<StoreOffersResponse<T>>(`${version || 'v2'}/store-offers`);
     }
 
     /**
@@ -334,9 +335,9 @@ export default class {
      * @param args.region - The players region
      * @return List of rr changes (recent competitive games)
      */
-    async getMMRHistory({name, tag, region}: {name: string; tag: string; region: Region}): Promise<APIResponse<V2MMRHistoryResponse>> {
+    async getMMRHistory({name, tag, region}: {name: string; tag: string; region: Region}): Promise<APIResponse<V1MMRHistoryResponse>> {
         this.validateArgs({name, tag, region});
-        return this.fetch<V2MMRHistoryResponse>(`v1/mmr-history/${region}/${name}/${tag}`);
+        return this.fetch<V1MMRHistoryResponse>(`v1/mmr-history/${region}/${name}/${tag}`);
     }
 
     /**
@@ -345,9 +346,9 @@ export default class {
      * @param args.region - The players region
      * @return List of rr changes (recent competitive games)
      */
-    async getMMRHistoryByPUUID({puuid, region}: {puuid: string; region: Region}): Promise<APIResponse<V2MMRHistoryResponse>> {
+    async getMMRHistoryByPUUID({puuid, region}: {puuid: string; region: Region}): Promise<APIResponse<V1MMRHistoryResponse>> {
         this.validateArgs({puuid, region});
-        return this.fetch<V2MMRHistoryResponse>(`v1/by-puuid/mmr-history/${region}/${puuid}`);
+        return this.fetch<V1MMRHistoryResponse>(`v1/by-puuid/mmr-history/${region}/${puuid}`);
     }
 
     /**
@@ -397,7 +398,7 @@ export default class {
             if (riotID && puuid)
                 throw new TypeError("Too many parameters: You can't search for a Riot ID and puuid at the same time, please decide between Riot ID and puuid");
         } else {
-            if (start || end || riotID || puuid || season) throw new TypeError("Can't use filters when using V2!");
+            if (start || end) throw new TypeError("Can't use start/end filters when using V2!");
         }
 
         this.validateArgs({region});
@@ -639,7 +640,7 @@ export default class {
         page: number;
         size: number;
     }): Promise<APIResponse<V1LifetimeMatchesResponse>> {
-        this.validateArgs({name, tag});
+        this.validateArgs({name, tag, region});
         return this.fetch<V1LifetimeMatchesResponse>(`v1/lifetime/matches/${region}/${name}/${tag}:`, {gamemodeFilter, mapFilter, page, size});
     }
 
@@ -668,12 +669,26 @@ export default class {
     }: {
         puuid: string;
         region: Region;
-        gamemodeFilter: Mode;
+        gamemodeFilter?: Mode;
         mapFilter?: ValorantMap;
-        page: number;
-        size: number;
+        page?: number;
+        size?: number;
     }): Promise<APIResponse<V1LifetimeMatchesResponse>> {
-        this.validateArgs({puuid});
+        this.validateArgs({puuid, region});
         return this.fetch<V1LifetimeMatchesResponse>(`v1/by-puuid/lifetime/matches/${region}/${puuid}`, {gamemodeFilter, mapFilter, page, size});
+    }
+
+    /**
+     * Get esports schedule data
+     * @remarks
+     * **Returns:**
+     * - All scheduled esport games
+     * - Games from: https://valorantesports.com/schedule
+     * @param args.region - Filter for schedules games in this region
+     * @param args.league - Filter for schedules games in this league
+     * @return All scheduled esport games
+     */
+    async getEsportsSchedule({region, league}: {region: string; league: string}): Promise<APIResponse<v1EsportsSchedule>> {
+        return this.fetch<v1EsportsSchedule>(`v1/esports/schedule`, {region, league});
     }
 }

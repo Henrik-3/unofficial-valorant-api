@@ -1,4 +1,4 @@
-import type { Rank } from "./general";
+import type {Rank} from './general';
 
 export interface Images {
     small: string;
@@ -11,6 +11,12 @@ export interface MMRHistoryGame {
     currenttier: number;
     currenttierpatched: Rank;
     images: Images;
+    match_id: string;
+    map: {
+        name: string;
+        id: string;
+    };
+    season_id: string;
     ranking_in_tier: number;
     mmr_change_to_last_game: number;
     elo: number;
@@ -18,4 +24,4 @@ export interface MMRHistoryGame {
     date_raw: number;
 }
 
-export type V2MMRHistoryResponse = MMRHistoryGame[];
+export type V1MMRHistoryResponse = MMRHistoryGame[];

@@ -14,7 +14,9 @@ export interface FeaturedItems {
     bundle_uuid: string;
     items: Item[];
     seconds_remaining: number;
+    expires_at: string;
+    bundle_price: number;
+    whole_sale_only: boolean;
 }
 
 export type V1StoreFeaturedResponse = FeaturedItems[];
-

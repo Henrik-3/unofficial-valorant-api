@@ -1,109 +1,109 @@
-const examplePUUID = "d55c3688-5a9b-5a5d-b49e-80d7e5ff6b2a";
-const exampleMatchID = "50ec10e0-2752-4a6a-a7ef-b63dacd5a6a9";
-const exampleRegion = "na";
-const exampleName = "jameslinimk";
-const exampleTag = "8868";
+const examplePUUID = 'd55c3688-5a9b-5a5d-b49e-80d7e5ff6b2a';
+const exampleMatchID = '50ec10e0-2752-4a6a-a7ef-b63dacd5a6a9';
+const exampleRegion = 'na';
+const exampleName = 'jameslinimk';
+const exampleTag = '8868';
 
 export const argParams: {
     [method: string]: {
-        args?: { [name: string]: any };
+        args?: {[name: string]: any};
         type: string;
         aliases?: string[];
     };
 } = {
     getCrosshair: {
         args: {
-            code: "0;P;t;2;o;1;d;1;f;0;0t;10;0l;3;0a;1;0f;0;1b;0",
-            size: 256
+            code: '0;P;t;2;o;1;d;1;f;0;0t;10;0l;3;0a;1;0f;0;1b;0',
+            size: 256,
         },
-        type: "V1CrosshairResponse"
+        type: 'V1CrosshairResponse',
     },
     getWebsite: {
         args: {
-            countryCode: "en-us"
+            countryCode: 'en-us',
         },
-        type: "V1WebsiteResponse",
-        aliases: ["getAnnouncements"]
+        type: 'V1WebsiteResponse',
+        aliases: ['getAnnouncements'],
     },
     getVersion: {
         args: {
-            region: "na"
+            region: 'na',
         },
-        type: "V1VersionResponse"
+        type: 'V1VersionResponse',
     },
     getFeaturedItems: {
-        type: "V2StoreFeaturedResponse"
+        type: 'V2StoreFeaturedResponse',
     },
     getOffers: {
-        type: "V1StoreOffersResponse"
+        type: 'V1StoreOffersResponse',
     },
     getStatus: {
         args: {
-            region: "na"
+            region: 'na',
         },
-        type: "V1StatusResponse"
+        type: 'V1StatusResponse',
     },
     getRawMatchDetails: {
         args: {
             matchID: exampleMatchID,
-            region: "na",
-            queries: null
+            region: 'na',
+            queries: null,
         },
-        type: "RawMatchDetailsResponse"
+        type: 'RawMatchDetailsResponse',
     },
     getRawMatchHistory: {
         args: {
             puuid: examplePUUID,
             region: exampleRegion,
-            queries: null
+            queries: null,
         },
-        type: "RawMatchHistoryResponse"
+        type: 'RawMatchHistoryResponse',
     },
     getRawCompetitiveUpdates: {
         args: {
             puuid: examplePUUID,
             region: exampleRegion,
-            queries: null
+            queries: null,
         },
-        type: "RawCompetitiveUpdatesResponse"
+        type: 'RawCompetitiveUpdatesResponse',
     },
     getRawMMR: {
         args: {
             puuid: examplePUUID,
             region: exampleRegion,
-            queries: null
+            queries: null,
         },
-        type: "RawMMRResponse"
+        type: 'RawMMRResponse',
     },
     getRawData: {
         args: {
-            type: "mmr",
+            type: 'mmr',
             value: examplePUUID,
             region: exampleRegion,
-            queries: null
+            queries: null,
         },
-        type: "RawMMRResponse"
+        type: 'RawMMRResponse',
     },
     getMMRHistory: {
         args: {
             name: exampleName,
             tag: exampleTag,
-            region: exampleRegion
+            region: exampleRegion,
         },
-        type: "V2MMRHistoryResponse"
+        type: 'V1MMRHistoryResponse',
     },
     getMMRHistoryByPUUID: {
         args: {
             puuid: examplePUUID,
-            region: exampleRegion
+            region: exampleRegion,
         },
-        type: "V2MMRHistoryResponse"
+        type: 'V1MMRHistoryResponse',
     },
     getMatch: {
         args: {
-            matchID: exampleMatchID
+            matchID: exampleMatchID,
         },
-        type: "V2MatchResponse"
+        type: 'V2MatchResponse',
     },
     getLeaderboard: {
         args: {
@@ -113,58 +113,58 @@ export const argParams: {
             riotID: null,
             puuid: null,
             season: null,
-            version: null
+            version: null,
         },
-        type: "V2LeaderboardResponse"
+        type: 'V2LeaderboardResponse',
     },
     getTranslations: {
         args: {
-            locale: null
+            locale: null,
         },
-        type: "V1ContentResponse",
-        aliases: ["getContent"]
+        type: 'V1ContentResponse',
+        aliases: ['getContent'],
     },
     getMMR: {
         args: {
             name: exampleName,
             tag: exampleTag,
-            region: exampleRegion
+            region: exampleRegion,
         },
-        type: "V2MMRResponse"
+        type: 'V2MMRResponse',
     },
     getMMRByPUUID: {
         args: {
             puuid: examplePUUID,
-            region: exampleRegion
+            region: exampleRegion,
         },
-        type: "V2MMRResponse"
+        type: 'V2MMRResponse',
     },
     getMatches: {
         args: {
             name: exampleName,
             tag: exampleTag,
-            region: exampleRegion
+            region: exampleRegion,
         },
-        type: "V3MatchesResponse"
+        type: 'V3MatchesResponse',
     },
     getMatchesByPUUID: {
         args: {
             puuid: examplePUUID,
-            region: exampleRegion
+            region: exampleRegion,
         },
-        type: "V3MatchesResponse"
+        type: 'V3MatchesResponse',
     },
     getAccount: {
         args: {
             name: exampleName,
-            tag: exampleTag
+            tag: exampleTag,
         },
-        type: "V1AccountResponse"
+        type: 'V1AccountResponse',
     },
     getAccountByPUUID: {
         args: {
-            puuid: examplePUUID
+            puuid: examplePUUID,
         },
-        type: "V1AccountResponse"
-    }
+        type: 'V1AccountResponse',
+    },
 };

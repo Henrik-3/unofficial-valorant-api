@@ -1,10 +1,10 @@
-import type { Characters, Mode, Rank, Region, ValorantMap, Weapon } from "./general";
+import type {Characters, Mode, Rank, Region, ValorantMap, Weapon} from './general';
 
 export interface Player {
     puuid: string;
     name: string;
     tag: string;
-    team: "Red" | "Blue";
+    team: 'Red' | 'Blue';
     level: number;
     character: Characters;
     currenttier: number;
@@ -75,12 +75,12 @@ export interface Player {
     damage_received: number;
 }
 
-export type PlayerLocation = { x: number, y: number };
+export type PlayerLocation = {x: number; y: number};
 
 export interface PlayerLocationOnEvent {
     player_puuid: string;
     player_display_name: string;
-    player_team: "Red" | "Blue";
+    player_team: 'Red' | 'Blue';
     location: PlayerLocation;
     view_radians: number;
 }
@@ -90,10 +90,10 @@ export interface KillEvent {
     kill_time_in_match: number;
     killer_puuid: string;
     killer_display_name: string;
-    killer_team: "Red" | "Blue";
+    killer_team: 'Red' | 'Blue';
     victim_puuid: string;
     victim_display_name: string;
-    victim_team: "Red" | "Blue";
+    victim_team: 'Red' | 'Blue';
     victim_death_location: PlayerLocation;
     damage_weapon_id: string;
     damage_weapon_name?: Weapon | null;
@@ -106,13 +106,13 @@ export interface KillEvent {
     assistants: {
         assistant_puuid: string;
         assistant_display_name: string;
-        assistant_team: "Red" | "Blue";
+        assistant_team: 'Red' | 'Blue';
     }[];
 }
 
 export interface Round {
-    winning_team: "Red" | "Blue";
-    end_type: "Eliminated" | "Bomb defused" | "Bomb detonated" | "Round timer expired" | "Surrendered";
+    winning_team: 'Red' | 'Blue';
+    end_type: 'Eliminated' | 'Bomb defused' | 'Bomb detonated' | 'Round timer expired' | 'Surrendered';
     bomb_planted: boolean;
     bomb_defused: boolean;
     plant_events: {
@@ -120,9 +120,9 @@ export interface Round {
         planted_by?: {
             puuid: string;
             display_name: string;
-            team: "Red" | "Blue";
+            team: 'Red' | 'Blue';
         } | null;
-        plant_site?: "A" | "B" | "C" | null;
+        plant_site?: 'A' | 'B' | 'C' | null;
         plant_time_in_round?: number | null;
         player_locations_on_plant?: PlayerLocationOnEvent[] | null;
     };
@@ -131,7 +131,7 @@ export interface Round {
         defused_by?: {
             puuid: string;
             display_name: string;
-            team: "Red" | "Blue";
+            team: 'Red' | 'Blue';
         } | null;
         defuse_time_in_round?: number | null;
         player_locations_on_defuse?: PlayerLocationOnEvent[] | null;
@@ -145,11 +145,11 @@ export interface Round {
         };
         player_puuid: string;
         player_display_name: string;
-        player_team: "Red" | "Blue";
+        player_team: 'Red' | 'Blue';
         damage_events: {
             receiver_puuid: string;
             receiver_display_name: string;
-            receiver_team: "Red" | "Blue";
+            receiver_team: 'Red' | 'Blue';
             bodyshots: number;
             damage: number;
             headshots: number;
@@ -174,7 +174,7 @@ export interface Round {
             };
             armor: {
                 id?: string | null;
-                name?: "Heavy Shields" | "Light Shields" | null;
+                name?: 'Heavy Shields' | 'Light Shields' | null;
                 assets: {
                     display_icon?: string | null;
                 };
@@ -193,6 +193,7 @@ export interface KillEventMatch extends KillEvent {
 }
 
 export interface Match {
+    is_available: boolean;
     metadata: {
         map: ValorantMap;
         game_version: string;
