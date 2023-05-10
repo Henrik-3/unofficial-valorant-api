@@ -73,6 +73,22 @@ export type Locale =
     | 'zn-CN'
     | 'zn-TW';
 
+export type PremierConferences =
+    | 'EU_CENTRAL_EAST'
+    | 'EU_WEST'
+    | 'EU_MIDDLE_EAST'
+    | 'EU_TURKEY'
+    | 'NA_US_EAST'
+    | 'NA_US_WEST'
+    | 'LATAM_NORTH'
+    | 'LATAM_SOUTH'
+    | 'BR_BRAZIL'
+    | 'KR_KOREA'
+    | 'AP_ASIA'
+    | 'AP_JAPAN'
+    | 'AP_OCEANIA'
+    | 'AP_SOUTH_ASIA';
+
 export interface APIResponse<dataType> {
     /**
      * Response status

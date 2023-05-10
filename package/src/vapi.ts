@@ -194,11 +194,13 @@ export default class {
      */
     async getWebsite({
         countryCode,
+        category,
     }: {
         countryCode: 'en-us' | 'en-gb' | 'de-de' | 'es-es' | 'es-mx' | 'fr-fr' | 'it-it' | 'ja-jp' | 'ko-kr' | 'pt-br' | 'ru-ru' | 'tr-tr' | 'vi-vn';
+        category?: 'game_updates' | 'dev' | 'esports' | 'announcements' | 'patch_notes';
     }): Promise<APIResponse<V1WebsiteResponse>> {
         this.validateArgs({countryCode});
-        return this.fetch<V1WebsiteResponse>(`v1/website/${countryCode}`);
+        return this.fetch<V1WebsiteResponse>(`v1/website/${countryCode}`, {category});
     }
 
     /**
@@ -445,21 +447,16 @@ export default class {
         region,
         seasonFilter,
         version,
-        filter,
     }: {
         name: string;
         tag: string;
         region: Region;
         seasonFilter?: Season;
         version?: T;
-        filter?: Season;
     }): Promise<APIResponse<MMRResponse<T>>> {
         if (version === 'v1') console.warn('v1 is outdated, please migrate to v2!');
-        if (filter) console.warn('filter is outdated! Please use seasonFilter instead');
-        if (seasonFilter && filter) throw new TypeError('seasonFilter and filter cannot be both set!');
-
         this.validateArgs({name, tag, region});
-        return this.fetch<MMRResponse<T>>(`${version || 'v2'}/mmr/${region}/${name}/${tag}`, {filter: seasonFilter || filter});
+        return this.fetch<MMRResponse<T>>(`${version || 'v2'}/mmr/${region}/${name}/${tag}`, {season: seasonFilter});
     }
 
     /**
@@ -483,20 +480,16 @@ export default class {
         region,
         seasonFilter,
         version,
-        filter,
     }: {
         puuid: string;
         region: Region;
         seasonFilter?: Season;
         version?: T;
-        filter?: Season;
     }): Promise<APIResponse<MMRResponse<T>>> {
         if (version === 'v1') console.warn('v1 is outdated, please migrate to v2!');
-        if (filter) console.warn('filter is outdated! Please use seasonFilter instead');
-        if (seasonFilter && filter) throw new TypeError('seasonFilter and filter cannot be both set!');
 
         this.validateArgs({puuid, region});
-        return this.fetch<MMRResponse<T>>(`${version || 'v2'}/by-puuid/mmr/${region}/${puuid}`, {filter: seasonFilter || filter});
+        return this.fetch<MMRResponse<T>>(`${version || 'v2'}/by-puuid/mmr/${region}/${puuid}`, {season: seasonFilter});
     }
 
     /**
@@ -534,7 +527,7 @@ export default class {
     }): Promise<APIResponse<V3MatchesResponse>> {
         this.validateArgs({name, tag, region});
         if (size && (size > 10 || size < 1)) throw new TypeError('Invalid size parameter. Size must be between 1-10!');
-        return this.fetch<V3MatchesResponse>(`v3/matches/${region}/${name}/${tag}`, {filter: gamemodeFilter, map: mapFilter, size});
+        return this.fetch<V3MatchesResponse>(`v3/matches/${region}/${name}/${tag}`, {mode: gamemodeFilter, map: mapFilter, size});
     }
 
     /**
@@ -569,7 +562,7 @@ export default class {
     }): Promise<APIResponse<V3MatchesResponse>> {
         this.validateArgs({name: puuid, region});
         if (size && (size > 10 || size < 1)) throw new TypeError('Invalid size parameter. Size must be between 1-10!');
-        return this.fetch<V3MatchesResponse>(`v3/by-puuid/matches/${region}/${puuid}`, {filter: gamemodeFilter, map: mapFilter, size});
+        return this.fetch<V3MatchesResponse>(`v3/by-puuid/matches/${region}/${puuid}`, {mode: gamemodeFilter, map: mapFilter, size});
     }
 
     /**
@@ -641,7 +634,7 @@ export default class {
         size: number;
     }): Promise<APIResponse<V1LifetimeMatchesResponse>> {
         this.validateArgs({name, tag, region});
-        return this.fetch<V1LifetimeMatchesResponse>(`v1/lifetime/matches/${region}/${name}/${tag}:`, {gamemodeFilter, mapFilter, page, size});
+        return this.fetch<V1LifetimeMatchesResponse>(`v1/lifetime/matches/${region}/${name}/${tag}:`, {mode: gamemodeFilter, map: mapFilter, page, size});
     }
 
     /**
