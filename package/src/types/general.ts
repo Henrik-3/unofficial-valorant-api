@@ -89,6 +89,9 @@ export type PremierConferences =
     | 'AP_OCEANIA'
     | 'AP_SOUTH_ASIA';
 
+export type PremierSeasonEventTypes = 'LEAGUE' | 'TOURNAMENT';
+export type PremierSeasonEventMapSelectionTypes = 'RANDOM' | 'PICKBAN';
+
 export interface APIResponse<dataType> {
     /**
      * Response status
