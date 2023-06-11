@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.2.7.0)
+# unofficial-valorant-api (v.3.0.0)
 Unofficial Valorant API by using the Ingame API
 <br>
 
@@ -83,7 +83,7 @@ If you receive this status code, please ping me on the support discord or contac
 See the current status of the API here: https://status.henrikdev.xyz/
 
 # Documentation
-The documention for the API is available under https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API
+The documention for the API is available under https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API (not updated to v3 yet)
   
 # Projects using this API
 - https://github.com/Henrik-3/valorant-labs
@@ -111,4 +111,4 @@ Consider checking out https://valorant-api.com if you need any images from the g
 # Other Stuff
 Also would be happy if you give the project a star and give credit when you use it. If you wanna help me to pay the server instance (16€ per month) or want to support my work, you can help me via patreon: [Link](https://www.patreon.com/henrikdev).
 
-If you have any questions write on Discord: Henrik3#1451 or on the support server or write me an email to contact@henrikdev.xyz. 
+If you have any questions write on Discord: @henrik3 or on the support server or write me an email to contact@henrikdev.xyz. 
