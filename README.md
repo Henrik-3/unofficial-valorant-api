@@ -83,7 +83,7 @@ If you receive this status code, please ping me on the support discord or contac
 See the current status of the API here: https://status.henrikdev.xyz/
 
 # Documentation
-The documention for the API is available under https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API (not updated to v3 yet)
+The documention for the API is available under https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API
   
 # Projects using this API
 - https://github.com/Henrik-3/valorant-labs
