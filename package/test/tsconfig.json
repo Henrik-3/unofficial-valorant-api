@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"watch": true,
+		"lib": [
+			"ESNext",
+			"DOM"
+		],
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"allowSyntheticDefaultImports": true
+	}
+}

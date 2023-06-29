@@ -1,8 +1,9 @@
 {
     "name": "unofficial-valorant-api",
-    "version": "2.3.0-stable.0",
+    "version": "3.0.0-stable.0",
     "description": "Library for the Unofficial VALORANT API by api.henrikdev.xyz",
-    "main": "./src/index.js",
+    "main": "./dist/src/index.js",
+    "types": "./dist/src/index.d.ts",
     "dependencies": {
         "axios": "^0.27.2"
     },
@@ -20,5 +21,28 @@
     },
     "homepage": "https://github.com/Henrik-3/unofficial-valorant-api",
     "author": "HenrikDev",
-    "license": "ISC"
+    "license": "ISC",
+    "type": "module",
+    "devDependencies": {
+        "@types/node": "^18.7.5",
+        "@typescript-eslint/eslint-plugin": "^5.33.1",
+        "@typescript-eslint/parser": "^5.33.1",
+        "ajv": "^8.11.0",
+        "ajv-formats": "^2.1.1",
+        "chalk": "^5.0.1",
+        "eslint": "^8.22.0",
+        "typedoc": "^0.23.10",
+        "typedoc-plugin-markdown": "^3.13.4",
+        "typescript": "^4.7.4",
+        "typescript-json-schema": "^0.54.0"
+    },
+    "scripts": {
+        "build:tsc": "tsc --watch false",
+        "build:docs": "typedoc --plugin typedoc-plugin-markdown && node ./test/editDocs.js",
+        "build:tests": "cd test && tsc --watch false",
+        "build": "npm run build:tsc && npm run build:tests && npm run build:docs",
+        "develop:tsc": "tsc",
+        "develop:testTsc": "cd test && tsc",
+        "test": "npm run build:tsc && npm run build:tests && node ./test/test.js"
+    }
 }

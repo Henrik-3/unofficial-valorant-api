@@ -1,0 +1,34 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"watch": true,
+		"lib": [
+			"ESNext",
+			"DOM"
+		],
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"allowSyntheticDefaultImports": true,
+		"declaration": true,
+		"outDir": "./dist",
+		"resolveJsonModule": true,
+        
+	},
+	"exclude": [
+		"node_modules",
+		"dist",
+		"test"
+	],
+	"typedocOptions": {
+		"entryPoints": [
+			"./src"
+		],
+		"entryPointStrategy": "expand",
+		"out": "./doc",
+		"excludeInternal": true,
+		"hideBreadcrumbs": true,
+		"githubPages": false
+	}
+}

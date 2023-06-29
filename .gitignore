@@ -1,0 +1,12 @@
+.history/
+node_modules/
+
+dist/
+doc/
+
+*.js.map
+*.js
+
+out.txt
+checked.txt
+_test.ts

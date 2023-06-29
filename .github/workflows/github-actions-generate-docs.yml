@@ -1,0 +1,25 @@
+name: Build docs
+on: [ push, workflow_dispatch ]
+permissions:
+  contents: write
+
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: |
+          cd package
+          npm i
+      - name: Build docs
+        run: |
+          cd package
+          npm run build
+      - name: Deploy to GH pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./package/doc
