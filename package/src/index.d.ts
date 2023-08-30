@@ -54,6 +54,7 @@ export default class {
     public getMatches(options: getMatchesFetchOptions): Promise<APIResponse>;
     public getMatch(options: getMatchFetchOptions): Promise<APIResponse>;
     public getMMRHistory(options: getMMRHistoryFetchOptions): Promise<APIResponse>;
+    public getLifetimeMMRHistory(options: getLifetimeMMRHistoryFetchOptions): Promise<APIResponse>;
     public getMMR(options: getMMRFetchOptions): Promise<APIResponse>;
     public getRawData(options: getRawFetchOptions): Promise<APIResponse>;
     public getStatus(options: getStatusFetchOptions): Promise<APIResponse>;
@@ -147,6 +148,14 @@ export interface getMMRHistoryFetchOptions {
     region: Regions;
     name: string;
     tag: string;
+}
+
+export interface getLifetimeMMRHistoryFetchOptions {
+    region: Regions;
+    name: string;
+    tag: string;
+    page?: number;
+    size?: number;
 }
 
 export interface getMMRFetchOptions {
