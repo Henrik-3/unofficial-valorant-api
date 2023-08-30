@@ -129,6 +129,14 @@ module.exports = class {
         });
     }
 
+    async getLifetimeMMRHistory({region, name, tag, page, size} = {}) {
+        this._validate({region, name, tag});
+        const query = this._query({page, size});
+        return await this._fetch({
+            url: `https://api.henrikdev.xyz/valorant/v1/lifetime/mmr-history/${region}/${name}/${tag}${query ? `?${query}` : ''}`,
+        });
+    }
+
     async getMMR({version, region, name, tag, filter} = {}) {
         this._validate({version, region, name, tag});
         const query = this._query({filter});
