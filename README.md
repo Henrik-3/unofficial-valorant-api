@@ -91,10 +91,10 @@ The documention for the API is available under https://app.swaggerhub.com/apis-d
 
 # Wrapper
 - [x] JavaScript - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.2.3.0] [Outdated]
-- [x] Python - **https://github.com/raimannma/ValorantAPI** [API v3.0.2] [Current]
+- [x] Python - **https://github.com/raimannma/ValorantAPI** by @raimannma [API v3.0.2] [Current]
 - [x] Java - **https://github.com/SocketC0nnection/JVA** (by @SocketC0nnection) [API v.2.6.2] [Outdated]
 - [x] C# - **https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master** [API v.1.6.2] [Outdated]
-- [x] Go - **https://github.com/yldshv/go-valorant-api** [API v3.0.2] [Current]
+- [x] Go - **https://github.com/yldshv/go-valorant-api** by @yldshv [API v3.0.2] [Current]
 
 # Legal
 This API isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
