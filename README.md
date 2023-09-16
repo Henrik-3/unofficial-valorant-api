@@ -90,11 +90,13 @@ The documention for the API is available under https://app.swaggerhub.com/apis-d
 - [VALO DE Discord](https://discord.gg/valode) Rolesystem
 
 # Wrapper
-- [x] JavaScript - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.2.3.0] [Outdated]
-- [x] Python - **https://github.com/raimannma/ValorantAPI** by [@raimannma](https://github.com/raimannma) [API v3.0.2] [Current]
-- [x] Java - **https://github.com/SocketC0nnection/JVA** by [@SocketC0nnection](https://github.com/SocketC0nnection) [API v.2.6.2] [Outdated]
-- [x] C# - **https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master** [API v.1.6.2] [Outdated]
-- [x] Go - **https://github.com/yldshv/go-valorant-api** by [@yldshv](https://github.com/yldshv) [API v3.0.2] [Current]
+| Language | Repo | API Version | Up To Date? | Documentation (if available)
+| :-: | :-: | :-: | :-: | :-: |
+| JavaScript | This Repo | v2.3.0 | ❌ | - |
+| Python | https://github.com/raimannma/ValorantAPI | v3.0.2 | ✅ | - |
+| Java | https://github.com/SocketC0nnection/JVA | v.2.6.2 | ❌ | - |
+| C# | https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master | v.1.6.2 | ❌ | - |
+| Go | https://github.com/yldshv/go-valorant-api | v3.0.2 | ✅ | - |
 
 # Legal
 This API isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
