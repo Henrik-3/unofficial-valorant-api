@@ -93,10 +93,10 @@ The documention for the API is available under https://app.swaggerhub.com/apis-d
 | Language | Repo | API Version | Up To Date? | Documentation (if available)
 | :-: | :-: | :-: | :-: | :-: |
 | JavaScript | This Repo | v2.3.0 | ❌ | - |
-| Python | https://github.com/raimannma/ValorantAPI | v3.0.2 | ✅ | - |
+| Python | https://github.com/raimannma/ValorantAPI | v3.0.2 | ✅ | https://raimannma.github.io/ValorantAPI/ |
 | Java | https://github.com/SocketC0nnection/JVA | v.2.6.2 | ❌ | - |
 | C# | https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master | v.1.6.2 | ❌ | - |
-| Go | https://github.com/yldshv/go-valorant-api | v3.0.2 | ✅ | - |
+| Go | https://github.com/yldshv/go-valorant-api | v3.0.2 | ✅ | https://pkg.go.dev/github.com/yldshv/go-valorant-api#VAPI |
 
 # Legal
 This API isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
