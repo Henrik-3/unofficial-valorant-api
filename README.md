@@ -24,7 +24,7 @@ If you exceed rate limit you will get following JSON with 429 Status Code:
 ```
 The API party uses a key based system, with the guarantee that you will receive an answer to your application within 24-48h. This change happened because of large botting attacks and data privacy reasons which could impact all other developers.
 
-You are can generate a key on the linked discord above. 
+You can generate a key on the linked discord above. 
 
 *You will also have to enter some details about your app, e.g., the use case. This is to ensure the API is not used in a harmful way and (hopefully) the user knows that his data is used.*
 
