@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.3.0.0)
+# unofficial-valorant-api (v.3.0.1)
 Unofficial Valorant API by using the Ingame API
 <br>
 
@@ -8,7 +8,7 @@ Unofficial Valorant API by using the Ingame API
 Please make sure that the user has given his consent to use his data. Analytic services where the user haven't giving his consent are not supported and will be banned if found out, same goes with store checkers if they are public
 
 # Authentication and Rate Limits
-All rate limits are the same for every endpoint, so in general you have **90 requests every minute** if you use an API Key, if not it will be **30 requests every minute** based on the IP.
+All rate limits are the same for every endpoint, so in general you have **90 requests every minute** if you use an "Advanced" API Key, if not it will be **30 requests every minute** with the "Basic" Key.
 If you exceed rate limit you will get following JSON with 429 Status Code:
 ```json
 {
@@ -22,17 +22,18 @@ If you exceed rate limit you will get following JSON with 429 Status Code:
   ]
 }
 ```
-The API party uses a key based system, with the guarantee that you will receive an answer to your application within 24-48h. This change happened because of large botting attacks and data privacy reasons which could impact all other developers.
+The API party uses a key based system.
+You can get the "Basic" Key instantly without waiting time or apply for an "Advanced" key with the guarantee that you will receive an answer to your application within 24-48h. 
 
 You can generate a key on the linked discord above. 
 
 *You will also have to enter some details about your app, e.g., the use case. This is to ensure the API is not used in a harmful way and (hopefully) the user knows that his data is used.*
 
 There are also some Rate Limit Adjustments:
-- No Key: 
+- Basic Key: 
    - 30req/min (2 uncached accounts/hour)
    - Suitable for: Twitch Bots | Educational purposes (How do i code etc)
-- Basic Key:
+- Advanced Key:
     - 90req/min (unlimited uncached accounts/hour if available)
     - Suitable for: Private Discord Bots (Servers) | Websites
 - Production Key:
@@ -45,8 +46,6 @@ There are also some Rate Limit Adjustments:
 What is not allowed?
 - Big analytic projects
     - Why? Because of data privacy. Rito set RSO as a requirement for their official API because the VAL Team said they want to protect the users data. Since I dont want to get into trouble with Riot and want to keep up the API as long as possible for normal developers out there this is a requirement
-- Public store trackers / store websites / store bots
-    - Why? Because it's simply not allowed and the risk of scamming accounts is also way to high. If it's a private project for a couple of friends you will receive a key, but as soon as I find out that the project is used in the public the key will get revoked.
 
 # Error codes
 Here are the error codes for the VALORANT API that could come up. There will always be a more detailed explanation in the `details` field.
