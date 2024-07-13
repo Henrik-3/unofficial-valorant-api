@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.3.0.1)
+# unofficial-valorant-api (v.4.0.0)
 Unofficial Valorant API by using the Ingame API
 <br>
 
@@ -31,58 +31,30 @@ You can generate a key on the linked discord above.
 
 There are also some Rate Limit Adjustments:
 - Basic Key: 
-   - 30req/min (2 uncached accounts/hour)
-   - Suitable for: Twitch Bots | Educational purposes (How do i code etc)
+    - 30req/min
+    - Suitable for: Twitch Bots | Educational purposes (How do i code etc) | Private Discord Bots
 - Advanced Key:
-    - 90req/min (unlimited uncached accounts/hour if available)
-    - Suitable for: Private Discord Bots (Servers) | Websites
+    - 90req/min
+    - Suitable for: Public Discord Bots (Servers) / Public Websites
 - Production Key:
     - Rate Limit you requested
-    - Suitable for: Production Discord Bots | Websites
-    - PLEASE MAKE SURE THAT YOU ALSO REQUEST AN OFFICIAL VALORANT API KEY AT RIOT TO GET RSO IF YOU HAVE A STATS FEATURE FOR EXAMPLE
+    - Suitable for: Large Discord Bots / Large Websites with a big amount of user
+    - API not intended for production use, grant will only happen with valid reason
     
 **IMPORTANT**
 
 What is not allowed?
 - Big analytic projects
     - Why? Because of data privacy. Rito set RSO as a requirement for their official API because the VAL Team said they want to protect the users data. Since I dont want to get into trouble with Riot and want to keep up the API as long as possible for normal developers out there this is a requirement
-
-# Error codes
-Here are the error codes for the VALORANT API that could come up. There will always be a more detailed explanation in the `details` field.
-| Code | Description |
-| ------------- | ------------- |
-| 1 | Invalid API Key |
-| 2 | Forbidden endpoint |
-| 3 | Restricted endpoint |
-| 101 | No region found for this Player  |
-| 102  | No matches found, can't get puuid  |
-| 103 | Possible name change detected, can't get puuid. Please play one match, wait 1-2 minutes and try it again  |
-| 104 | Invalid region |
-| 105 | Invalid filter |
-| 106 | Invalid gamemode |
-| 107 | Invalid map |
-| 108 | Invalid locale |
-| 109 | Missing name |
-| 110 | Missing tag |
-| 111 | Player not found in leaderboard |
-| 112 | Invalid raw type |
-| 113 | Invalid match or player id |
-| 114 | Invalid country code |
-| 115 | Invalid season |
-| 116 | Multiple queries detected. Make sure to only request one query for this query type. |
-| 117 | Missing query |
-| 118 | Query 'page' and 'size' must be a valid number |
-| 119 | Query 'page' must be greater then 0 |
-| 120 | Query 'size' must be greater then 0 |
-
-# Status 403 - Forbidden
-If you receive this status code, please ping me on the support discord or contact me over my mail or discord that are linked on the bottom of this page.
+- Public store checkers
+    - As this feature requires the users credentials, the possibility of a credential leak is to high
 
 # Status
 See the current status of the API here: https://status.henrikdev.xyz/
 
 # Documentation
-The documention for the API is available under https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API
+The documention for the API is available at: https://docs.henridkev.xyz
+If you need an OpenAPI Spec, check the link here: https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API
   
 # Projects using this API
 - https://github.com/Henrik-3/valorant-labs
@@ -92,10 +64,10 @@ The documention for the API is available under https://app.swaggerhub.com/apis-d
 | Language | Repo | API Version | Up To Date? | Documentation (if available)
 | :-: | :-: | :-: | :-: | :-: |
 | JavaScript | This Repo | v2.3.0 | ❌ | - |
-| Python | https://github.com/raimannma/ValorantAPI | v3.0.2 | ✅ | https://raimannma.github.io/ValorantAPI/ |
+| Python | https://github.com/raimannma/ValorantAPI | v3.0.2 | ❌ | https://raimannma.github.io/ValorantAPI/ |
 | Java | https://github.com/SocketC0nnection/JVA | v.2.6.2 | ❌ | - |
 | C# | https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master | v.1.6.2 | ❌ | - |
-| Go | https://github.com/yldshv/go-valorant-api | v3.0.2 | ✅ | https://pkg.go.dev/github.com/yldshv/go-valorant-api#VAPI |
+| Go | https://github.com/yldshv/go-valorant-api | v3.0.2 | ❌ | https://pkg.go.dev/github.com/yldshv/go-valorant-api#VAPI |
 
 # Legal
 This API isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
@@ -107,10 +79,7 @@ Hey Riot, first of all i hope u know that this project is a try to enhance the d
 Thanks to @liamcottle, @RumbleMike and @Hamper. Without them, parts of the API would be not available.
 Consider checking out https://valorant-api.com if you need any images from the game.
 
-# Year 2022 in Numbers
-![Annual Report 2022 API](https://user-images.githubusercontent.com/43936184/210059618-29665ffd-2070-48b9-87ae-293b55023941.png)
-
 # Other Stuff
-Also would be happy if you give the project a star and give credit when you use it. If you wanna help me to pay the server instance (16€ per month) or want to support my work, you can help me via patreon: [Link](https://www.patreon.com/henrikdev).
+Also would be happy if you give the project a star and give credit when you use it. If you wanna help me to pay the server instance or want to support my work, you can help me via patreon: [Link](https://www.patreon.com/henrikdev).
 
 If you have any questions write on Discord: @henrik3 or on the support server or write me an email to contact@henrikdev.xyz. 
