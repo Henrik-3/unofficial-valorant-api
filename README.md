@@ -53,7 +53,7 @@ What is not allowed?
 See the current status of the API here: https://status.henrikdev.xyz/
 
 # Documentation
-The documention for the API is available at: https://docs.henridkev.xyz
+The documention for the API is available at: https://docs.henrikdev.xyz
 If you need an OpenAPI Spec, check the link here: https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API
   
 # Projects using this API
