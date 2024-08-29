@@ -1,11 +1,11 @@
-# unofficial-valorant-api (v.4.0.0)
+# unofficial-valorant-api (v.4.0.1)
 Unofficial Valorant API by using the Ingame API
 <br>
 
 <a href="https://discord.gg/X3GaVkX2YN" target="_blank"><img src="https://discordapp.com/api/guilds/704231681309278228/widget.png?style=banner2"/></a>
 
 # Before using this API
-Please make sure that the user has given his consent to use his data. Analytic services where the user haven't giving his consent are not supported and will be banned if found out, same goes with store checkers if they are public
+Please make sure that the user has given his consent to use his data. Analytic services where the user haven't giving his consent are not supported and will be banned if found out, same stuff for store checkers if they are public
 
 # Authentication and Rate Limits
 All rate limits are the same for every endpoint, so in general you have **90 requests every minute** if you use an "Advanced" API Key, if not it will be **30 requests every minute** with the "Basic" Key.
@@ -38,16 +38,24 @@ There are also some Rate Limit Adjustments:
     - Suitable for: Public Discord Bots (Servers) / Public Websites
 - Production Key:
     - Rate Limit you requested
-    - Suitable for: Large Discord Bots / Large Websites with a big amount of user
+    - Suitable for: Large Discord Bots / Large Websites with a big amount of users
     - API not intended for production use, grant will only happen with valid reason
     
 **IMPORTANT**
 
 What is not allowed?
 - Big analytic projects
-    - Why? Because of data privacy. Rito set RSO as a requirement for their official API because the VAL Team said they want to protect the users data. Since I dont want to get into trouble with Riot and want to keep up the API as long as possible for normal developers out there this is a requirement
+    - Why? Because of data privacy. Rito set RSO as a requirement for their official API because the VAL Team said they want to protect the users data. Since I dont want to get into trouble with Riot and want to keep up the API as long as possible for normal developers out there, this is a requirement
 - Public store checkers
     - As this feature requires the users credentials, the possibility of a credential leak is to high
+ 
+## Custom Rate Limits & Project Support
+As stated above, the API is developed with higher request counts in mind since version 4, but still not intended to be used within big projects.
+Do compensate hosting costs, storage (and maybe one of the endless hours i already spend with this project) and further expansion/development, 
+I'll require projects that need higher rate limits (individually decided based on project) OR have a PAID tier in their project,
+to subscripe to patreon with level 4/5: https://www.patreon.com/henrikdev
+
+For more questions feel free to open a ticket on the discord ^^
 
 # Status
 See the current status of the API here: https://status.henrikdev.xyz/
