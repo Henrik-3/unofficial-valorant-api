@@ -53,7 +53,7 @@ What is not allowed?
 As stated above, the API is developed with higher request counts in mind since version 4, but still not intended to be used within big projects.
 Do compensate hosting costs, storage (and maybe one of the endless hours i already spend with this project) and further expansion/development, 
 I'll require projects that need higher rate limits (individually decided based on project) OR have a PAID tier in their project,
-to subscripe to patreon with level 4/5: https://www.patreon.com/henrikdev
+to subscribe to patreon with level 4/5: https://www.patreon.com/henrikdev
 
 For more questions feel free to open a ticket on the discord ^^
 
