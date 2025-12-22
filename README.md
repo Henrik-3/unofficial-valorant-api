@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.4.0.1)
+# unofficial-valorant-api (v.4.5.0)
 Unofficial Valorant API by using the Ingame API
 <br>
 
@@ -23,9 +23,10 @@ If you exceed rate limit you will get following JSON with 429 Status Code:
 }
 ```
 The API party uses a key based system.
-You can get the "Basic" Key instantly without waiting time or apply for an "Advanced" key with the guarantee that you will receive an answer to your application within 24-48h. 
+You can get the "Basic" Key instantly without waiting time or apply for an "Enhanced" key with the guarantee that you will receive an answer to your application within 1-2 Weeks (sometimes faster :D). 
 
-You can generate a key on the linked discord above. 
+You can manage your keys at https://api.henrikdev.xyz/dashboard/
+For beeing able to generate keys you have to join the linked discord above, this is for support reasons...
 
 *You will also have to enter some details about your app, e.g., the use case. This is to ensure the API is not used in a harmful way and (hopefully) the user knows that his data is used.*
 
@@ -33,10 +34,10 @@ There are also some Rate Limit Adjustments:
 - Basic Key: 
     - 30req/min
     - Suitable for: Twitch Bots | Educational purposes (How do i code etc) | Private Discord Bots
-- Advanced Key:
+- Enhanced Key:
     - 90req/min
     - Suitable for: Public Discord Bots (Servers) / Public Websites
-- Production Key:
+- Production/Custom Key:
     - Rate Limit you requested
     - Suitable for: Large Discord Bots / Large Websites with a big amount of users
     - API not intended for production use, grant will only happen with valid reason
