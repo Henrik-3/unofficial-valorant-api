@@ -1,7 +1,5 @@
 # unofficial-valorant-api (v.4.5.0)
-Unofficial Valorant API by using the Ingame API
-<br>
-
+<img src="https://status.henrikdev.xyz/badge/val-eu/uptime?labelColor=333&color=67ab95&style=for-the-badge&label=Unofficial%20VALORANT%20API&sinceLast=7776000&hideDuration=true" />
 <a href="https://discord.gg/X3GaVkX2YN" target="_blank"><img src="https://discordapp.com/api/guilds/704231681309278228/widget.png?style=banner2"/></a>
 
 # Before using this API
