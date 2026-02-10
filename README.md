@@ -47,6 +47,8 @@ What is not allowed?
     - Why? Because of data privacy. Rito set RSO as a requirement for their official API because the VAL Team said they want to protect the users data. Since I dont want to get into trouble with Riot and want to keep up the API as long as possible for normal developers out there, this is a requirement
 - Public store checkers
     - As this feature requires the users credentials, the possibility of a credential leak is to high
+- TOS breaking stuff
+    - Includes showing hidden names, account checkers for selling accounts and other stuff that may sound illegal (please do some thinking before executing)
  
 ## Custom Rate Limits & Project Support
 As stated above, the API is developed with higher request counts in mind since version 4, but still not intended to be used within big projects.
