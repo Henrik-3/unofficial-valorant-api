@@ -63,7 +63,7 @@ See the current status of the API here: https://status.henrikdev.xyz/
 
 # Documentation
 The documention for the API is available at: https://docs.henrikdev.xyz
-If you need an OpenAPI Spec, check the link here: https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API
+If you need an OpenAPI Spec, check the link here: https://api.henrikdev.xyz/docs
   
 # Projects using this API
 - https://github.com/Henrik-3/valorant-labs
